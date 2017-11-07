@@ -1,0 +1,11 @@
+email: erick@entre-quote.com
+fullname: Newick
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$w699WroKRaotyK1//tGlWesPo1iKdcy57xShmsvoU5d0ZFptn6LFy
