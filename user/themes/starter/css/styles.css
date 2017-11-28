@@ -33,6 +33,12 @@ body {
   .container {
     padding: 0 20px;
     width: 100%; } }
+header {
+  padding-top: 2rem; }
+
+.logo img {
+  max-width: 39rem; }
+
 footer {
   padding: 1rem 1.4rem 1rem 8px;
   font-size: 1.2rem;
@@ -48,8 +54,17 @@ footer {
 
 /* --- Components --- */
 /* --- Nav --- */
-nav a {
-  text-decoration: none; }
+.main-nav {
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #333; }
+  .main-nav a {
+    text-decoration: none; }
+    .main-nav a:hover
+    .main-nav a.selected {
+      text-decoration: underline; }
 
 ol,
 ul {
@@ -58,9 +73,6 @@ ul {
 
 ul {
   list-style-type: none; }
-  ul li:before {
-    content: '';
-    margin-right: 10px; }
   ul ul {
     margin-left: 20px; }
 

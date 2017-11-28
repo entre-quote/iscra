@@ -9,12 +9,7 @@ ul {
 //Unordered lists
 ul {
   list-style-type: none;
-  
-  li:before {
-    content: '';
-    margin-right: 10px;
-  }
-  
+
   ul {
     margin-left: 20px;
   }

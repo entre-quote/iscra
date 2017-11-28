@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Actualités
 ---
 
 # Grav is Running!

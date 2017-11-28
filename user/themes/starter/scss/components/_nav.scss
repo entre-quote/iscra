@@ -1,9 +1,19 @@
 @charset "UTF-8";
 
 /* --- Nav --- */
-nav {
-  
-}
-nav a {
-  text-decoration: none;
+.main-nav {
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border-bottom: 1px dotted $default-color;
+
+    a {
+        text-decoration: none;
+
+        &:hover
+        &.selected {
+            text-decoration: underline;
+        }
+    }
 }
