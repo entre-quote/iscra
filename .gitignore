@@ -1,4 +1,4 @@
 /cache/
-/logs/
+/logs/*
 /user/themes/starter/.sass-cache/
 .DS_Store
