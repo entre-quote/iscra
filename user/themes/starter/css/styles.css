@@ -1,0 +1,96 @@
+/*
+Comment everything not useful for the current project
+*/
+/* --- Base --- */
+/* --- * --- */
+* {
+  box-sizing: border-box; }
+
+/* --- Body --- */
+body {
+  margin: 0;
+  color: #333;
+  background-color: #f2f2f2; }
+
+/*Font-face declaration example*/
+html {
+  font-size: 62.5%;
+  /* 10px */
+  font-size: calc(1em * 0.625);
+  /* fix */ }
+
+body {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.25; }
+
+/* --- Layout --- */
+.container {
+  margin: 0 auto;
+  width: 940px; }
+
+@media (max-width: 940px) {
+  .container {
+    padding: 0 20px;
+    width: 100%; } }
+/* --- Components --- */
+/* --- Nav --- */
+nav a {
+  text-decoration: none; }
+
+ol,
+ul {
+  margin: 20px 0;
+  padding-left: 0; }
+
+ul {
+  list-style-type: none; }
+  ul li:before {
+    content: '';
+    margin-right: 10px; }
+  ul ul {
+    margin-left: 20px; }
+
+/* Forms */
+input,
+textarea,
+select,
+button {
+  font-size: 1em;
+  vertical-align: middle; }
+
+/* Labels */
+label {
+  display: block; }
+
+/* Inputs */
+input[type="text"],
+textarea,
+select {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #333; }
+
+[type="radio"] + label,
+[type="checkbox"] + label {
+  display: inline-block; }
+
+/* Textarea */
+textarea {
+  resize: vertical; }
+
+input[type="submit"],
+button {
+  cursor: pointer; }
+
+button {
+  cursor: pointer; }
+
+a {
+  color: #f00; }
+
+/* --- Pages --- */
+/* --- Vendors --- */
+/*@import "vendors/"*/
+
+/*# sourceMappingURL=styles.css.map */
