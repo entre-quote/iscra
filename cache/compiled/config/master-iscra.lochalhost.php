@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1510054931,
-    'checksum' => '95eda299e4db609f1d179371a51a62d8',
+    'timestamp' => 1510526310,
+    'checksum' => '06ee03578ffd7b652704a96a3d78b9e6',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1509087390
+                'modified' => 1510526310
             ]
         ],
         'system/config' => [
@@ -719,7 +719,8 @@ return [
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false
+                'auto_metadata_exif' => false,
+                'upload_limit' => 33554432
             ],
             'session' => [
                 'enabled' => true,
