@@ -8,12 +8,42 @@
     text-transform: uppercase;
     border-bottom: 1px dotted $default-color;
 
+    & > ul {
+        display: flex;
+    }
+    li {
+        display: inline-block;
+
+        &.selected {
+
+            & > a {
+                color: $red;
+                text-decoration: underline;
+            }
+        }
+    }
+
     a {
+        color: $default-color;
         text-decoration: none;
 
-        &:hover
-        &.selected {
+        &:hover {
+            color: $red;
             text-decoration: underline;
+        }
+    }
+
+    .has-children {
+
+        ul {
+            display: none;
+        }
+
+        &.selected {
+
+            ul {
+                display: block;
+            }
         }
     }
 }
