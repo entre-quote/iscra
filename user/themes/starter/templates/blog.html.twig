@@ -4,14 +4,12 @@
 
 	{% block content %}
 
-		{{ page.content }}
-		<div>
-			<div id="listing">
+			<section class="blog-list">
 				{% for child in collection %}
 			        {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
 			    {% endfor %}
-			</div>
-		</div>
+			</section>
+
 	{% endblock %}
 
 {% endembed %}

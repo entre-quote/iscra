@@ -3,9 +3,9 @@
 	{% block content %}
 
 		<div class="blog-content-item ">
-			<div id="item">
+			<article id="item">
 			    {% include 'partials/blog_item.html.twig' with {'blog':page.parent, 'truncate':false} %}
-			</div>
+			</article>
 		</div>
 	{% endblock %}
 
