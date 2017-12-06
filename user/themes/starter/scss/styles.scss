@@ -4,6 +4,9 @@
 Comment everything not useful for the current project
 */
 
+/* --- Vendors --- */
+@import "vendors/grillade";
+
 /* --- Base --- */
 @import "base/variables";
 @import "base/basics";
@@ -23,6 +26,7 @@ Comment everything not useful for the current project
 @import "components/forms";
 @import "components/buttons";
 @import "components/links";
+@import "components/blog-item";
 
 /* --- Pages --- */
 @import "pages/blog-list";

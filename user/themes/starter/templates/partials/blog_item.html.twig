@@ -1,66 +1,70 @@
-<article class="blog-list-item">
+<article class="blog-item">
 
     {% set header_image = page.header.header_image|defined(true) %}
     {% set header_image_width  = page.header.header_image_width|defined(203) %}
     {% set header_image_height = page.header.header_image_height|defined(203) %}
     {% set header_image_file = page.header.header_image_file %}
 
-    <div class="list-blog-header">
 
-        {% if header_image %}
+    <div class="blog-item-content">
+        <div class="blog-item-header">
+
+            {% if header_image %}
             {% if header_image_file %}
-                {% set header_image_media = page.media.images[header_image_file] %}
+            {% set header_image_media = page.media.images[header_image_file] %}
             {% else %}
-                {% set header_image_media = page.media.images|first %}
+            {% set header_image_media = page.media.images|first %}
             {% endif %}
             {{ header_image_media.cropZoom(header_image_width, header_image_height).html }}
-        {% endif %}
+            {% endif %}
 
-        {% if page.header.link %}
-            <h2 class="p-name">
+            {% if page.header.link %}
+            <h2>
                 {% if page.header.continue_link is not sameas(false) %}
                 <a href="{{ page.url }}"><i class="fa fa-angle-double-right u-url"></i></a>
                 {% endif %}
                 <a href="{{ page.header.link }}" class="u-url">{{ page.title }}</a>
             </h2>
-        {% else %}
-            <h2 class="p-name"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h2>
-        {% endif %}
+            {% else %}
+            <h2><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h2>
+            {% endif %}
 
-    </div>
+        </div>
 
-    <div class="list-blog-padding">
+        <div class="list-blog-padding">
 
-        {% if page.header.continue_link is sameas(false) %}
+            {% if page.header.continue_link is sameas(false) %}
             <div class="e-content">
                 {{ page.content }}
             </div>
             {% if not truncate %}
             {% set show_prev_next = true %}
             {% endif %}
-        {% elseif truncate and page.summary != page.content %}
+            {% elseif truncate and page.summary != page.content %}
             <div class="p-summary e-content">
                 {{ page.summary }}
-                <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+                <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
             </div>
-        {% elseif truncate %}
+            {% elseif truncate %}
             <div class="p-summary e-content">
                 {{ page.content }}
-                <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+                <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
             </div>
-        {% else %}
+            {% else %}
             <div class="e-content">
                 {{ page.content }}
             </div>
-        {% endif %}
+            {% endif %}
+
+        </div>
 
     </div>
 
     {% if page.taxonomy.tag %}
-    <span class="tags">
+    <div class="blog-item-tags">
         {% for tag in page.taxonomy.tag %}
         <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
         {% endfor %}
-    </span>
+    </div>
     {% endif %}
 </article>

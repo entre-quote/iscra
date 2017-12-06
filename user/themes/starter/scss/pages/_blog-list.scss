@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
 .blog-list {
-    display: flex;
+    
+    .blog-item-content {
+        padding: 1rem;
+        border: 1px dotted transparent;
 
-    article {
-        flex-basis: 20%;
+        &:hover {
+            border-color: $red;
+        }
     }
 }
