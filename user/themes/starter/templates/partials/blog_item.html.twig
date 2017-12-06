@@ -10,23 +10,23 @@
         <div class="blog-item-header">
 
             {% if header_image %}
-            {% if header_image_file %}
-            {% set header_image_media = page.media.images[header_image_file] %}
-            {% else %}
-            {% set header_image_media = page.media.images|first %}
-            {% endif %}
-            {{ header_image_media.cropZoom(header_image_width, header_image_height).html }}
+                {% if header_image_file %}
+                    {% set header_image_media = page.media.images[header_image_file] %}
+                {% else %}
+                    {% set header_image_media = page.media.images|first %}
+                {% endif %}
+                {{ header_image_media.cropZoom(header_image_width, header_image_height).html }}
             {% endif %}
 
             {% if page.header.link %}
-            <h2>
-                {% if page.header.continue_link is not sameas(false) %}
-                <a href="{{ page.url }}"><i class="fa fa-angle-double-right u-url"></i></a>
-                {% endif %}
-                <a href="{{ page.header.link }}" class="u-url">{{ page.title }}</a>
-            </h2>
+                <h2>
+                    {% if page.header.continue_link is not sameas(false) %}
+                        <a href="{{ page.url }}"><i class="fa fa-angle-double-right u-url"></i></a>
+                    {% endif %}
+                        <a href="{{ page.header.link }}" class="u-url">{{ page.title }}</a>
+                </h2>
             {% else %}
-            <h2><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h2>
+                <h2><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h2>
             {% endif %}
 
         </div>
@@ -34,37 +34,40 @@
         <div class="list-blog-padding">
 
             {% if page.header.continue_link is sameas(false) %}
-            <div class="e-content">
-                {{ page.content }}
-            </div>
+                <div class="e-content">
+                    {{ page.content }}
+                </div>
             {% if not truncate %}
-            {% set show_prev_next = true %}
+                {% set show_prev_next = true %}
             {% endif %}
             {% elseif truncate and page.summary != page.content %}
-            <div class="p-summary e-content">
-                {{ page.summary }}
-                <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
-            </div>
+                <div class="p-summary e-content">
+                    {{ page.summary }}
+                    <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
+                </div>
             {% elseif truncate %}
-            <div class="p-summary e-content">
-                {{ page.content }}
-                <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
-            </div>
+                <div class="p-summary e-content">
+                    {{ page.content }}
+                    <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
+                </div>
             {% else %}
-            <div class="e-content">
-                {{ page.content }}
-            </div>
+                <div class="e-content">
+                    {{ page.content }}
+                </div>
             {% endif %}
 
         </div>
 
     </div>
 
-    {% if page.taxonomy.tag %}
-    <div class="blog-item-tags">
-        {% for tag in page.taxonomy.tag %}
-        <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
-        {% endfor %}
-    </div>
+    {% if page.taxonomy.Actualites %}
+        <div class="blog-item-tags">
+            {% for theme in page.taxonomy.Themes %}
+                <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ theme }}" class="p-category">{{ theme }}</a>
+            {% endfor %}
+            {% for intervention in page.taxonomy.Interventions %}
+                <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ intervention }}" class="p-category">{{ intervention }}</a>
+            {% endfor %}
+        </div>
     {% endif %}
 </article>

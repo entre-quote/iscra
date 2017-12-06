@@ -4,8 +4,9 @@ author:
   name: 'Joe Bloggs'
   email: joe@test.com
 taxonomies:
-  - category
-  - tag
+  - Actualites
+  - Themes
+  - Interventions
 metadata:
   description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
 summary:

@@ -1,11 +1,12 @@
 ---
 title: 'Laïcité : des pratiques professionnelles d’inclusion ou d’exclusion'
 taxonomy:
-    category:
+    Actualites:
+        - Oui
+    Themes:
         - Laïcité
-    tag:
-        - Laïcité
-        - 'Univers-cité des savoirs impliqués'
+    Interventions:
+        - Publications
 visible: false
 ---
 
