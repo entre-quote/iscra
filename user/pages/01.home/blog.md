@@ -1,6 +1,8 @@
 ---
 content:
-    items: '@self.children'
+    items:
+        '@taxonomy':
+            Actualites: Oui
     limit: 4
     order:
         by: date
