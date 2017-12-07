@@ -18,33 +18,25 @@
                 </div>
             {% endif %}
 
-            {% if page.header.link %}
-                <h2>
-                    {% if page.header.continue_link is not sameas(false) %}
-                        <a href="{{ page.url }}"><i class="fa fa-angle-double-right u-url"></i></a>
-                    {% endif %}
-                        <a href="{{ page.header.link }}" class="u-url">{{ page.title }}</a>
-                </h2>
-            {% else %}
-                <h2><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h2>
-            {% endif %}
+            <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 
         </div>
 
         <div class="list-blog-padding">
 
             {% if page.header.continue_link is sameas(false) %}
-                <div class="e-content">
+                <div>
                     {{ page.content }}
                 </div>
             {% if not truncate %}
                 {% set show_prev_next = true %}
             {% endif %}
             {% elseif truncate and page.summary != page.content %}
-                <div class="p-summary e-content">
+                <div class="p-summary">
                     {{ page.summary }}
-                    <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
                 </div>
+                <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
+
             {% elseif truncate %}
                 <div class="p-summary e-content">
                     {{ page.content }}

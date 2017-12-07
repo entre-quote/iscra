@@ -71,3 +71,14 @@
         }
     }
 }
+
+.p-summary {
+
+    p {
+        
+        &:after {
+            content: '[...]';
+            color: $red;
+        }
+    }
+}

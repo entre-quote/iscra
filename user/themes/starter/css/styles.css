@@ -647,6 +647,10 @@ a {
         padding-right: 5px;
         padding-left: 5px; }
 
+.p-summary p:after {
+  content: '[...]';
+  color: #f00; }
+
 /* --- Pages --- */
 .blog-list .blog-item-content {
   padding: 1rem;
