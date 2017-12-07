@@ -524,28 +524,34 @@ footer {
 /* --- Components --- */
 /* --- Nav --- */
 .main-nav {
-  padding-bottom: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
   margin-bottom: 2.5rem;
   font-size: 1.6rem;
   text-transform: uppercase;
   border-bottom: 1px dotted #333; }
-  .main-nav > ul {
-    display: flex; }
-  .main-nav li {
-    display: inline-block; }
-    .main-nav li.selected > a {
-      color: #f00;
-      text-decoration: underline; }
   .main-nav a {
     color: #333;
     text-decoration: none; }
-    .main-nav a:hover {
+    .main-nav a:hover, .main-nav a.selected {
       color: #f00;
       text-decoration: underline; }
-  .main-nav .has-children ul {
+  .main-nav > a {
+    margin-bottom: 2rem; }
+  .main-nav .has-children + ul {
     display: none; }
-  .main-nav .has-children.selected ul {
-    display: block; }
+  .main-nav .has-children.selected + ul {
+    display: block;
+    order: 2;
+    flex-basis: 100%; }
+
+.sub-menu {
+  margin: 0;
+  padding: 1rem 5px;
+  font-size: 1.3rem;
+  background-color: #d9d9d9;
+  border-top: 1px dotted #333; }
 
 h1 {
   font-size: 1.6rem;

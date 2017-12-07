@@ -2,48 +2,51 @@
 
 /* --- Nav --- */
 .main-nav {
-    padding-bottom: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    // padding-bottom: 2.5rem;
+    margin-top: 3rem;
     margin-bottom: 2.5rem;
     font-size: 1.6rem;
     text-transform: uppercase;
     border-bottom: 1px dotted $default-color;
 
-    & > ul {
-        display: flex;
-    }
-    li {
-        display: inline-block;
-
-        &.selected {
-
-            & > a {
-                color: $red;
-                text-decoration: underline;
-            }
-        }
-    }
-
     a {
         color: $default-color;
         text-decoration: none;
 
-        &:hover {
+        &:hover,
+        &.selected {
             color: $red;
             text-decoration: underline;
         }
     }
 
+    & > a {
+        margin-bottom: 2rem;
+    }
+
     .has-children {
 
-        ul {
+        & + ul {
             display: none;
         }
 
         &.selected {
 
-            ul {
+            & + ul {
                 display: block;
+                order:2;
+                flex-basis: 100%;
             }
         }
     }
+}
+
+.sub-menu {
+    margin: 0;
+    padding: 1rem 5px;
+    font-size: 1.3rem;
+    background-color: $grey;
+    border-top: 1px dotted $default-color;
 }
