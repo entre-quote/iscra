@@ -6,8 +6,19 @@
 
 .blog-item-header {
 
-    img {
+    .img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 1.5rem;
+        width: 20rem;
+        height: 20rem;
+        background-color: $grey;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
     }
 
     h2 {
