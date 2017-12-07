@@ -26,10 +26,12 @@ Comment everything not useful for the current project
 @import "components/forms";
 @import "components/buttons";
 @import "components/links";
+@import "components/paragraphs";
 @import "components/blog-item";
 
 /* --- Pages --- */
 @import "pages/blog-list";
+@import "pages/default";
 
 /* --- Vendors --- */
 /*@import "vendors/"*/
