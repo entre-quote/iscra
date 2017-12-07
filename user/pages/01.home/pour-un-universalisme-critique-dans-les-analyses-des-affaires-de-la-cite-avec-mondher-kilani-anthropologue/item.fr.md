@@ -3,11 +3,8 @@ title: 'Pour un universalisme critique dans les analyses des affaires de la Cit�
 media_order: illu-blog.jpg
 published: true
 taxonomy:
-    category:
-        - Laïcité
-    tag:
-        - Laïcité
-        - 'Univers-cité des savoirs impliqués'
+    Actualites:
+        - Oui
 visible: false
 ---
 

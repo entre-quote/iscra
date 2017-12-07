@@ -1,5 +1,6 @@
 ---
 title: 'Laïcité : des pratiques professionnelles d’inclusion ou d’exclusion'
+media_order: vst.jpg
 taxonomy:
     Actualites:
         - Oui
