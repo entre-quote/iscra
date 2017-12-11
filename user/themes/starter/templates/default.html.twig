@@ -1,7 +1,21 @@
-{% extends 'partials/base.html.twig' %}
+{# extends 'partials/base.html.twig' #}
 
-{% block content %}
-    <section class="default">
-        {{ page.content }}
-    </section>
-{% endblock %}
+{# block content #}
+    <!-- <section class="default"> -->
+        {# page.content #}
+    <!-- </section> -->
+{# endblock #}
+
+
+{% embed 'partials/base.html.twig' %}
+
+	{% block content %}
+
+		<section class="blog-content-item">
+			<article id="item">
+			    {% include 'partials/default-item.html.twig' with {'blog':page.parent, 'truncate':false} %}
+			</article>
+		</section>
+	{% endblock %}
+
+{% endembed %}

@@ -664,9 +664,22 @@ p {
         padding-right: 5px;
         padding-left: 5px; }
 
-.p-summary p:after {
+.p-summary p::after {
   content: '[...]';
   color: #f00; }
+
+.item-intro {
+  font-size: 1.6rem;
+  font-weight: bold; }
+
+.item-content::after {
+  content: '';
+  display: block;
+  clear: both; }
+.item-content .img {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 2rem; }
 
 /* --- Pages --- */
 .blog-list .blog-item-content {
@@ -674,10 +687,6 @@ p {
   border: 1px dotted transparent; }
   .blog-list .blog-item-content:hover {
     border-color: #f00; }
-
-.default p:first-child {
-  font-size: 1.6rem;
-  font-weight: bold; }
 
 /* --- Vendors --- */
 /*@import "vendors/"*/

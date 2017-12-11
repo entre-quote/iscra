@@ -28,10 +28,10 @@ Comment everything not useful for the current project
 @import "components/links";
 @import "components/paragraphs";
 @import "components/blog-item";
+@import "components/default-item";
 
 /* --- Pages --- */
 @import "pages/blog-list";
-@import "pages/default";
 
 /* --- Vendors --- */
 /*@import "vendors/"*/

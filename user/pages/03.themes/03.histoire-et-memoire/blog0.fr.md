@@ -1,0 +1,10 @@
+---
+content:
+    items:
+        '@taxonomy':
+            Themes: 'Développement du pouvoir d''agir'
+    order:
+        by: date
+        dir: desc
+title: 'Développement du pouvoir d''agir'
+---

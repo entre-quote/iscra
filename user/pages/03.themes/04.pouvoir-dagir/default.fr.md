@@ -1,4 +1,0 @@
----
-title: 'Pouvoir d''agir'
----
-
