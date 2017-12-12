@@ -5,9 +5,9 @@
                 <a href="{{ p.url }}" class="has-children {{ current_page }}">
                     {{ p.menu }}
                 </a>
-                <ul class="sub-menu">
+                <nav class="sub-menu">
                     {{ _self.loop(p) }}
-                </ul>
+                </nav>
         {% else %}
                 <a href="{{ p.url }}" class="{{ current_page }}">
                     {{ p.menu }}

@@ -4,7 +4,6 @@
 .main-nav {
     display: flex;
     flex-wrap: wrap;
-    // padding-bottom: 2.5rem;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
     font-size: 1.6rem;
@@ -24,11 +23,15 @@
 
     & > a {
         margin-bottom: 2rem;
+
+        &:not(:first-child) {
+            margin-left: 4.5rem;
+        }
     }
 
     .has-children {
 
-        & + ul {
+        & + nav {
             display: none;
         }
 
@@ -49,8 +52,24 @@
 
 .sub-menu {
     margin: 0;
-    padding: 1rem 5px;
+    padding: 1rem 5px 5px;
     font-size: 1.3rem;
     background-color: $grey;
     border-top: 1px dotted $default-color;
+
+    & > a {
+        padding-bottom: 5px;
+
+        &:not(:last-child) {
+
+            &:after {
+                content: '|';
+                display: inline-block;
+                margin-right: 1.5rem;
+                margin-left: 1.5rem;
+                color: $default-color;
+
+            }
+        }
+    }
 }
