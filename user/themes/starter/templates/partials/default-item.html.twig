@@ -5,10 +5,6 @@
 
     <h2>{{ page.title }}</h2>
 
-    <div class="item-intro">
-        {{page.summary}}
-    </div>
-
     <div class="item-content">
 
         {% if header_image %}
@@ -23,8 +19,7 @@
         {% endif %}
 
         <div class="txt">
-            {% set content = page.content|slice(page.summary|length) %}
-            {{ content }}
+            {{ page.content }}
         </div>
 
     </div>

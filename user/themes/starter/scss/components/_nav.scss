@@ -34,10 +34,14 @@
 
         &.selected {
 
-            & + ul {
+            & + .sub-menu {
                 display: block;
                 order:2;
                 flex-basis: 100%;
+
+                & > .sub-menu {
+                    display: none;
+                }
             }
         }
     }

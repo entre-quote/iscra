@@ -541,10 +541,12 @@ footer {
     margin-bottom: 2rem; }
   .main-nav .has-children + ul {
     display: none; }
-  .main-nav .has-children.selected + ul {
+  .main-nav .has-children.selected + .sub-menu {
     display: block;
     order: 2;
     flex-basis: 100%; }
+    .main-nav .has-children.selected + .sub-menu > .sub-menu {
+      display: none; }
 
 .sub-menu {
   margin: 0;
