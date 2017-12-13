@@ -581,7 +581,8 @@ ul {
     margin-left: 20px; }
 
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  margin-left: 1.6rem; }
 
 /* Forms */
 input,

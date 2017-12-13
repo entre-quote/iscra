@@ -11,11 +11,9 @@
 
 	{% block content %}
 
-		<section class="blog-content-item">
-			<article id="item">
-			    {% include 'partials/default-item.html.twig' with {'blog':page.parent, 'truncate':false} %}
-			</article>
-		</section>
+		<h2>{{ page.title }}</h2>
+		{{ content }}
+		
 	{% endblock %}
 
 {% endembed %}
