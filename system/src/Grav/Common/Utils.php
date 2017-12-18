@@ -246,7 +246,7 @@ abstract class Utils
      *
      * @return string
      */
-    public static function truncateHtml($text, $length = 100, $ellipsis = ' ')
+    public static function truncateHtml($text, $length = 100, $ellipsis = '...')
     {
         if (mb_strlen($text) <= $length) {
             return $text;

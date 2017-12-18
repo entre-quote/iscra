@@ -7,6 +7,10 @@ taxonomy:
         - Oui
     Themes:
         - Laïcité
+        - Jeunesse
+        - 'Développement du pouvoir d''agir'
+        - Discrimination
+        - 'Histoire et mémoire'
     Interventions:
         - 'Univers-cité des savoirs impliqués'
 visible: false

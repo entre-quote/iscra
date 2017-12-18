@@ -2,6 +2,8 @@
 title: '«Déconstruire les problèmes de la jeunesse pour mieux penser les projets portés par les jeunes : quels enjeux, quelles postures ?»'
 media_order: posture.jpg
 taxonomy:
+    Actualites:
+        - Oui
     Themes:
         - Jeunesse
         - 'Développement du pouvoir d''agir'

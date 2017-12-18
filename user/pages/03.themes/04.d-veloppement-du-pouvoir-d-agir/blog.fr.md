@@ -1,4 +1,5 @@
 ---
+title: 'Développement du pouvoir d''agir'
 content:
     items:
         '@taxonomy':
@@ -6,5 +7,5 @@ content:
     order:
         by: date
         dir: desc
-title: 'Développement du pouvoir d''agir'
 ---
+

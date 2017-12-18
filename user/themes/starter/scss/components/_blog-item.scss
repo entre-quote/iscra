@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .blog-item {
-    
+
 }
 
 .blog-item-header {
@@ -60,8 +60,7 @@
             color: $red;
         }
 
-        &:first-child {
-            font-weight: bold;
+        &:not(:last-child) {
 
             &::after {
                 content: '|';
@@ -69,6 +68,9 @@
                 padding-left: 5px;
             }
         }
+    }
+    .p-theme {
+        font-weight: bold;
     }
 }
 

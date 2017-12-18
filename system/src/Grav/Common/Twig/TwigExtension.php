@@ -11,6 +11,9 @@ namespace Grav\Common\Twig;
 use Grav\Common\Grav;
 use Grav\Common\Page\Collection;
 use Grav\Common\Page\Media;
+use Grav\Common\Twig\TokenParser\TwigTokenParserScript;
+use Grav\Common\Twig\TokenParser\TwigTokenParserStyle;
+use Grav\Common\Twig\TokenParser\TwigTokenParserTryCatch;
 use Grav\Common\Utils;
 use Grav\Common\Markdown\Parsedown;
 use Grav\Common\Markdown\ParsedownExtra;
@@ -18,7 +21,7 @@ use Grav\Common\Uri;
 use Grav\Common\Helpers\Base32;
 use RocketTheme\Toolbox\ResourceLocator\UniformResourceLocator;
 
-class TwigExtension extends \Twig_Extension
+class TwigExtension extends \Twig_Extension implements \Twig_Extension_GlobalsInterface
 {
     protected $grav;
     protected $debugger;
@@ -32,16 +35,6 @@ class TwigExtension extends \Twig_Extension
         $this->grav     = Grav::instance();
         $this->debugger = isset($this->grav['debugger']) ? $this->grav['debugger'] : null;
         $this->config   = $this->grav['config'];
-    }
-
-    /**
-     * Returns extension name.
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'GravTwigExtension';
     }
 
     /**
@@ -69,6 +62,7 @@ class TwigExtension extends \Twig_Extension
             new \Twig_SimpleFilter('contains', [$this, 'containsFilter']),
             new \Twig_SimpleFilter('chunk_split', [$this, 'chunkSplitFilter']),
 
+            new \Twig_SimpleFilter('nicenumber', [$this, 'niceNumberFunc']),
             new \Twig_SimpleFilter('defined', [$this, 'definedDefaultFilter']),
             new \Twig_SimpleFilter('ends_with', [$this, 'endsWithFilter']),
             new \Twig_SimpleFilter('fieldName', [$this, 'fieldNameFilter']),
@@ -144,6 +138,18 @@ class TwigExtension extends \Twig_Extension
             new \Twig_SimpleFunction('exif', [$this, 'exifFunc']),
             new \Twig_SimpleFunction('media_directory', [$this, 'mediaDirFunc']),
 
+        ];
+    }
+
+    /**
+     * @return array
+     */
+    public function getTokenParsers()
+    {
+        return [
+            new TwigTokenParserTryCatch(),
+            new TwigTokenParserScript(),
+            new TwigTokenParserStyle(),
         ];
     }
 
@@ -1095,4 +1101,27 @@ class TwigExtension extends \Twig_Extension
         var_dump($var);
     }
 
+    /**
+     * Returns a nicer more readable number
+     *
+     * @param $number
+     * @return bool|string
+     */
+    public function niceNumberFunc($n)
+    {
+
+        // first strip any formatting;
+        $n = (0+str_replace(",", "", $n));
+
+        // is this a number?
+        if (!is_numeric($n)) return false;
+
+        // now filter it;
+        if ($n > 1000000000000) return round(($n/1000000000000), 2).' t';
+        elseif ($n > 1000000000) return round(($n/1000000000), 2).' b';
+        elseif ($n > 1000000) return round(($n/1000000), 2).' m';
+        elseif ($n > 1000) return round(($n/1000), 2).' k';
+
+        return number_format($n);
+    }
 }

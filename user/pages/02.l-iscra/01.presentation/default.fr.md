@@ -1,5 +1,6 @@
 ---
 title: Présentation
+media_order: organisation.jpg
 ---
 
 Le projet d’Institut Social et Coopératif de Recherche Appliquée (ISCRA), fondé en 1996, à Montpellier, s’est fixé pour objectif de développer des activités de recherche, d’étude et de formation dans le domaine des sciences sociales. 
@@ -18,3 +19,5 @@ L’enjeu est de réfléchir à une autre façon de fabriquer les problèmes et 
 
 Ce site a pour but de rendre accessible et visible la généalogie et l’actualité des travaux de l'ISCRA. Il dessine également les réseaux et les affinités, ou garde trace de ses initiatives. Parce que la production est en mouvement, parce que les configurations sont changeantes, le site évolue.
 
+
+![Organisation de l'ISCRA](organisation.jpg#center) {.img-center}
