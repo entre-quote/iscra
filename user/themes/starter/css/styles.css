@@ -710,11 +710,13 @@ p {
   height: auto; }
 
 /* --- Pages --- */
-.blog-list .blog-item {
-  padding: 1rem;
-  border: 1px dotted transparent; }
-  .blog-list .blog-item:hover {
-    border-color: #f00; }
+.blog-list {
+  align-items: flex-start; }
+  .blog-list .blog-item {
+    padding: 1rem;
+    border: 1px dotted transparent; }
+    .blog-list .blog-item:hover {
+      border-color: #f00; }
 
 /* --- Vendors --- */
 /*@import "vendors/"*/
