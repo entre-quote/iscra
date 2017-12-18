@@ -697,6 +697,18 @@ p {
   content: '[...]';
   color: #f00; }
 
+.e-content::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.img-article {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  max-width: 25.5rem;
+  height: auto; }
+
 .item-intro {
   font-size: 1.6rem;
   font-weight: bold; }

@@ -4,23 +4,25 @@
     {% set header_image_file = page.header.header_image_file %}
 
 
+    {% if header_image_file %}
+        {% set header_image_media = page.media.images[header_image_file] %}
+    {% else %}
+        {% set header_image_media = page.media.images|first %}
+    {% endif %}
+
     <div class="blog-item-content">
-        <div class="blog-item-header">
 
-            {% if header_image %}
-                {% if header_image_file %}
-                    {% set header_image_media = page.media.images[header_image_file] %}
-                {% else %}
-                    {% set header_image_media = page.media.images|first %}
+        {% if truncate and page.summary != page.content %}
+            <div class="blog-item-header">
+
+                {% if header_image %}
+                    <div class="img-wrapper">
+                        {{ header_image_media.html }}
+                    </div>
                 {% endif %}
-                <div class="img-wrapper">
-                    {{ header_image_media.html }}
-                </div>
-            {% endif %}
 
-            <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-
-        </div>
+            </div>
+        {% endif %}
 
         <div class="list-blog-padding">
 
@@ -44,6 +46,13 @@
                 </div>
             {% else %}
                 <div class="e-content">
+
+                    <h2>{{ page.title }}</h2>
+
+                    <div class="img-article">
+                        {{ header_image_media.html }}
+                    </div>
+
                     {{ page.content }}
                 </div>
             {% endif %}
@@ -52,14 +61,13 @@
 
     </div>
 
-    {% if page.taxonomy.Actualites %}
-        <div class="blog-item-tags">
-            {% for theme in page.taxonomy.Themes %}
-                <a href="/themes/{{ theme |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-theme">{{ theme }}</a>
-            {% endfor %}
-            {% for intervention in page.taxonomy.Interventions %}
-                <a href="/interventions/{{ intervention |replace({'é': 'e', 'â': 'a'})|hyphenize }}"" class="p-intervention">{{ intervention }}</a>
-            {% endfor %}
-        </div>
-    {% endif %}
+    <div class="blog-item-tags">
+        {% for theme in page.taxonomy.Themes %}
+            <a href="/themes/{{ theme |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-theme">{{ theme }}</a>
+        {% endfor %}
+        {% for intervention in page.taxonomy.Interventions %}
+            <a href="/interventions/{{ intervention |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-intervention">{{ intervention }}</a>
+        {% endfor %}
+    </div>
+
 </article>
