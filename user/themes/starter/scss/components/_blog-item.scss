@@ -2,6 +2,17 @@
 
 .blog-item {
 
+    & > div {
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+
+    a {
+        color: $default-color;
+    }
 }
 
 .blog-item-header {
@@ -25,10 +36,6 @@
         margin-top: 0;
         font-size: 1.4rem;
         text-transform: uppercase;
-    }
-
-    a {
-        color: $default-color;
     }
 }
 
@@ -86,11 +93,7 @@
 }
 
 .e-content {
-    &::after {
-        content: '';
-        display: block;
-        clear: both;
-    }
+
 }
 
 .img-article {

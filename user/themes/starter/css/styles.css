@@ -647,6 +647,13 @@ a {
 p {
   margin: 1rem 0; }
 
+.blog-item > div::after {
+  content: '';
+  display: block;
+  clear: both; }
+.blog-item a {
+  color: #333; }
+
 .blog-item-header .img-wrapper {
   display: flex;
   justify-content: center;
@@ -662,8 +669,6 @@ p {
   margin-top: 0;
   font-size: 1.4rem;
   text-transform: uppercase; }
-.blog-item-header a {
-  color: #333; }
 
 .read-more {
   padding: 5px;
@@ -697,11 +702,6 @@ p {
   content: '[...]';
   color: #f00; }
 
-.e-content::after {
-  content: '';
-  display: block;
-  clear: both; }
-
 .img-article {
   float: left;
   margin-right: 2rem;
@@ -709,24 +709,11 @@ p {
   max-width: 25.5rem;
   height: auto; }
 
-.item-intro {
-  font-size: 1.6rem;
-  font-weight: bold; }
-
-.item-content::after {
-  content: '';
-  display: block;
-  clear: both; }
-.item-content .img {
-  float: left;
-  margin-right: 2rem;
-  margin-bottom: 2rem; }
-
 /* --- Pages --- */
-.blog-list .blog-item-content {
+.blog-list .blog-item {
   padding: 1rem;
   border: 1px dotted transparent; }
-  .blog-list .blog-item-content:hover {
+  .blog-list .blog-item:hover {
     border-color: #f00; }
 
 /* --- Vendors --- */

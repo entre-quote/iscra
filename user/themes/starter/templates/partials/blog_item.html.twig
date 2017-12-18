@@ -10,43 +10,46 @@
         {% set header_image_media = page.media.images|first %}
     {% endif %}
 
-    <div class="blog-item-content">
 
         {% if truncate and page.summary != page.content %}
             <div class="blog-item-header">
 
                 {% if header_image %}
                     <div class="img-wrapper">
-                        {{ header_image_media.html }}
+                         <a href="{{ page.url }}"> {{ header_image_media.html }}</a>
                     </div>
                 {% endif %}
+
+                <h2><a href="{{ page.url }}">{{ page.title }}</h2></a>
 
             </div>
         {% endif %}
 
-        <div class="list-blog-padding">
+        <div>
 
             {% if page.header.continue_link is sameas(false) %}
                 <div>
                     {{ page.content }}
                 </div>
-            {% if not truncate %}
-                {% set show_prev_next = true %}
-            {% endif %}
-            {% elseif truncate and page.summary != page.content %}
-                <div class="p-summary">
-                    {{ page.summary }}
-                </div>
-                <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
 
-            {% elseif truncate %}
-                <div class="p-summary e-content">
-                    {{ page.content }}
+                {% if not truncate %}
+                    {% set show_prev_next = true %}
+                {% endif %}
+
+                {% elseif truncate and page.summary != page.content %}
+                    <div class="p-summary">
+                        <a href="{{page.url}}">
+                            {{ page.summary }}
+                        </a>
+                    </div>
                     <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
-                </div>
-            {% else %}
-                <div class="e-content">
 
+                {% elseif truncate %}
+                    <div class="p-summary e-content">
+                        {{ page.content }}
+                        <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
+                    </div>
+                {% else %}
                     <h2>{{ page.title }}</h2>
 
                     <div class="img-article">
@@ -54,7 +57,7 @@
                     </div>
 
                     {{ page.content }}
-                </div>
+
             {% endif %}
 
         </div>
