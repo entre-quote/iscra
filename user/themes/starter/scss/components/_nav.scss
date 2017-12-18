@@ -1,14 +1,8 @@
 @charset "UTF-8";
 
 /* --- Nav --- */
-.main-nav {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-    margin-bottom: 2.5rem;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    border-bottom: 1px dotted $default-color;
+
+nav {
 
     a {
         color: $default-color;
@@ -20,6 +14,16 @@
             text-decoration: underline;
         }
     }
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border-bottom: 1px dotted $default-color;
 
     & > a {
         margin-bottom: 2rem;
@@ -68,8 +72,21 @@
                 margin-right: 1.5rem;
                 margin-left: 1.5rem;
                 color: $default-color;
-
             }
+        }
+    }
+}
+
+.mini-nav {
+
+    & > a {
+
+        &:first-child::after {
+            content: '|';
+            display: inline-block;
+            margin-right: 1.5rem;
+            margin-left: 1.5rem;
+            color: $default-color;
         }
     }
 }

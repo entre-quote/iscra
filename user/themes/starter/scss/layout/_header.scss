@@ -2,11 +2,21 @@
 
 header {
     padding-top: 2rem;
+
+    h1 {
+        display: inline;
+        margin: 0;
+    }
+
+    & > div {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .logo {
 
     img {
-        max-width: 39rem;
+        width: 39rem;
     }
 }
