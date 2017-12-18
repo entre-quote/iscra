@@ -55,10 +55,10 @@
     {% if page.taxonomy.Actualites %}
         <div class="blog-item-tags">
             {% for theme in page.taxonomy.Themes %}
-                <a href="/themes/{{ theme |hyphenize}}" class="p-theme">{{ theme }}</a>
+                <a href="/themes/{{ theme |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-theme">{{ theme }}</a>
             {% endfor %}
             {% for intervention in page.taxonomy.Interventions %}
-                <a href="{{ blog.url|rtrim('/') }}/interventions/{{ intervention |hyphenize}}"" class="p-intervention">{{ intervention }}</a>
+                <a href="/interventions/{{ intervention |replace({'é': 'e', 'â': 'a'})|hyphenize }}"" class="p-intervention">{{ intervention }}</a>
             {% endfor %}
         </div>
     {% endif %}
