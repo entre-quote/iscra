@@ -3,70 +3,76 @@
     {% set header_image = page.header.header_image|defined(true) %}
     {% set header_image_file = page.header.header_image_file %}
 
-
     {% if header_image_file %}
         {% set header_image_media = page.media.images[header_image_file] %}
     {% else %}
         {% set header_image_media = page.media.images|first %}
     {% endif %}
 
+    {% if truncate and page.summary != page.content %}
+        <div class="blog-item-header">
 
-        {% if truncate and page.summary != page.content %}
-            <div class="blog-item-header">
-
-                {% if header_image_media %}
-                    <div class="img-wrapper">
-                         <a href="{{ page.url }}"> {{ header_image_media.html }}</a>
-                    </div>
-                {% endif %}
-
-                <h2><a href="{{ page.url }}">{{ page.title }}</h2></a>
-
-            </div>
-        {% endif %}
-
-        <div>
-
-            {% if page.header.continue_link is sameas(false) %}
-                <div>
-                    {{ page.content }}
-                </div>
-
-                {% if not truncate %}
-                    {% set show_prev_next = true %}
-                {% endif %}
-
-                {% elseif truncate and page.summary != page.content %}
-                    <div class="p-summary">
-                        <a href="{{page.url}}">
-                            {{ page.summary }}
-                        </a>
-                    </div>
-                    <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
-
-                {% elseif truncate %}
-                    <div class="p-summary e-content">
-                        {{ page.content }}
-                        <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
-                    </div>
-                {% else %}
-                    <h2>{{ page.title }}</h2>
-
-                    <div class="img-article">
-                        {{ header_image_media.html }}
-                    </div>
-
-                    {{ page.content }}
-
+            {% if header_image_media %}
+                <a href="{{ page.url }}" class="img-wrapper">
+                    {{ header_image_media.html }}
+                </a>
             {% endif %}
 
-        </div>
+            <h2><a href="{{ page.url }}">{{ page.title }}</h2></a>
 
-    </div>
+        </div>
+    {% endif %}
+
+    {% if page.header.continue_link is sameas(false) %}
+            {{ page.content }}
+
+        {% if not truncate %}
+            {% set show_prev_next = true %}
+        {% endif %}
+
+        {% elseif truncate and page.summary != page.content %}
+            <div class="p-summary">
+                <a href="{{page.url}}">
+                    {{ page.summary }}
+                </a>
+            </div>
+            <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
+
+        {% elseif truncate %}
+        <div class="blog-item-header">
+
+            {% if header_image_media %}
+                <a href="{{ page.url }}" class="img-wrapper">
+                    {{ header_image_media.html }}
+                </a>
+            {% endif %}
+
+            <h2><a href="{{ page.url }}">{{ page.title }}</h2></a>
+
+        </div>
+            <div class="p-summary e-content">
+                {{ page.content }}
+                <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
+            </div>
+
+        {% else %}
+            <h2>{{ page.title }}</h2>
+
+            {% if header_image_media %}
+                <div class="img-article">
+                    {{ header_image_media.html }}
+                </div>
+            {% endif %}
+
+            <div class="txt-article">
+                {{ page.content }}
+            </div>
+
+    {% endif %}
 
     <div class="blog-item-tags">
         {% for theme in page.taxonomy.Themes %}
-            <a href="/themes/{{ theme |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-theme">{{ theme }}</a>
+            <a href="/themes/{{ theme |replace({'é': 'e', 'â': 'a', 'ï': 'i'})|hyphenize }}" class="p-theme">{{ theme }}</a>
         {% endfor %}
         {% for intervention in page.taxonomy.Interventions %}
             <a href="/interventions/{{ intervention |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-intervention">{{ intervention }}</a>

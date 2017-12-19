@@ -1,4 +1,5 @@
 ---
+title: Laïcité
 content:
     items:
         '@taxonomy':
@@ -6,6 +7,5 @@ content:
     order:
         by: date
         dir: desc
-title: Laïcité
 ---
 

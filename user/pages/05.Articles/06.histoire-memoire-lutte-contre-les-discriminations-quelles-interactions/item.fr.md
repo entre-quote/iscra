@@ -1,5 +1,6 @@
 ---
 title: 'Histoire, mémoire, lutte contre les discriminations : quelle interactions ?'
+media_order: interactions.jpg
 taxonomy:
     Themes:
         - 'Histoire et mémoire'

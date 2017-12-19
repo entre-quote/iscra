@@ -15,6 +15,8 @@
     }
 }
 
+
+
 .blog-item-header {
 
     .img-wrapper {
@@ -83,7 +85,7 @@
 
 .p-summary {
 
-    p {
+    p:last-of-type {
 
         &::after {
             content: '[...]';
@@ -92,8 +94,10 @@
     }
 }
 
-.e-content {
-
+.txt-article {
+    a {
+        color: $red;
+    }
 }
 
 .img-article {
@@ -102,4 +106,8 @@
     margin-bottom: 2rem;
     max-width: 25.5rem;
     height: auto;
+
+    img {
+        width: 100%;
+    }
 }

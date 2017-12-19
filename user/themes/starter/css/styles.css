@@ -698,8 +698,11 @@ p {
   .blog-item-tags .p-theme {
     font-weight: bold; }
 
-.p-summary p::after {
+.p-summary p:last-of-type::after {
   content: '[...]';
+  color: #f00; }
+
+.txt-article a {
   color: #f00; }
 
 .img-article {
@@ -708,6 +711,8 @@ p {
   margin-bottom: 2rem;
   max-width: 25.5rem;
   height: auto; }
+  .img-article img {
+    width: 100%; }
 
 /* --- Pages --- */
 .blog-list {
