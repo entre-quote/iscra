@@ -714,6 +714,21 @@ p {
   .img-article img {
     width: 100%; }
 
+.taxonomies-display > a {
+  font-weight: bold; }
+
+.tax-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  list-style-type: none; }
+  .tax-list li {
+    margin-bottom: 0; }
+    .tax-list li:first-child {
+      margin-left: 0; }
+  .tax-list a {
+    color: #f00; }
+
 /* --- Pages --- */
 .blog-list {
   align-items: flex-start; }
