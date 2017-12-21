@@ -15,8 +15,6 @@
     }
 }
 
-
-
 .blog-item-header {
 
     .img-wrapper {
@@ -37,7 +35,10 @@
     h2 {
         margin-top: 0;
         font-size: 1.4rem;
-        text-transform: uppercase;
+
+        span {
+            margin-top: 0;
+        }
     }
 }
 
@@ -78,6 +79,7 @@
             }
         }
     }
+
     .p-theme {
         font-weight: bold;
     }

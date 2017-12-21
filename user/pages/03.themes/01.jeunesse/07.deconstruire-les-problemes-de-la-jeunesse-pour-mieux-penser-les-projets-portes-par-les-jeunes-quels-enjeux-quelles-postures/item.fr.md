@@ -1,5 +1,6 @@
 ---
 title: '«Déconstruire les problèmes de la jeunesse pour mieux penser les projets portés par les jeunes : quels enjeux, quelles postures ?»'
+subTitle: 'Par Olivier Noël'
 media_order: posture.jpg
 taxonomy:
     Actualites:
