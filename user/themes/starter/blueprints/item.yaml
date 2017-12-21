@@ -1,0 +1,26 @@
+title: Item
+'@extends':
+    type: blog
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+
+          fields:
+
+            header.subTitle:
+              parrent.parent.classes: vertical
+              ordering@: 1
+              type: text
+              label: Sous titre
+              validate:
+                required: true
+                type: text
+              placeholder: "Ex. : Par … / Le …"

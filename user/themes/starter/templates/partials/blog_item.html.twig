@@ -67,7 +67,12 @@
 
         {% else %} <!-- Affichage complet -->
 
-            <h2>{{ page.title }}</h2>
+            <h2>
+                {{ page.title }}
+                <span>{{page.header.subTitle}}</span>
+            </h2>
+
+
 
             <div class="taxonomies-display">
                 <a href="/themes/">Thème(s) :</a>

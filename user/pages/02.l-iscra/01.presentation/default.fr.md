@@ -20,4 +20,4 @@ L’enjeu est de réfléchir à une autre façon de fabriquer les problèmes et 
 Ce site a pour but de rendre accessible et visible la généalogie et l’actualité des travaux de l'ISCRA. Il dessine également les réseaux et les affinités, ou garde trace de ses initiatives. Parce que la production est en mouvement, parce que les configurations sont changeantes, le site évolue.
 
 
-![Organisation de l'ISCRA](organisation.jpg#center) {.img-center}
+![Organisation de l'ISCRA](organisation.jpg) {.img-center}
