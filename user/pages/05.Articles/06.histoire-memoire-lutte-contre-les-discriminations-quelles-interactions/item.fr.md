@@ -1,5 +1,6 @@
 ---
 title: 'Histoire, mémoire, lutte contre les discriminations : quelle interactions ?'
+subTitle: 'Par Suzana Dukic'
 media_order: interactions.jpg
 taxonomy:
     Themes:

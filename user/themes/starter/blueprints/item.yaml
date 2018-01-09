@@ -15,7 +15,7 @@ form:
 
           fields:
 
-            subTitle:
+            header.subTitle:
               ordering@: 1
               type: text
               label: Sous titre

@@ -21,7 +21,7 @@
             <a href="{{ page.url }}">
                 <h2>
                     {{ page.title }}
-                    <span>{{ page.subTitle }}</span>
+                    <span>{{ page.header.subTitle }}</span>
                 </h2>
             </a>
 
@@ -53,7 +53,12 @@
                     </a>
                 {% endif %}
 
-                <h2><a href="{{ page.url }}">{{ page.title }}</h2></a>
+                <a href="{{ page.url }}">
+                    <h2>
+                        {{ page.title }}
+                        <span>{{ page.header.subTitle }}</span>
+                    </h2>
+                </a>
             </div>
 
             <div class="p-summary e-content">
