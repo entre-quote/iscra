@@ -13,4 +13,3 @@ language: fr
 login_attempts: {  }
 twofa_secret: PZHG3B5QY5K2WR343E4XDVWA2WYKL26O
 twofa_enabled: false
-reset: '7b8c1d20468d8aba2a1479976eaceeed::1518086119'
