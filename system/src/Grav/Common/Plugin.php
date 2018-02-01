@@ -90,7 +90,7 @@ class Plugin implements EventSubscriberInterface, \ArrayAccess
     /**
      * Get configuration of the plugin.
      *
-     * @return array
+     * @return Config
      */
     public function config()
     {
@@ -121,7 +121,7 @@ class Plugin implements EventSubscriberInterface, \ArrayAccess
 
         if (strpos($uri->path(), $this->config->get('plugins.admin.route') . '/' . $plugin_route) === false) {
             $should_run = false;
-        } elseif (isset($uri->paths()[1]) && $uri->paths()[1] === $plugin_route) {
+        } elseif (isset($uri->paths()[1]) && $uri->paths()[1] == $plugin_route) {
             $should_run = true;
         }
 
@@ -207,7 +207,6 @@ class Plugin implements EventSubscriberInterface, \ArrayAccess
      *
      * @param mixed $offset  The offset to assign the value to.
      * @param mixed $value   The value to set.
-     * @throws LogicException
      */
     public function offsetSet($offset, $value)
     {
@@ -218,7 +217,6 @@ class Plugin implements EventSubscriberInterface, \ArrayAccess
      * Unsets an offset.
      *
      * @param mixed $offset  The offset to unset.
-     * @throws LogicException
      */
     public function offsetUnset($offset)
     {
@@ -301,14 +299,13 @@ class Plugin implements EventSubscriberInterface, \ArrayAccess
      */
     private function mergeArrays($deep = false, $array1, $array2)
     {
-        if ($deep === 'merge') {
+        if ($deep == 'merge') {
             return Utils::arrayMergeRecursiveUnique($array1, $array2);
-        }
-        if ($deep === true) {
+        } elseif ($deep === true) {
             return array_replace_recursive($array1, $array2);
+        } else {
+            return array_merge($array1, $array2);
         }
-
-        return array_merge($array1, $array2);
     }
 
     /**

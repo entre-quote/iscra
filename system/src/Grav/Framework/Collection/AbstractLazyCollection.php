@@ -45,15 +45,6 @@ abstract class AbstractLazyCollection extends BaseAbstractLazyCollection impleme
     /**
      * {@inheritDoc}
      */
-    public function chunk($size)
-    {
-        $this->initialize();
-        return $this->collection->chunk($size);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function jsonSerialize()
     {
         $this->initialize();

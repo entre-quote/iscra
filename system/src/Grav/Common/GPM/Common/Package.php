@@ -34,10 +34,6 @@ class Package {
         return isset($this->data->$key);
     }
 
-    public function __set($key, $value) {
-        throw new \BadMethodCallException('Not Implemented');
-    }
-
     public function __toString() {
         return $this->toJson();
     }

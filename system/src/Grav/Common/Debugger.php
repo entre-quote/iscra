@@ -36,9 +36,6 @@ class Debugger
      */
     public function __construct()
     {
-        // Enable debugger until $this->init() gets called.
-        $this->enabled = true;
-
         $this->debugbar = new StandardDebugBar();
         $this->debugbar['time']->addMeasure('Loading', $this->debugbar['time']->getRequestStartTime(), microtime(true));
     }
@@ -53,9 +50,6 @@ class Debugger
     {
         $this->grav = Grav::instance();
         $this->config = $this->grav['config'];
-
-        // Enable/disable debugger based on configuration.
-        $this->enabled = $this->config->get('system.debugger.enabled');
 
         if ($this->enabled()) {
             $this->debugbar->addCollector(new ConfigCollector((array)$this->config->get('system'), 'Config'));
@@ -74,8 +68,12 @@ class Debugger
      */
     public function enabled($state = null)
     {
-        if ($state !== null) {
+        if (isset($state)) {
             $this->enabled = $state;
+        } else {
+            if (!isset($this->enabled)) {
+                $this->enabled = $this->config->get('system.debugger.enabled');
+            }
         }
 
         return $this->enabled;
@@ -92,7 +90,8 @@ class Debugger
 
             // Only add assets if Page is HTML
             $page = $this->grav['page'];
-            if ($page->templateFormat() !== 'html') {
+            if ($page->templateFormat() != 'html') {
+                $this->enabled = false;
                 return $this;
             }
 
@@ -107,13 +106,13 @@ class Debugger
 
             // Get the required CSS files
             list($css_files, $js_files) = $this->renderer->getAssets(null, JavascriptRenderer::RELATIVE_URL);
-            foreach ((array)$css_files as $css) {
+            foreach ($css_files as $css) {
                 $assets->addCss($css);
             }
 
             $assets->addCss('/system/assets/debugger.css');
 
-            foreach ((array)$js_files as $js) {
+            foreach ($js_files as $js) {
                 $assets->addJs($js);
             }
         }
@@ -164,12 +163,6 @@ class Debugger
     public function render()
     {
         if ($this->enabled()) {
-            // Only add assets if Page is HTML
-            $page = $this->grav['page'];
-            if (!$this->renderer || $page->templateFormat() !== 'html') {
-                return $this;
-            }
-
             echo $this->renderer->render();
         }
 
@@ -183,27 +176,9 @@ class Debugger
      */
     public function sendDataInHeaders()
     {
-        if ($this->enabled()) {
-            $this->debugbar->sendDataInHeaders();
-        }
+        $this->debugbar->sendDataInHeaders();
 
         return $this;
-    }
-
-    /**
-     * Returns collected debugger data.
-     *
-     * @return array
-     */
-    public function getData()
-    {
-        if (!$this->enabled()) {
-            return null;
-        }
-
-        $this->timers = [];
-
-        return $this->debugbar->getData();
     }
 
     /**
@@ -216,7 +191,7 @@ class Debugger
      */
     public function startTimer($name, $description = null)
     {
-        if ($name[0] === '_' || $this->enabled()) {
+        if ($name[0] == '_' || $this->config->get('system.debugger.enabled')) {
             $this->debugbar['time']->startMeasure($name, $description);
             $this->timers[] = $name;
         }
@@ -233,7 +208,7 @@ class Debugger
      */
     public function stopTimer($name)
     {
-        if (in_array($name, $this->timers, true) && ($name[0] === '_' || $this->enabled())) {
+        if (in_array($name, $this->timers) && ($name[0] == '_' || $this->config->get('system.debugger.enabled'))) {
             $this->debugbar['time']->stopMeasure($name);
         }
 

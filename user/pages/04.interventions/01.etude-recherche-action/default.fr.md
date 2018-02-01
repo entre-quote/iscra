@@ -1,10 +1,11 @@
 ---
+title: 'Étude, recherche-action'
 content:
     items:
         '@taxonomy':
-            Interventions: 'Étude, recherche, action'
+            Interventions: 'Étude et recherche-action'
     order:
         by: date
         dir: desc
-title: 'Étude, recherche, action'
 ---
+

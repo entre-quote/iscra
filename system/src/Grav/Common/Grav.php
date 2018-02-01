@@ -15,7 +15,6 @@ use Grav\Common\Page\Medium\Medium;
 use Grav\Common\Page\Page;
 use RocketTheme\Toolbox\DI\Container;
 use RocketTheme\Toolbox\Event\Event;
-use RocketTheme\Toolbox\Event\EventDispatcher;
 
 class Grav extends Container
 {
@@ -257,6 +256,11 @@ class Grav extends Container
             header('ETag: "' . md5($page->raw() . $page->modified()).'"');
         }
 
+        // Set debugger data in headers
+        if (!($format === null || $format == 'html')) {
+            $this['debugger']->enabled(false);
+        }
+
         // Set HTTP response code
         if (isset($this['page']->header()->http_response_code)) {
             http_response_code($this['page']->header()->http_response_code);
@@ -436,7 +440,7 @@ class Grav extends Container
      */
     public function fallbackUrl($path)
     {
-        $this->fireEvent('onPageFallBackUrl');
+      	$this->fireEvent('onPageFallBackUrl');
 
         /** @var Uri $uri */
         $uri = $this['uri'];

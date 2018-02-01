@@ -16,7 +16,6 @@ use Grav\Common\Utils;
 
 class Config extends Data
 {
-    /** @var string */
     protected $checksum;
     protected $modified = false;
     protected $timestamp = 0;
