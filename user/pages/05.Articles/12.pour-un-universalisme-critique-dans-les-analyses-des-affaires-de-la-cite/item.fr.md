@@ -34,6 +34,7 @@ La première permet de se décentrer d’une lecture ethnocentrique occidentale 
 
 La seconde est une contribution à la réflexion sur le radicalisme (20 minutes) :
 - le radicalisme est -il une fatalité ? (déc 2015), à partir de 22 minutes
+
 ![](https://vimeo.com/149547654)
 
 [ISCRA UCSI KILANI 1411.pdf](ISCRA%20UCSI%20KILANI%201411.pdf)

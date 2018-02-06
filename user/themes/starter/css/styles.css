@@ -743,6 +743,9 @@ p {
   .tax-list a {
     color: #f00; }
 
+audio {
+  vertical-align: middle; }
+
 /* --- Pages --- */
 .blog-list {
   align-items: flex-start; }
