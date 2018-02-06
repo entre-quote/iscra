@@ -1,3 +1,44 @@
+# v1.7.0-rc.2
+## 01/24/2018
+
+1. [](#new)
+    * Moved to LineAwesome icons rather than FontAwesome (still compatible w/FA 4.7.0)
+1. [](#improved)
+    * Simplified open/close nav button
+    * Tidied Tools panel and added translations
+    * Tooltip and new icon for site preview
+    * Updated JS library dependencies
+    * Changed CodeMirror editor to use sans-serif font for readability 
+1. [](#bugfix)
+    * Fixed z-index issue in fullscreen mode [#1317](https://github.com/getgrav/grav-plugin-admin/issues/1317)
+
+# v1.7.0-rc.1
+## 01/22/2018
+
+1. [](#new)
+    * Added support for markdown in all form fields for `label`, `help`, and `description` when `markdown: true` is set on field
+    * Changed "made by" to Trilby Media from RocketTheme
+1. [](#improved)
+    * Lightened tabs in new theme
+    * Sort languages by key [#1303](https://github.com/getgrav/grav-plugin-admin/issues/1303)
+    * Add limit to Parent Levels [#1298](https://github.com/getgrav/grav-plugin-admin/pull/1298)
+1. [](#bugfix)
+    * Fixed alignment issue with language drop-down
+    * Fixed a z-index issue with fullscreen editor [#1302](https://github.com/getgrav/grav-plugin-admin/issues/1302)
+    * Fixed missing background on register [#1307](https://github.com/getgrav/grav-plugin-admin/issues/1307)
+    * Fixed some style issues with field descriptions
+    * Fixed an issue with `File` field losing download size setting
+    * Fixed distorted thumbnails in `File` field by using `object-fit: cover`
+
+# v1.7.0-beta.1
+## 12/29/2017
+
+1. [](#new)
+    * New lighter-and-tighter admin theme developed
+1. [](#improved)
+    * Added simple value support for list field type
+    * Added checks to automatically hide collapse buttons when there's only single value in list type
+
 # v1.6.7
 ## 12/05/2017
 

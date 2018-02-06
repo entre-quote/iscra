@@ -1,5 +1,6 @@
 name: Admin Panel
-version: 1.6.7
+version: 1.7.0-rc.2
+testing: true
 description: Adds an advanced administration panel to manage your site
 icon: empire
 author:
@@ -157,11 +158,17 @@ form:
         folder: Show folder
         fullpath: Show fullpath
 
+    pages.parents_levels:
+      type: text
+      label: Parents Levels
+      size: small
+      help: The number of levels to show in parent select list
+      
     google_fonts:
       type: toggle
       label: Use Google Fonts
-      highlight: 1
-      default: 1
+      highlight: 0
+      default: 0
       options:
         1: PLUGIN_ADMIN.ENABLED
         0: PLUGIN_ADMIN.DISABLED

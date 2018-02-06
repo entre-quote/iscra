@@ -2,7 +2,7 @@
 /**
  * @package    Grav.Common.Twig
  *
- * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -11,6 +11,9 @@ namespace Grav\Common\Twig;
 use Grav\Common\Grav;
 use Grav\Common\Page\Collection;
 use Grav\Common\Page\Media;
+use Grav\Common\Twig\TokenParser\TwigTokenParserScript;
+use Grav\Common\Twig\TokenParser\TwigTokenParserStyle;
+use Grav\Common\Twig\TokenParser\TwigTokenParserTryCatch;
 use Grav\Common\Utils;
 use Grav\Common\Markdown\Parsedown;
 use Grav\Common\Markdown\ParsedownExtra;
@@ -18,7 +21,7 @@ use Grav\Common\Uri;
 use Grav\Common\Helpers\Base32;
 use RocketTheme\Toolbox\ResourceLocator\UniformResourceLocator;
 
-class TwigExtension extends \Twig_Extension
+class TwigExtension extends \Twig_Extension implements \Twig_Extension_GlobalsInterface
 {
     protected $grav;
     protected $debugger;
@@ -32,16 +35,6 @@ class TwigExtension extends \Twig_Extension
         $this->grav     = Grav::instance();
         $this->debugger = isset($this->grav['debugger']) ? $this->grav['debugger'] : null;
         $this->config   = $this->grav['config'];
-    }
-
-    /**
-     * Returns extension name.
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'GravTwigExtension';
     }
 
     /**
@@ -69,6 +62,7 @@ class TwigExtension extends \Twig_Extension
             new \Twig_SimpleFilter('contains', [$this, 'containsFilter']),
             new \Twig_SimpleFilter('chunk_split', [$this, 'chunkSplitFilter']),
 
+            new \Twig_SimpleFilter('nicenumber', [$this, 'niceNumberFunc']),
             new \Twig_SimpleFilter('defined', [$this, 'definedDefaultFilter']),
             new \Twig_SimpleFilter('ends_with', [$this, 'endsWithFilter']),
             new \Twig_SimpleFilter('fieldName', [$this, 'fieldNameFilter']),
@@ -143,7 +137,22 @@ class TwigExtension extends \Twig_Extension
             new \Twig_SimpleFunction('isajaxrequest', [$this, 'isAjaxFunc']),
             new \Twig_SimpleFunction('exif', [$this, 'exifFunc']),
             new \Twig_SimpleFunction('media_directory', [$this, 'mediaDirFunc']),
+            new \Twig_SimpleFunction('body_class', [$this, 'bodyClassFunc']),
+            new \Twig_SimpleFunction('theme_var', [$this, 'themeVarFunc']),
+            new \Twig_SimpleFunction('header_var', [$this, 'pageHeaderVarFunc']),
 
+        ];
+    }
+
+    /**
+     * @return array
+     */
+    public function getTokenParsers()
+    {
+        return [
+            new TwigTokenParserTryCatch(),
+            new TwigTokenParserScript(),
+            new TwigTokenParserStyle(),
         ];
     }
 
@@ -668,36 +677,7 @@ class TwigExtension extends \Twig_Extension
      */
     public function urlFunc($input, $domain = false)
     {
-        if (!trim((string)$input)) {
-            return false;
-        }
-
-        if ($this->grav['config']->get('system.absolute_urls', false)) {
-            $domain = true;
-        }
-
-        if (Grav::instance()['uri']->isExternal($input)) {
-            return $input;
-        }
-
-        $input = ltrim((string)$input, '/');
-
-        if (Utils::contains((string)$input, '://')) {
-            /** @var UniformResourceLocator $locator */
-            $locator = $this->grav['locator'];
-
-
-
-            // Get relative path to the resource (or false if not found).
-            $resource = $locator->findResource($input, false);
-        } else {
-            $resource = $input;
-        }
-
-        /** @var Uri $uri */
-        $uri = $this->grav['uri'];
-
-        return $resource ? rtrim($uri->rootUrl($domain), '/') . '/' . $resource : null;
+        return Utils::url($input, $domain);
     }
 
     /**
@@ -1095,4 +1075,96 @@ class TwigExtension extends \Twig_Extension
         var_dump($var);
     }
 
+    /**
+     * Returns a nicer more readable number
+     *
+     * @param $number
+     * @return bool|string
+     */
+    public function niceNumberFunc($n)
+    {
+
+        // first strip any formatting;
+        $n = (0+str_replace(",", "", $n));
+
+        // is this a number?
+        if (!is_numeric($n)) return false;
+
+        // now filter it;
+        if ($n > 1000000000000) return round(($n/1000000000000), 2).' t';
+        elseif ($n > 1000000000) return round(($n/1000000000), 2).' b';
+        elseif ($n > 1000000) return round(($n/1000000), 2).' m';
+        elseif ($n > 1000) return round(($n/1000), 2).' k';
+
+        return number_format($n);
+    }
+
+    /**
+     * Get a theme variable
+     *
+     * @param $var
+     * @return string
+     */
+    public function themeVarFunc($var)
+    {
+        return $this->config->get('theme.' . $var, false) ?: '';
+    }
+
+    /**
+     * takes an array of classes, and if they are not set on body_classes
+     * look to see if they are set in theme config
+     *
+     * @param $classes
+     * @return string
+     */
+    public function bodyClassFunc($classes)
+    {
+
+        $header = $this->grav['page']->header();
+        $body_classes = isset($header->body_classes) ? $header->body_classes : '';
+
+        foreach ((array)$classes as $class) {
+            if (!empty($body_classes) && Utils::contains($body_classes, $class)) {
+                continue;
+            } else {
+                $val = $this->config->get('theme.' . $class, false) ? $class : false;
+                $body_classes .= $val ? ' ' . $val : '';
+            }
+        }
+
+        return $body_classes;
+    }
+
+    /**
+     * Look for a page header variable in an array of pages working its way through until a value is found
+     *
+     * @param $var
+     * @param null $pages
+     * @return mixed
+     */
+    public function pageHeaderVarFunc($var, $pages = null)
+    {
+        if ($pages === null) {
+            $pages = $this->grav['page'];
+        }
+
+        // Make sure pages are an array
+        if (!is_array($pages)) {
+            $pages = array($pages);
+        }
+
+        // Loop over pages and look for header vars
+        foreach ($pages as $page) {
+            if (is_string($page)) {
+                $page = $this->grav['pages']->find($page);
+            }
+
+            if ($page) {
+                $header = $page->header();
+                if (isset($header->$var)) {
+                    return $header->$var;
+                }
+            }
+        }
+    }
 }

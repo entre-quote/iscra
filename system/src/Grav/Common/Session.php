@@ -2,7 +2,7 @@
 /**
  * @package    Grav.Common
  *
- * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -40,14 +40,14 @@ class Session extends BaseSession
         $session_timeout = $config->get('system.session.timeout', 1800);
         $session_path = $config->get('system.session.path');
         if (!$session_path) {
-            $session_path = '/' . ltrim($base_url, '/');
+            $session_path = '/' . ltrim(Uri::filterPath($base_url), '/');
         }
 
         // Activate admin if we're inside the admin path.
         if ($config->get('plugins.admin.enabled')) {
             $route = $config->get('plugins.admin.route');
             // Uri::route() is not processed yet, let's quickly get what we need
-            $current_route = str_replace($base_url, '', parse_url($uri->url(true), PHP_URL_PATH));
+            $current_route = str_replace(Uri::filterPath($base_url), '', parse_url($uri->url(true), PHP_URL_PATH));
             $base = '/' . trim($route, '/');
 
             if (substr($current_route, 0, strlen($base)) == $base || //handle no language specified
