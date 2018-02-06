@@ -2,10 +2,9 @@
 content:
     items:
         '@taxonomy':
-            Interventions: Publications
+            Interventions: 'Publications'
     order:
         by: date
         dir: desc
 title: Publications
 ---
-
