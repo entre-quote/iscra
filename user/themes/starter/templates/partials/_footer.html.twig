@@ -1,15 +1,16 @@
 {% block footer %}
+
 <footer class="grid-4">
     {% if 'themes' in uri.path %}
         <div>
-            <a href="{{ base_url_absolute }}/themes/jeunesse">Jeunesse</a>
-            <a href="{{ base_url_absolute }}/themes/discrimination">Discrimination</a>
-            <a href="{{ base_url_absolute }}/themes/histoire-et-memoire">Histoire et mémoire</a>
+            <a href="{{ base_url_absolute }}/interventions/etude-recherche-action">Étude, recherche-action</a>
+            <a href="{{ base_url_absolute }}/interventions/formation">Formation</a>
+            <a href="{{ base_url_absolute }}/interventions/conferences-et-debats-publics">Conférences et débats publics</a>
         </div>
         <div>
-            <a href="{{ base_url_absolute }}/themes/developpement-du-pouvoir-d-agir">Développement et pouvoir d'agir</a>
-            <a href="{{ base_url_absolute }}/themes/laicite">Laïcité</a>
-            <a href="{{ base_url_absolute }}/themes/autres-themes">Autres thèmes</a>
+            <a href="{{ base_url_absolute }}/interventions/publications">Publications</a>
+            <a href="{{ base_url_absolute }}/interventions/ressources-pedagogiques">Ressources pédagogiques</a>
+            <a href="{{ base_url_absolute }}/interventions/univers-cite-des-savoirs-impliques">Univers-cité des savoirs impliqués</a>
         </div>
     {% else %}
         <div>
@@ -32,4 +33,5 @@
         <a href="{{ base_url_absolute }}/plan-du-site">Plan du site</a>
     </div>
 </footer>
+
 {% endblock %}
