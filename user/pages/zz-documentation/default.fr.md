@@ -11,6 +11,7 @@ title: Documentation
 * Remplir les champs de la popin
 	* "Titre de la page"
 	* Laisser le "Nom du dossier" se remplir automatiquement
+	* vérifier qu'il ne reste pas d'accents ou d'appostrophes
 	* Page parente, choisir "Articles"
 	* Template de la page, choisir "item"
 	* Visible, laisser en auto
@@ -22,7 +23,8 @@ S'il y a une information supplémentaire, la mettre dans le champs "Sous-titre"
 
 Dans le cadre de contenu, le langage Markdown est utilisé.  
 Il a quelques subtilités :
-*
+* pour faire un retour à la ligne, il faut mettre 2 espaces en fin de ligne
+
 
 ## Image
 Pour redimensionner une image : [Resize your image](http://resizeyourimage.com/FR/).  
