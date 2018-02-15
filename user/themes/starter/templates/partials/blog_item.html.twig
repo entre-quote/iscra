@@ -44,6 +44,15 @@
             </div>
             <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
 
+            <div class="blog-item-tags">
+                {% for theme in page.taxonomy.Themes %}
+                    <a href="/themes/{{ theme |replace({'é': 'e', 'â': 'a', 'ï': 'i'})|hyphenize }}" class="p-theme">{{ theme }}</a>
+                {% endfor %}
+                {% for intervention in page.taxonomy.Interventions %}
+                    <a href="/interventions/{{ intervention |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-intervention">{{ intervention }}</a>
+                {% endfor %}
+            </div>
+
         {% elseif truncate %} <!-- Affichage en liste tronqué avec le séparateur -->
             <div class="blog-item-header">
 
@@ -86,7 +95,7 @@
                 <a href="/themes/">Thème(s) :</a>
                 <ul class="tax-list">
                     {% for theme in page.taxonomy.Themes %}
-                        <li><a href="/themes/{{ theme |replace({'é': 'e', 'â': 'a', 'ï': 'i'})|hyphenize }}" class="p-theme">{{ theme }}</a></li>
+                        <li><a href="/themes/{{ theme |replace({'é': 'e','è': 'e', 'â': 'a', 'ï': 'i'})|hyphenize }}" class="p-theme">{{ theme }}</a></li>
                     {% endfor %}
                 </ul>
 

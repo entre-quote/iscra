@@ -1,8 +1,13 @@
 ---
-title: 'Rencontre publique avec Marie Peltier sur les théories du complot en septembre 2017 à Toulouse'
+title: 'Théorie du complot - Rencontre publique avec Marie Peltier sur les théories du complot en septembre 2017 à Toulouse'
 subTitle: 'Septembre 2017'
 media_order: '20170911_192311.jpg,FLYER - Conférence débat Théories du complot 11 septembre Espace diversités laïcité.pdf'
 date: '01-09-2017 14:24'
+taxonomy:
+    Themes:
+        - 'Autres thèmes'
+    Interventions:
+        - 'Univers-cité des savoirs impliqués'
 ---
 
 Cette rencontre vise à ouvrir le débat sur les moyens de lutter  de manière plus efficace contre le discours complotiste, pour sortir du clivage et des confusions.

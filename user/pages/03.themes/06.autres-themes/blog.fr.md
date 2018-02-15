@@ -5,6 +5,7 @@ content:
         '@taxonomy':
             Themes: 'Autres thèmes'
     order:
-        by: date
+        by: title
         dir: desc
 ---
+
