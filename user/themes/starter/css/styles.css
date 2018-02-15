@@ -554,6 +554,7 @@ nav a {
   flex-wrap: wrap;
   margin-top: 3rem;
   margin-bottom: 2.5rem;
+  font-family: Arial, sans-serif;
   font-size: 1.6rem;
   text-transform: uppercase;
   border-bottom: 1px dotted #333; }
@@ -561,7 +562,24 @@ nav a {
     margin-bottom: 2rem; }
     .main-nav > a:not(:first-child) {
       margin-left: 4.5rem; }
-  @media (max-width: 575px) {
+    .main-nav > a span {
+      display: block;
+      padding-left: 1rem;
+      height: 3.5rem;
+      line-height: 3.5rem; }
+    .main-nav > a:first-child span {
+      width: 13rem;
+      background: url(../images/bg-nav-1.png) 0 0 no-repeat; }
+    .main-nav > a:nth-child(2) span {
+      width: 13.6rem;
+      background: url(../images/bg-nav-2.png) 0 0 no-repeat; }
+    .main-nav > a:nth-of-type(3) span {
+      width: 11.6rem;
+      background: url(../images/bg-nav-3.png) 0 0 no-repeat; }
+    .main-nav > a:nth-of-type(4) span {
+      width: 18rem;
+      background: url(../images/bg-nav-4.png) 0 0 no-repeat; }
+  @media (max-width: 737px) {
     .main-nav > a {
       width: 50%; }
       .main-nav > a:not(:first-child) {
@@ -590,12 +608,24 @@ nav a {
       margin-left: 1.5rem;
       color: #333; }
 
-.mini-nav > a:first-child::after {
-  content: '|';
-  display: inline-block;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-  color: #333; }
+.mini-nav {
+  min-width: 24.5rem;
+  padding-right: 1.5rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  text-align: right;
+  background: url(../images/bg-nav-top.png) 0 0 no-repeat; }
+  .mini-nav > a:first-child::after {
+    content: '|';
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: #333; }
+  @media (max-width: 768px) {
+    .mini-nav {
+      padding-left: 1.5rem;
+      text-align: left; } }
 
 h1 {
   font-size: 1.8rem; }

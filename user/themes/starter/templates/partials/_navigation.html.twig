@@ -2,12 +2,12 @@
     {% for p in page.children.visible %}
         {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
         {% if p.children.visible.count > 0 %}
-                <a href="{{ p.url }}" class="has-children {{ current_page }}">{{ p.menu }}</a>
+                <a href="{{ p.url }}" class="has-children {{ current_page }}"><span>{{ p.menu }}</span></a>
                 <nav class="sub-menu">
                     {{ _self.loop(p) }}
                 </nav>
         {% else %}
-                <a href="{{ p.url }}" class="{{ current_page }}">{{ p.menu }}</a>
+                <a href="{{ p.url }}" class="{{ current_page }}"><span>{{ p.menu }}</span></a>
         {% endif %}
     {% endfor %}
 {% endmacro %}
@@ -19,7 +19,7 @@
     {% for page in pages.children.visible %}
         {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
         <li class="{{ current_page }}">
-            <a href="{{ page.url }}">{{ page.menu }}</a>
+            <a href="{{ page.url }}"><span>{{ page.menu }}</span></a>
         </li>
     {% endfor %}
 {% endif %}
