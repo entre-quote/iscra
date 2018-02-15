@@ -13,7 +13,11 @@ articles:
 <ul>
     {% for p in page.collection %}
 
+    {% if p.title != 'Documentation' %}
+
     <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+
+    {% endif %}
 
     {% if p.children.count > 0 %}
         <ul>

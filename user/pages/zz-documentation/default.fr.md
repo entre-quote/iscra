@@ -1,6 +1,6 @@
 ---
 title: Documentation
-published: false
+published: true
 ---
 
 # Fonctionnement de l'interface d'administration

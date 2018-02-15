@@ -1,5 +1,7 @@
 ---
 title: Formation
+published: false
+routable: false
 ---
 
 # Exercices pour la formation
