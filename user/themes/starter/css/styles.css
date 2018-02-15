@@ -561,7 +561,23 @@ nav a {
   .main-nav > a {
     margin-bottom: 2rem; }
     .main-nav > a:not(:first-child) {
+      position: relative;
       margin-left: 4.5rem; }
+      .main-nav > a:not(:first-child):after {
+        content: '';
+        position: absolute;
+        right: 1rem;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 10px solid #333; }
+    .main-nav > a:hover:after {
+      border-top-color: #f00; }
     .main-nav > a span {
       display: block;
       padding-left: 1rem;
@@ -592,6 +608,8 @@ nav a {
     flex-basis: 100%; }
     .main-nav .has-children.selected + .sub-menu > .sub-menu {
       display: none; }
+  .main-nav .has-children.selected:after {
+    border-top-color: #f00; }
 
 .sub-menu {
   margin: 0;

@@ -30,7 +30,29 @@ nav {
         margin-bottom: 2rem;
 
         &:not(:first-child) {
+            position: relative;
             margin-left: 4.5rem;
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: 1rem;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                display: block;
+                width:0;
+                height:0;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 10px solid $default-color;
+            }
+        }
+
+        &:hover {
+            &:after {
+                border-top-color: $red;
+            }
         }
 
         span {
@@ -39,6 +61,7 @@ nav {
             height: 3.5rem;
             line-height: 3.5rem;
         }
+
         &:first-child span {
             width: 13rem;
             background: url(../images/bg-nav-1.png) 0 0 no-repeat;
@@ -85,6 +108,10 @@ nav {
                 & > .sub-menu {
                     display: none;
                 }
+            }
+
+            &:after {
+                border-top-color: $red;
             }
         }
     }
