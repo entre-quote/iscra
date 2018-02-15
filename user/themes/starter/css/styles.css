@@ -519,7 +519,10 @@ header {
       justify-content: flex-start; } }
 
 .logo img {
-  max-width: 39rem; }
+  width: 39rem; }
+  @media (max-width: 390px) {
+    .logo img {
+      max-width: 100%; } }
 
 footer {
   margin-top: 2.5rem;
@@ -558,6 +561,11 @@ nav a {
     margin-bottom: 2rem; }
     .main-nav > a:not(:first-child) {
       margin-left: 4.5rem; }
+  @media (max-width: 575px) {
+    .main-nav > a {
+      width: 50%; }
+      .main-nav > a:not(:first-child) {
+        margin-left: 0; } }
   .main-nav .has-children + nav {
     display: none; }
   .main-nav .has-children.selected + .sub-menu {

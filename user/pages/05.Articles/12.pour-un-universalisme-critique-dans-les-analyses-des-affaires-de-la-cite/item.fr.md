@@ -1,7 +1,7 @@
 ---
 title: 'Pour un universalisme critique dans les analyses des affaires de la Cité'
 subTitle: 'avec Mondher Kilani, anthropologue, animé par Christine Salvat, membre associée à l’ISCRA-Méditerranée'
-media_order: 'ISCRA UCSI KILANI 1411.pdf'
+media_order: ISCRA-UCSI-KILANI-1411.pdf
 date: '14-11-2017 14:33'
 taxonomy:
     Themes:
@@ -37,4 +37,4 @@ La seconde est une contribution à la réflexion sur le radicalisme (20 minutes)
 
 ![](https://vimeo.com/149547654)
 
-[ISCRA UCSI KILANI 1411.pdf](ISCRA%20UCSI%20KILANI%201411.pdf)
+[ISCRA-UCSI-KILANI-1411.pdf](ISCRA-UCSI-KILANI-1411.pdf)

@@ -33,6 +33,16 @@ nav {
         }
     }
 
+    @media (max-width: 575px) {
+        & > a {
+            width: 50%;
+
+            &:not(:first-child) {
+                margin-left: 0;
+            }
+        }
+    }
+
     .has-children {
 
         & + nav {
