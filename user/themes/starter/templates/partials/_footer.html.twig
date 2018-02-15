@@ -1,6 +1,7 @@
 {% block footer %}
 
-<footer class="grid-4">
+<footer class="grid-4-small-2">
+
     {% if 'themes' in uri.path %}
         <div>
             <a href="{{ base_url_absolute }}/interventions/etude-recherche-action">Étude, recherche-action</a>
@@ -24,6 +25,7 @@
             <a href="{{ base_url_absolute }}/themes/autres-themes">Autres thèmes</a>
         </div>
     {% endif %}
+
     <div>
         <a href="{{ base_url_absolute }}/reseau">Réseau</a>
         <a href="{{ base_url_absolute }}/archives">Archives</a>
