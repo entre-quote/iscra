@@ -1,0 +1,9 @@
+email: olivier.noel@iscra.org
+access:
+  admin:
+    login: true
+    super: true
+fullname: Olivier
+title: null
+state: enabled
+hashed_password: $2y$10$h.gssjKxfiaJg6Un3a2u6uN/EfHLLd6Be.4EKFzjZ7k9TAG7jYj3q
