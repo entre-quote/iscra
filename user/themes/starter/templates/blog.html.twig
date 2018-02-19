@@ -4,11 +4,11 @@
 
 	{% block content %}
 
-			<section class="blog-list grid-4-small-2 has-gutter">
-				{% for child in collection %}
-			        {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
-			    {% endfor %}
-			</section>
+		<section class="blog-list grid-4-small-2 has-gutter">
+			{% for child in collection %}
+		        {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
+		    {% endfor %}
+		</section>
 
 	{% endblock %}
 
