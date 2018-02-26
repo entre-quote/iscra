@@ -7,6 +7,10 @@ taxonomy:
         - 'Histoire et mémoire'
     Interventions:
         - 'Conférences et débats publics'
+    Medias:
+        - Video
+        - Document
+        - Son
 visible: false
 ---
 

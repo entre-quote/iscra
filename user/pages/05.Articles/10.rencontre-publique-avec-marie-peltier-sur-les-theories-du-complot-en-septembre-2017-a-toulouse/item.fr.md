@@ -1,7 +1,7 @@
 ---
-title: 'Théorie du complot - Rencontre publique avec Marie Peltier sur les théories du complot en septembre 2017 à Toulouse'
-subTitle: 'Septembre 2017'
-media_order: '20170911_192311.jpg,FLYER - Conférence débat Théories du complot 11 septembre Espace diversités laïcité.pdf'
+title: 'Les théories du complot : comprendre pour agir !'
+subTitle: 'Avec Marie Peltier, historienne, animée par Suzana Dukic'
+media_order: '20170911_192311.jpg,FLYER - Conférence débat Théories du complot 11 septembre Espace diversités laïcité.pdf'
 date: '01-09-2017 14:24'
 taxonomy:
     Themes:
@@ -10,7 +10,7 @@ taxonomy:
         - 'Univers-cité des savoirs impliqués'
 ---
 
-Cette rencontre vise à ouvrir le débat sur les moyens de lutter  de manière plus efficace contre le discours complotiste, pour sortir du clivage et des confusions.
+Cette rencontre, organisée à l'espace Diversité Laïcité de Toulouse, vise à ouvrir le débat sur les moyens de lutter de manière plus efficace contre le discours complotiste, pour sortir du clivage et des confusions.
 
 ===
 
@@ -23,4 +23,4 @@ Il recycle en particulier la tradition antisémite datant du XIXe siècle et tra
 
 L’analyse de Marie PELTIER, spécialiste de la question, vise à ouvrir le débat sur les moyens de lutter de manière plus efficace contre le discours complotiste, pour sortir du clivage et des confusions.
 
-[FLYER - Conférence débat Théories du complot 11 septembre Espace diversités laïcité.pdf](FLYER%20-%20Confe%CC%81rence%20de%CC%81bat%20The%CC%81ories%20du%20complot%2011%20septembre%20Espace%20diversite%CC%81s%20lai%CC%88cite%CC%81.pdf)
+[FLYER - Conférence débat Théories du complot 11 septembre Espace diversités laïcité.pdf](FLYER%20-%20Confe%CC%81rence%20de%CC%81bat%20The%CC%81ories%20du%20complot%2011%20septembre%20Espace%20diversite%CC%81s%20lai%CC%88cite%CC%81.pdf)

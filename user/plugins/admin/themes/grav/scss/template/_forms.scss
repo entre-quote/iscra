@@ -22,9 +22,8 @@ form {
     }
 
     .form-description {
-        p {
-            padding: 0;
-        }
+        font-weight: bold;
+        font-size: small;
     }
 
     .form-field {
@@ -85,7 +84,7 @@ form {
             text-align: center;
         }
         input {
-            height: 35px;
+            height: 43px;
             display: table-cell;
         }
         .form-input-prepend {
@@ -130,10 +129,6 @@ form {
         padding: 5px 0;
         font-weight: 400;
         margin:0;
-
-        p {
-            margin: 0;
-        }
 
         [data-hint] {
             display: inline;
@@ -361,7 +356,7 @@ form {
             span {
                 padding: 0.5rem;
                 display: inline-block;
-                line-height: 1.5;
+                line-height: 1.7;
                 cursor: pointer;
 
                 &[data-grav-array-action="sort"] {

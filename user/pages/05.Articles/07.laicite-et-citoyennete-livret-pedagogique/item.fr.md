@@ -1,6 +1,6 @@
 ---
 title: 'Laïcité et citoyenneté : livret pédagogique'
-subTitle: 'Par Suzana Dukic'
+subTitle: 'Par Suzana Dukic et Céline Ziwès'
 media_order: livret.jpg
 taxonomy:
     Actualites:

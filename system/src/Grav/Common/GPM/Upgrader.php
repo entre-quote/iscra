@@ -2,7 +2,7 @@
 /**
  * @package    Grav.Common.GPM
  *
- * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -29,7 +29,6 @@ class Upgrader
      *
      * @param boolean  $refresh  Applies to Remote Packages only and forces a refetch of data
      * @param callable $callback Either a function or callback in array notation
-     * @throws \InvalidArgumentException
      */
     public function __construct($refresh = false, $callback = null)
     {

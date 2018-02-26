@@ -211,8 +211,6 @@
 }
 .remove-times:after {
 	content: "\00D7";
-	display: block;
-	line-height: 15px;
 }
 .launch-icons {
 	margin: 5px 3px 0 0;

@@ -2,7 +2,7 @@
 /**
  * @package    Grav.Common.Language
  *
- * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -157,13 +157,14 @@ class LanguageCodes
     {
         if (isset(static::$codes[$code])) {
             return static::get($code, 'nativeName');
-        }
+        } else {
+            if (preg_match('/[a-zA-Z]{2}-[a-zA-Z]{2}/', $code)) {
+                return static::get(substr($code, 0, 2), 'nativeName') . ' (' . substr($code, -2) . ')';
+            } else {
+                return $code;
+            }
 
-        if (preg_match('/[a-zA-Z]{2}-[a-zA-Z]{2}/', $code)) {
-            return static::get(substr($code, 0, 2), 'nativeName') . ' (' . substr($code, -2) . ')';
         }
-
-        return $code;
     }
 
     public static function getOrientation($code)
@@ -178,7 +179,7 @@ class LanguageCodes
 
     public static function isRtl($code)
     {
-        if (static::getOrientation($code) === 'rtl') {
+        if (static::getOrientation($code) == 'rtl') {
             return true;
         }
         return false;
@@ -191,6 +192,7 @@ class LanguageCodes
             if (isset(static::$codes[$key])) {
                 $results[$key] = static::$codes[$key];
             }
+
         }
         return $results;
     }
@@ -199,8 +201,8 @@ class LanguageCodes
     {
         if (isset(static::$codes[$code][$type])) {
             return static::$codes[$code][$type];
+        } else {
+            return false;
         }
-
-        return false;
     }
 }

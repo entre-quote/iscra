@@ -1,16 +1,18 @@
 ---
 title: 'Statistiques raciales ou racistes ? Histoire et actualité d’une controverse française'
-subTitle: 'Rencontre-débat avec Éric Fassin, sociologue, animé par Olivier Noël, le 17 mai 2010'
-media_order: 'Eric-Fassin-Partie-7.mp3,Eric-Fassin-Partie-6.mp3,Eric-Fassin-Partie-5.mp3,Eric-Fassin-Partie-4.mp3,Eric-Fassin-Partie-3.mp3,Eric-Fassin-Partie-2.mp3,Eric-Fassin-Partie-1.mp3'
+subTitle: 'avec Éric Fassin, sociologue, animé par Olivier Noël'
+media_order: 'Eric-Fassin-Partie-7.mp3,Eric-Fassin-Partie-6.mp3,Eric-Fassin-Partie-5.mp3,Eric-Fassin-Partie-4.mp3,Eric-Fassin-Partie-3.mp3,Eric-Fassin-Partie-2.mp3,Eric-Fassin-Partie-1.mp3,Unknown.jpeg'
 date: '17-05-2010 10:02'
 taxonomy:
     Themes:
         - Discrimination
     Interventions:
         - 'Univers-cité des savoirs impliqués'
+    Medias:
+        - Son
 ---
 
-Cette rencontre est organisée, en partenariat avec la librairie Sauramps, dans le cadre de la parution de l’ouvrage "Les nouvelles frontières de la société française", sous la direction de Didier Fassin (éd. La découverte, 2010).
+Cette rencontre est organisée, le 17 mai 2010, en partenariat avec la librairie Sauramps, dans le cadre de la parution de l’ouvrage "Les nouvelles frontières de la société française", sous la direction de Didier Fassin (éd. La découverte, 2010).
 
 ===
 

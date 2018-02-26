@@ -15,9 +15,6 @@ $(function() {
         cards.each(function() {
             $(this).css('width', width);
         });
-
-        treescroll.update();
-        thumbscroll.update();
     });
 
     $(document).on('opened', '.remodal', function() {

@@ -2,7 +2,7 @@
 /**
  * @package    Grav.Common
  *
- * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -301,7 +301,7 @@ class Uri
 
         $this->url = $this->base . $this->uri;
 
-        $uri = str_replace(static::filterPath($this->root), '', $this->url);
+        $uri = str_replace($this->root, '', $this->url);
 
         // remove the setup.php based base if set:
         $setup_base = $grav['pages']->base();
@@ -941,7 +941,7 @@ class Uri
         }
 
         // handle absolute URLs
-        if (is_array($url) && !$external && ($absolute === true || $grav['config']->get('system.absolute_urls', false))) {
+        if (!$external && ($absolute === true || $grav['config']->get('system.absolute_urls', false))) {
 
             $url['scheme'] = $uri->scheme(true);
             $url['host'] = $uri->host();
@@ -983,16 +983,15 @@ class Uri
             }
         }
 
-        // Handle route only
-        if ($route_only) {
-            $url_path = str_replace(static::filterPath($base_url), '', $url_path);
-        }
-
         // transform back to string/array as needed
         if (is_array($url)) {
             $url['path'] = $url_path;
         } else {
             $url = $url_path;
+        }
+
+        if ($route_only) {
+            $url = str_replace($base_url, '', $url);
         }
 
         return $url;

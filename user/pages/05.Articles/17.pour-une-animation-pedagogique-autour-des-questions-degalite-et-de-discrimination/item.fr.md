@@ -1,6 +1,6 @@
 ---
-title: 'Pour une animation pédagogique autour des questions d''égalité et de discrimination'
-subTitle: 'Kit de photolangage'
+title: 'Kit de photolangage pour une animation pédagogique autour des questions d''égalité et de discrimination'
+subTitle: 'Par Suzana Dukic et Olivier Noël'
 taxonomy:
     Themes:
         - Discrimination

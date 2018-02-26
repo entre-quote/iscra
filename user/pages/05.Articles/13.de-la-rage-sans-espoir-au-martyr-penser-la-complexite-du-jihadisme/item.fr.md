@@ -1,6 +1,6 @@
 ---
 title: 'De la rage sans espoir au martyr, penser la complexité du jihadisme'
-subTitle: 'par Alain Bertho, animé par Pierre-Alain Guyot, membre associé à l’ISCRA-Méditerranée'
+subTitle: 'par Alain Bertho, animé par Pierre-Alain Guyot'
 media_order: attachment.jpeg
 date: '09-05-2016 15:25'
 taxonomy:

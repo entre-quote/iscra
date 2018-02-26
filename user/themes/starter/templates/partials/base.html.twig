@@ -3,25 +3,41 @@
 <html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
 <head>
 {% block head %}
-    <meta charset="utf-8" />
-    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+<meta charset="utf-8" />
+<title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include 'partials/metadata.html.twig' %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% include 'partials/metadata.html.twig' %}
 
-    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
-    <link rel="canonical" href="{{ page.url(true, true) }}" />
+<link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+<link rel="canonical" href="{{ page.url(true, true) }}" />
 
-    {% block stylesheets %}
-        {% do assets.addCss('theme://css/styles.css', 98) %}
-    {% endblock %}
-    {{ assets.css() }}
+{% block stylesheets %}
+{% do assets.addCss('theme://css/styles.css', 98) %}
+{% endblock %}
+{{ assets.css() }}
 
-    {% block javascripts %}
-        {% do assets.addJs('jquery', 100) %}
-    {% endblock %}
-    {{ assets.js() }}
+{% block javascripts %}
+{% do assets.addJs('jquery', 100) %}
+{% endblock %}
+{{ assets.js() }}
+
+<!-- Matomo -->
+<script type="text/javascript">
+var _paq = _paq || [];
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+    var u="//entre-quote.fr/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<!-- End Matomo Code -->
 
 {% endblock head%}
 </head>
@@ -30,15 +46,15 @@
 {% include 'partials/_header.html.twig' %}
 
 {% block body %}
-    <main>
-        {% block content %}{% endblock %}
-    </main>
+<main>
+    {% block content %}{% endblock %}
+</main>
 {% endblock %}
 
 {% include 'partials/_footer.html.twig' %}
 
 {% block bottom %}
-    {{ assets.js('bottom') }}
+{{ assets.js('bottom') }}
 {% endblock %}
 
 </body>

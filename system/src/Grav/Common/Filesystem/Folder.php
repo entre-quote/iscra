@@ -2,7 +2,7 @@
 /**
  * @package    Grav.Common.FileSystem
  *
- * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -108,7 +108,8 @@ abstract class Folder
             $files[] = $file->getPathname() . '?'. $file->getMTime();
         }
 
-        return md5(serialize($files));
+        $hash = md5(serialize($files));
+        return $hash;
     }
 
     /**
@@ -233,7 +234,7 @@ abstract class Folder
         /** @var \RecursiveDirectoryIterator $file */
         foreach ($iterator as $file) {
             // Ignore hidden files.
-            if ($file->getFilename()[0] === '.') {
+            if ($file->getFilename()[0] == '.') {
                 continue;
             }
             if (!$folders && $file->isDir()) {
@@ -338,7 +339,7 @@ abstract class Folder
         }
 
         // Don't do anything if the source is the same as the new target
-        if ($source === $target) {
+        if ($source == $target) {
             return;
         }
 
@@ -376,7 +377,6 @@ abstract class Folder
      * @param  string $target
      * @param  bool   $include_target
      * @return bool
-     * @throws \RuntimeException
      */
     public static function delete($target, $include_target = true)
     {
@@ -435,7 +435,6 @@ abstract class Folder
      * @param $dest
      *
      * @return bool
-     * @throws \RuntimeException
      */
     public static function rcopy($src, $dest)
     {
@@ -448,7 +447,7 @@ abstract class Folder
 
         // If the destination directory does not exist create it
         if (!is_dir($dest)) {
-            static::mkdir($dest);
+            Folder::mkdir($dest);
         }
 
         // Open the source directory to read in files
@@ -456,10 +455,10 @@ abstract class Folder
         /** @var \DirectoryIterator $f */
         foreach ($i as $f) {
             if ($f->isFile()) {
-                copy($f->getRealPath(), "{$dest}/" . $f->getFilename());
+                copy($f->getRealPath(), "$dest/" . $f->getFilename());
             } else {
                 if (!$f->isDot() && $f->isDir()) {
-                    static::rcopy($f->getRealPath(), "{$dest}/{$f}");
+                    static::rcopy($f->getRealPath(), "$dest/$f");
                 }
             }
         }
@@ -480,10 +479,10 @@ abstract class Folder
         }
 
         // Go through all items in filesystem and recursively remove everything.
-        $files = array_diff(scandir($folder, SCANDIR_SORT_NONE), array('.', '..'));
+        $files = array_diff(scandir($folder), array('.', '..'));
         foreach ($files as $file) {
             $path = "{$folder}/{$file}";
-            is_dir($path) ? self::doDelete($path) : @unlink($path);
+            (is_dir($path)) ? self::doDelete($path) : @unlink($path);
         }
 
         return $include_target ? @rmdir($folder) : true;

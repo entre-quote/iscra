@@ -3,8 +3,6 @@ title: 'L''immigration en Languedoc-Roussillon, du XIXè siècle à nos jours Sy
 subTitle: 'Par Suzana Dukic'
 media_order: vignette.png
 taxonomy:
-    Actualites:
-        - Oui
     Themes:
         - 'Histoire et mémoire'
     Interventions:

@@ -14,19 +14,10 @@
                     <label class="{{ form_field_label_classes ?: 'inline' }}" {% if field.id is defined %}for="{{ field.id|e }}" {% endif %} >
                     {% block label %}
                         {% if field.help %}
-                            {% if field.markdown %}
-                                <span class="tooltip" data-asTooltip-position="w" title="{{ field.help|t|markdown(false)|e }}">{{ field.label|markdown(false)|default(field.name|capitalize)|t }}</span>
-                            {% else %}
-                                <span class="tooltip" data-asTooltip-position="w" title="{{ field.help|t|e }}">{{ field.label|default(field.name|capitalize)|t }}</span>
-                            {% endif %}
+                        <span class="tooltip" data-asTooltip-position="w" title="{{ field.help|t|e }}">{{ field.label|default(field.name|capitalize)|t }}</span>
                         {% else %}
-                            {% if field.markdown %}
-                                {{ field.label|markdown(false)|default(field.name|capitalize)|t }}
-                            {% else %}
-                                {{ field.label|default(field.name|capitalize)|t }}
-                            {% endif %}
+                        {{ field.label|default(field.name|capitalize)|t }}
                         {% endif %}
-
                         {{ field.validate.required in ['on', 'true', 1] ? '<span class="required">*</span>' }}
                     {% endblock %}
                     </label>
@@ -49,7 +40,7 @@
                                 value="{{ value|join(', ')|e('html_attr') }}"
                                 {# input attribute structures #}
                                 {% block input_attributes %}
-                                    class="{{ form_field_input_classes }} {{ field.classes }}"
+                                    {% if field.classes is defined %}class="{{ field.classes }}" {% endif %}
                                     {% if field.id is defined %}id="{{ field.id|e }}" {% endif %}
                                     {% if field.style is defined %}style="{{ field.style|e }}" {% endif %}
                                     {% if field.disabled or isDisabledToggleable %}disabled="disabled"{% endif %}
@@ -82,13 +73,7 @@
                 {% endblock %}
                 {% if field.description %}
                     <div class="form-extra-wrapper {{ field.size|e }} {{ field.wrapper_classes }}">
-                        <span class="form-description">
-                            {% if field.markdown %}
-                                {{ field.description|tu|markdown(false)|raw }}
-                            {% else %}
-                                {{ field.description|tu|raw }}
-                            {% endif %}
-                        </span>
+                        <span class="form-description">{{ field.description|raw }}</span>
                     </div>
                 {% endif %}
 

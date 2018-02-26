@@ -3,6 +3,8 @@ title: 'Nous !'
 subTitle: "Comment faire société commune\_?"
 media_order: inconnu.jpg
 taxonomy:
+    Actualites:
+        - Oui
     Themes:
         - 'Histoire et mémoire'
     Interventions:

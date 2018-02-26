@@ -2,7 +2,7 @@
 /**
  * @package    Grav.Common.Page
  *
- * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -1203,19 +1203,19 @@ class Pages
                     break;
                 case 'date':
                     $list[$key] = $child->date();
-                    $sort_flags = SORT_NUMERIC;
+                    $sort_flags = SORT_REGULAR;
                     break;
                 case 'modified':
                     $list[$key] = $child->modified();
-                    $sort_flags = SORT_NUMERIC;
+                    $sort_flags = SORT_REGULAR;
                     break;
                 case 'publish_date':
                     $list[$key] = $child->publishDate();
-                    $sort_flags = SORT_NUMERIC;
+                    $sort_flags = SORT_REGULAR;
                     break;
                 case 'unpublish_date':
                     $list[$key] = $child->unpublishDate();
-                    $sort_flags = SORT_NUMERIC;
+                    $sort_flags = SORT_REGULAR;
                     break;
                 case 'slug':
                     $list[$key] = $child->slug();

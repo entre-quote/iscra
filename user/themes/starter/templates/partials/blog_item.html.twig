@@ -4,18 +4,26 @@
     {% set header_image_file = page.header.header_image_file %}
 
     {% if header_image_file %}
-        {% set header_image_media = page.media.images[header_image_file] %}
+    {% set header_image_media = page.media.images[header_image_file] %}
     {% else %}
-        {% set header_image_media = page.media.images|first %}
+    {% set header_image_media = page.media.images|first %}
     {% endif %}
 
-    {% if truncate and page.summary != page.content %}
-        <div class="blog-item-header">
+    {% if page.header.continue_link is sameas(false) %}
 
+    {{ page.content }}
+
+    {% if not truncate %}
+    {% set show_prev_next = true %}
+    {% endif %}
+
+    {% elseif truncate and page.summary != page.content %} <!-- Affichage en liste sans séparateur -->
+    <div class="blog-item-container">
+        <div class="blog-item-header">
             {% if header_image_media %}
-                <a href="{{ page.url }}" class="img-wrapper">
-                    {{ header_image_media.html }}
-                </a>
+            <a href="{{ page.url }}" class="img-wrapper">
+                {{ header_image_media.html }}
+            </a>
             {% endif %}
 
             <a href="{{ page.url }}">
@@ -24,98 +32,131 @@
                     <span>{{ page.header.subTitle }}</span>
                 </h2>
             </a>
-
         </div>
-    {% endif %}
 
-    {% if page.header.continue_link is sameas(false) %}
+        <div class="p-summary">
+            <a href="{{page.url}}">
+                {{ page.summary }}
+            </a>
+        </div>
 
-        {{ page.content }}
+        <a href="{{ page.url }}" class="read-more">
+            {{ 'BLOG.ITEM.CONTINUE_READING'|t }}
+        </a>
 
-        {% if not truncate %}
-            {% set show_prev_next = true %}
+        {% if page.taxonomy.Medias == true %}
+        <div class="blog-item-plus">
+            <div class="bog-item-media">
+                Media :
+                {% for media in page.taxonomy.Medias %}
+                {{ media }}
+                {% endfor %}
+            </div>
+        </div>
         {% endif %}
 
-        {% elseif truncate and page.summary != page.content %} <!-- Affichage en liste sans séparateur -->
-            <div class="p-summary">
-                <a href="{{page.url}}">
-                    {{ page.summary }}
-                </a>
-            </div>
-            <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
+        {% for theme in page.taxonomy.Medias %}
 
-            <div class="blog-item-tags">
-                {% for theme in page.taxonomy.Themes %}
-                    <a href="/themes/{{ theme |replace({'é': 'e', 'â': 'a', 'ï': 'i'})|hyphenize }}" class="p-theme">{{ theme }}</a>
-                {% endfor %}
-                {% for intervention in page.taxonomy.Interventions %}
-                    <a href="/interventions/{{ intervention |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-intervention">{{ intervention }}</a>
-                {% endfor %}
-            </div>
+        {% endfor %}
+    </div>
 
-        {% elseif truncate %} <!-- Affichage en liste tronqué avec le séparateur -->
-            <div class="blog-item-header">
+    <div class="blog-item-tags">
+        {% for theme in page.taxonomy.Themes %}
+        <a href="{{base_url}}/themes/{{ theme |replace({'é': 'e', 'â': 'a', 'ï': 'i'})|hyphenize }}" class="p-theme">{{ theme }}</a>
+        {% endfor %}
+        {% for intervention in page.taxonomy.Interventions %}
+        <a href="{{base_url}}/interventions/{{ intervention |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-intervention">{{ intervention }}</a>
+        {% endfor %}
+    </div>
 
-                {% if header_image_media %}
-                    <a href="{{ page.url }}" class="img-wrapper">
-                        {{ header_image_media.html }}
-                    </a>
-                {% endif %}
+    {% elseif truncate %} <!-- Affichage en liste tronqué avec le séparateur -->
 
-                <a href="{{ page.url }}">
-                    <h2>
-                        {{ page.title }}
-                        <span>{{ page.header.subTitle }}</span>
-                    </h2>
-                </a>
-            </div>
-
-            <div class="p-summary e-content">
-                {{ page.content }}
-                <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
-            </div>
-
-            <div class="blog-item-tags">
-                {% for theme in page.taxonomy.Themes %}
-                    <a href="/themes/{{ theme |replace({'é': 'e', 'â': 'a', 'ï': 'i'})|hyphenize }}" class="p-theme">{{ theme }}</a>
-                {% endfor %}
-                {% for intervention in page.taxonomy.Interventions %}
-                    <a href="/interventions/{{ intervention |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-intervention">{{ intervention }}</a>
-                {% endfor %}
-            </div>
-
-        {% else %} <!-- Affichage complet -->
-
-            <h1>
-                {{ page.title }}
-                <span>{{page.header.subTitle}}</span>
-            </h1>
-
-            <div class="taxonomies-display">
-                <a href="/themes/">Thème(s) :</a>
-                <ul class="tax-list">
-                    {% for theme in page.taxonomy.Themes %}
-                        <li><a href="/themes/{{ theme |replace({'é': 'e','è': 'e', 'â': 'a', 'ï': 'i'})|hyphenize }}" class="p-theme">{{ theme }}</a></li>
-                    {% endfor %}
-                </ul>
-
-                <a href="/interventions/">Intervention(s) :</a>
-                <ul class="tax-list">
-                    {% for intervention in page.taxonomy.Interventions %}
-                        <li><a href="/interventions/{{ intervention |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-intervention">{{ intervention }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
+    <div class="blog-item-container">
+        <div class="blog-item-header">
 
             {% if header_image_media %}
-                <div class="img-article">
-                    {{ header_image_media.html }}
-                </div>
+            <a href="{{ page.url }}" class="img-wrapper">
+                {{ header_image_media.html }}
+            </a>
             {% endif %}
 
-            <div class="txt-article">
+            <a href="{{ page.url }}">
+                <h2>
+                    {{ page.title }}
+                    <span>{{ page.header.subTitle }}</span>
+                </h2>
+            </a>
+        </div>
+
+        <div class="p-summary e-content">
+            <a href="{{ page.url }}">
                 {{ page.content }}
+            </a>
+
+            <a href="{{ page.url }}" class="read-more">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
+        </div>
+
+        {% if page.taxonomy.Medias == true %}
+        <div class="blog-item-plus">
+            <div class="bog-item-media">
+                Media :
+                {% for media in page.taxonomy.Medias %}
+                {{ media }}
+                {% endfor %}
             </div>
+        </div>
+        {% endif %}
+
+        {% for theme in page.taxonomy.Medias %}
+
+        {% endfor %}
+    </div>
+
+    <div class="blog-item-tags">
+        {% for theme in page.taxonomy.Themes %}
+        <a href="/themes/{{ theme |replace({'é': 'e', 'â': 'a', 'ï': 'i'})|hyphenize }}" class="p-theme">{{ theme }}</a>
+        {% endfor %}
+
+        {% for intervention in page.taxonomy.Interventions %}
+        <a href="/interventions/{{ intervention |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-intervention">{{ intervention }}</a>
+        {% endfor %}
+    </div>
+
+    {% else %} <!-- Affichage complet -->
+
+    <h1>
+        {{ page.title }}
+        <span>{{page.header.subTitle}}</span>
+    </h1>
+
+    <div class="taxonomies-display">
+        <a href="{{ base_url_absolute }}/themes/">Thème(s) :</a>
+
+        <ul class="tax-list">
+            {% for theme in page.taxonomy.Themes %}
+
+            <li><a href="{{ base_url_absolute }}/themes/{{ theme |replace({'é': 'e','è': 'e', 'â': 'a', 'ï': 'i'})|hyphenize }}" class="p-theme">{{ theme }}</a></li>
+
+            {% endfor %}
+        </ul>
+
+        <a href="{{ base_url_absolute }}/interventions/">Intervention(s) :</a>
+        <ul class="tax-list">
+            {% for intervention in page.taxonomy.Interventions %}
+            <li><a href="{{ base_url_absolute }}/interventions/{{ intervention |replace({'é': 'e', 'â': 'a'})|hyphenize }}" class="p-intervention">{{ intervention }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% if header_image_media %}
+    <div class="img-article">
+        {{ header_image_media.html }}
+    </div>
+    {% endif %}
+
+    <div class="txt-article">
+        {{ page.content }}
+    </div>
 
     {% endif %}
 

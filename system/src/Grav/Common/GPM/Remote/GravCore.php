@@ -2,7 +2,7 @@
 /**
  * @package    Grav.Common.GPM
  *
- * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2014 - 2017 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -22,7 +22,6 @@ class GravCore extends AbstractPackageCollection
     /**
      * @param bool $refresh
      * @param null $callback
-     * @throws \InvalidArgumentException
      */
     public function __construct($refresh = false, $callback = null)
     {
@@ -39,7 +38,7 @@ class GravCore extends AbstractPackageCollection
         $this->date    = isset($this->data['date']) ? $this->data['date'] : '-';
 
         if (isset($this->data['assets'])) {
-            foreach ((array)$this->data['assets'] as $slug => $data) {
+            foreach ($this->data['assets'] as $slug => $data) {
                 $this->items[$slug] = new Package($data);
             }
         }
@@ -69,10 +68,10 @@ class GravCore extends AbstractPackageCollection
         }
 
         $diffLog = [];
-        foreach ((array)$this->data['changelog'] as $version => $changelog) {
+        foreach ($this->data['changelog'] as $version => $changelog) {
             preg_match("/[\w-\.]+/", $version, $cleanVersion);
 
-            if (!$cleanVersion || version_compare($diff, $cleanVersion[0], '>=')) {
+            if (!$cleanVersion || version_compare($diff, $cleanVersion[0], ">=")) {
                 continue;
             }
 

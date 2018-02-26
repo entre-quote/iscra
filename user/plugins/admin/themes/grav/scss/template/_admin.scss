@@ -3,7 +3,6 @@ $update-height: 3rem;
 $sidebar-width-large: 240px;
 $sidebar-width-small: $topbar-height;
 $sidebar-padding: 2rem;
-$content-padding: 1.5rem;
 
 // Special cases
 .sidebar-closed:not(.sidebar-quickopen) {
@@ -21,7 +20,9 @@ $content-padding: 1.5rem;
                 }
             }
 
-
+            .admin-logo .front-end {
+                display: none;
+            }
         }
 
         #grav-logo-small {
@@ -29,10 +30,6 @@ $content-padding: 1.5rem;
         }
 
         #grav-logo-large {
-            display: none;
-        }
-
-        .front-end {
             display: none;
         }
 
@@ -71,8 +68,8 @@ $content-padding: 1.5rem;
 
         #open-handle {
             @include breakpoint(large-desktop-plus) {
-                .fa-angle-right:before {
-                    content: "\f105";
+                .fa-angle-double-right:before {
+                    content: "\f101";
                 }
             }
         }
@@ -114,9 +111,12 @@ $content-padding: 1.5rem;
             display: block;
         }
 
-        .front-end {
+
+        .admin-logo .front-end {
             display: inline-block;
         }
+
+
 
         #admin-menu {
             em {
@@ -142,8 +142,8 @@ $content-padding: 1.5rem;
 
         #open-handle {
             @include breakpoint(mini-nav-range) {
-                .fa-angle-right:before {
-                    content: "\f104";
+                .fa-angle-double-right:before {
+                    content: "\f100";
                 }
             }
         }
@@ -165,21 +165,20 @@ $content-padding: 1.5rem;
         display: block;
         position: absolute;
         cursor: pointer;
-        right:0;
-        top: 0;
-        width: 15px;
-        height: $topbar-height;
+        right: -16px;
+        top: 20px;
+        width: 16px;
+        height: 25px;
         text-align: center;
-        line-height: $topbar-height;
-        font-size: 12px;
+        line-height: 23px;
+        z-index: 3;
+        font-size: 1.2rem;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
 
-
-
         @include breakpoint(large-desktop-plus) {
-            .fa-angle-right:before {
-                content: "\f104";
+            .fa-angle-double-right:before {
+                content: "\f100";
             }
         }
     }
@@ -215,10 +214,11 @@ $content-padding: 1.5rem;
     text-align: center;
 
     .admin-logo {
-        a:not(.front-end) {
+        a {
             display: inline-block;
             vertical-align: middle;
             width: 20%;
+            text-align: right;
             padding-right: 1rem;
 
             &:first-child {
@@ -236,27 +236,27 @@ $content-padding: 1.5rem;
         }
     }
 
-    .front-end {
-
+    .admin-logo .front-end {
         @include breakpoint(mobile-only) {
+            position: absolute;
+            right: 20px;
+            top: 23px;
+            line-height: 2rem;
+            padding-right: 0;
+            i {
+                font-size: 2rem;
+            }
+        }
+        @include breakpoint(mini-nav-range) {
             display: none;
         }
-
-        @include breakpoint(tablet-plus) {
-            display: none;
-        }
-
-        @include breakpoint(large-desktop-plus) {
-            display: inline-block;
-        }
-
     }
 
     #grav-logo-small {
         max-width: 100%;
-        height: 30px;
+        height: 40px;
         display: none;
-        margin: 18px 0;
+        margin: 13px 0 12px;
 
         @include breakpoint(tablet-plus) {
             display: inline-block;
@@ -269,8 +269,9 @@ $content-padding: 1.5rem;
 
     #grav-logo-large {
         max-width: 100%;
-        height: 30px;
-        margin: 18px 0;
+        padding-left: 1.5rem;
+        height: 40px;
+        margin: 13px 0 12px;
 
         @include breakpoint(tablet-plus) {
             display: none;
@@ -282,10 +283,11 @@ $content-padding: 1.5rem;
     }
 
     h3 {
+        text-transform: uppercase;
         margin: 0;
         @extend %vertical-align;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
 
 
         @include breakpoint(tablet-plus) {
@@ -296,9 +298,9 @@ $content-padding: 1.5rem;
         }
 
         @include breakpoint(large-desktop-plus) {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             &:first-letter {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
 
@@ -377,7 +379,7 @@ $content-padding: 1.5rem;
         }
 
         h5 {
-            opacity: 0.7;
+            opacity: 0.8;
             font-size: 0.9rem;
         }
     }
@@ -404,7 +406,7 @@ $content-padding: 1.5rem;
 
 .content-padding {
     #messages.default-box-shadow {
-        margin-bottom: $content-padding;
+        margin-bottom: 2.5rem;
 
         @include breakpoint(mobile-only) {
             margin-bottom: 0.5rem;
@@ -494,6 +496,11 @@ $content-padding: 1.5rem;
                 margin-right: 8px;
             }
 
+            &:hover {
+                .fa {
+                    font-size: 1.2rem;
+                }
+            }
         }
 
         &.selected {
@@ -533,7 +540,7 @@ body.sidebar-quickopen #admin-main {
 
     h1 {
         margin: 0;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: left;
         letter-spacing: -1px;
         line-height: 1.5;
@@ -565,12 +572,11 @@ body.sidebar-quickopen #admin-main {
         position: relative;
         height: $topbar-height;
         padding: 0 $padding-default;
-        z-index: 4;
 
-        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
 
         @include breakpoint(mobile-only) {
-            padding: 0 ($padding-default / 4) 0 ($padding-default + 2.5);
+            padding: 0 ($padding-default / 4) 0 ($padding-default + 1);
         }
 
         h1 {
@@ -601,9 +607,8 @@ body.sidebar-quickopen #admin-main {
         }
 
         .button {
-            padding: 0.5rem 0.4rem;
+            padding: 0.3rem 0.4rem;
             vertical-align: top;
-            margin-right: -2px;
 
             @include breakpoint(mobile-only) {
                 font-size: 0;
@@ -619,8 +624,6 @@ body.sidebar-quickopen #admin-main {
                 padding: 0.5rem 0.2rem;
             }
         }
-
-
 
         @include breakpoint(mobile-only) {
             .dropdown-menu .button {
@@ -707,7 +710,6 @@ body.sidebar-quickopen #admin-main {
         position: relative;
         overflow-y: hidden;
         height: calc(100vh - #{$topbar-height});
-        //z-index: 0;
 
         .gm-scrollbar.-vertical {
             right: 5px;
@@ -718,7 +720,7 @@ body.sidebar-quickopen #admin-main {
     }
 
     .content-padding {
-        padding: $content-padding;
+        padding: 2.5rem;
 
         @include breakpoint(mobile-only) {
             padding: 0;
@@ -726,7 +728,7 @@ body.sidebar-quickopen #admin-main {
     }
 
     .admin-block {
-        padding: 1rem 0;
+        padding: 2rem 0;
 
         &:empty {
             padding: 0;
@@ -763,7 +765,7 @@ body.sidebar-quickopen #admin-main {
 
     .flush-bottom {
         &.button-bar {
-            margin: 1rem (-$padding-default) -1rem;
+            margin: 1rem -2rem -1rem;
             height: 70px;
             padding: 1rem;
             float: none;
@@ -779,7 +781,7 @@ body.sidebar-quickopen #admin-main {
         position: relative;
 
         &.button-bar {
-            margin: 2rem 0 -1rem;
+            margin: 2rem 0 -2rem;
             height: 70px;
             padding: 1rem;
             float: none;
@@ -796,17 +798,17 @@ body.sidebar-quickopen #admin-main {
         .dashboard-item-flex {
             &:nth-of-type(2n) .dashboard-item {
                 margin-right: 0;
-                margin-left: $content-padding / 2;
+                margin-left: 4%;
             }
 
             &:nth-of-type(2n+1) .dashboard-item {
                 margin-left: 0;
-                margin-right: $content-padding / 2;
+                margin-right: 4%;
             }
         }
 
         .dashboard-item {
-            margin-bottom: $content-padding;
+            margin-bottom: 2.5rem;
         }
 
     }
@@ -838,7 +840,7 @@ body.sidebar-quickopen #admin-main {
     .dashboard-item {
 
         > div:not(.widget-content) {
-            padding: 1rem $padding-default;
+            padding: 1rem 2rem;
         }
 
         h1 .right {
@@ -855,7 +857,7 @@ body.sidebar-quickopen #admin-main {
             }
             li {
                 margin: 0;
-                padding: 0.425rem $padding-default 0.2rem $padding-default;
+                padding: 0.425rem 3rem 0.2rem 3rem;
                 &:last-child {
                     border-bottom: 0;
                 }
@@ -881,7 +883,7 @@ body.sidebar-quickopen #admin-main {
 
     .widget-content {
         position: relative;
-        min-height: 335px;
+        min-height: 400px;
         padding: 0;
     }
 
