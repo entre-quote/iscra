@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.taxonomies-display {
+    margin-bottom: 1.8rem;
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        width: 20%;
+        height: 1px;
+        border-top: 1px dotted $red;
+    }
+
+    &:before {
+        padding-top: 1rem;
+    }
+
+
+    & > a {
+        font-weight: bold;
+    }
+}
+
+.tax-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    list-style-type: none;
+
+    li {
+        margin-bottom: 0;
+        margin-left: 1rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:not(:first-child) {
+            padding-left: 1rem;
+            border-left: 1px solid $red;
+        }
+    }
+
+    a {
+        color: $red;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

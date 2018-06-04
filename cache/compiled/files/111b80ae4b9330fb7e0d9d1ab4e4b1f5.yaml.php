@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/user/plugins/login/languages/de.yaml',
-    'modified' => 1512528474,
+    'modified' => 1528101321,
     'data' => [
         'PLUGIN_LOGIN' => [
             'USERNAME' => 'Benutzername',

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+header {
+    padding-top: 2rem;
+
+    h1 {
+        display: inline;
+        margin: 0;
+    }
+
+    & > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+        & > div {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+}
+
+.logo {
+
+    img {
+        width: 39rem;
+
+        @media (max-width: 390px) {
+            max-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.blog-list {
+    align-items: flex-start;
+
+    .blog-item {
+        position: relative;
+        align-self: stretch;
+
+        &:hover {
+            border-color: $red;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: rgba(0,0,0, .15);
+        }
+    }
+
+    .blog-item-container {
+        padding: 1rem;
+        border: 1px dotted transparent;
+
+        &:hover {
+            border-color: $red;
+        }
+    }
+}

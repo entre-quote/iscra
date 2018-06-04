@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/system/blueprints/user/account.yaml',
-    'modified' => 1512528472,
+    'modified' => 1528101135,
     'data' => [
         'title' => 'Account',
         'form' => [
@@ -45,6 +45,7 @@ return [
                     'type' => 'password',
                     'size' => 'large',
                     'label' => 'PLUGIN_ADMIN.PASSWORD',
+                    'autocomplete' => 'new-password',
                     'validate' => [
                         'required' => false,
                         'message' => 'PLUGIN_ADMIN.PASSWORD_VALIDATION_MESSAGE',

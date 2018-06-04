@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+footer {
+    margin-top: 2.5rem;
+    padding: 1rem 1.4rem 1rem 8px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: $grey;
+    border-top: 1px dotted $default-color;
+
+    a {
+        display: block;
+        margin-bottom: 5px;
+        padding-right: 1.2rem;
+        color: $default-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $red;
+            text-decoration: underline;
+        }
+    }
+
+    .limit {
+        position: relative;
+        padding-left: 5rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 3rem;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: block;
+            width: 1px;
+            height: 100%;
+            background-color: $default-color;
+        }
+    }
+    @media (max-width: 768px) {
+        .limit {
+            padding-left: 0;
+            padding-top: 5px;
+
+            &:before {
+                top: 0;
+                left: 0;
+                bottom: auto;
+                width: 100%;
+                height: 1px;
+            }
+        }
+    }
+
+    @media (min-width: 575px) and (max-width: 768px) {
+        .limit + div {
+            position: relative;
+            padding-top: 5px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: $default-color;
+            }
+        }
+    }
+}

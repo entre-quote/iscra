@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/system/blueprints/config/system.yaml',
-    'modified' => 1512528472,
+    'modified' => 1528101134,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SYSTEM',
         'form' => [

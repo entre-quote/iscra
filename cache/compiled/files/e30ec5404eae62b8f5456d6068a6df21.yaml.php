@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/user/plugins/admin/languages/bg.yaml',
-    'modified' => 1512528472,
+    'modified' => 1528101212,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Това е Бета версия! Използвате на ваша отговорност...',

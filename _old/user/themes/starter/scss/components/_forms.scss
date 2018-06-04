@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+$border-color: $default-color;
+
+/* Forms */
+input,
+textarea,
+select,
+button {
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+/* Labels */
+label {
+  display: block;
+}
+
+/* Inputs */
+input[type="text"],
+textarea,
+select {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid $border-color;
+} 
+
+[type="radio"],
+[type="checkbox"] {
+ & + label {
+  display: inline-block;
+  }
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
+}
+
+//Default cursor for buttons
+input[type="submit"],
+button {
+  cursor: pointer;
+}

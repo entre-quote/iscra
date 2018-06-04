@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/user/themes/starter/languages.yaml',
-    'modified' => 1512641492,
+    'modified' => 1528101367,
     'data' => [
         'en' => [
             'TRANSLATION_TEST' => 'Antimatter!',

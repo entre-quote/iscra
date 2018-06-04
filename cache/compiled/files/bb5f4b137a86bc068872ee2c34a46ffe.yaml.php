@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/user/plugins/email/email.yaml',
-    'modified' => 1512528472,
+    'modified' => 1528101293,
     'data' => [
         'enabled' => true,
         'from' => NULL,

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/user/config/site.yaml',
-    'modified' => 1519655810,
+    'modified' => 1528101165,
     'data' => [
         'title' => 'I.S.C.R.A.',
         'default_lang' => 'fr',

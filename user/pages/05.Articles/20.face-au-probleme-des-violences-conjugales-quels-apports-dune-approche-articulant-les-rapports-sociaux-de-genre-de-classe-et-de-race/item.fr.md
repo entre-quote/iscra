@@ -5,8 +5,8 @@ media_order: Unknown-1.jpeg
 date: '30-11-2017 15:55'
 taxonomy:
     Themes:
-        - 'Développement du pouvoir d''agir'
         - Discrimination
+        - 'Développement du pouvoir d''agir'
     Interventions:
         - 'Conférences et débats publics'
     Medias:
@@ -17,6 +17,4 @@ Invité par le CIDFF de l’Hérault, le 30 novembre 2017, au Lazaret à Sète, 
 
 ===
 
-Voir la conférence publique : 
-
-![](https://www.youtube.com/watch?v=P3myMq-__Co)
+[Voir la conférence publique](https://www.youtube.com/watch?v=P3myMq-__Co)

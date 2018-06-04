@@ -1,0 +1,23 @@
+{% block header %}
+<header>
+    <div>
+        <a class="logo" href="{{ base_url == '' ? '/' : base_url }}">
+            <h1>
+                <img src="{{ url('theme://images/logo-iscra.svg') }}" alt="Institut Social et Coopératif en Recherche Appliquée">
+            </h1>
+        </a>
+        <nav class="mini-nav">
+            <a href="{{ base_url_absolute }}/contact">Contact</a>
+            <a href="http://www.iscra.org/waln/subscribe.php" target="_blank">Inscription à la newsletter</a>
+        </nav>
+    </div>
+
+    {% block header_navigation %}
+    <nav class="main-nav">
+        {% include 'partials/_navigation.html.twig' %}
+    </nav>
+    {% endblock %}
+
+
+</header>
+{% endblock %}

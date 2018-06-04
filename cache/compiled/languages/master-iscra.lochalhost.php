@@ -1,323 +1,327 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1519661015,
-    'checksum' => 'e6c16e5e1dd2e521b6cb2a2f5bc0629d',
+    'timestamp' => 1528101852,
+    'checksum' => '3619a6516d3a84f1e8740cf328fbe690',
     'files' => [
         'system/languages' => [
             'ar' => [
                 'file' => 'system/languages/ar.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101148
             ],
             'ca' => [
                 'file' => 'system/languages/ca.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101148
             ],
             'cs' => [
                 'file' => 'system/languages/cs.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101148
             ],
             'da' => [
                 'file' => 'system/languages/da.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'de' => [
                 'file' => 'system/languages/de.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'el' => [
                 'file' => 'system/languages/el.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'en' => [
                 'file' => 'system/languages/en.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'es' => [
                 'file' => 'system/languages/es.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'fi' => [
                 'file' => 'system/languages/fi.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'fr' => [
                 'file' => 'system/languages/fr.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'hr' => [
                 'file' => 'system/languages/hr.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'hu' => [
                 'file' => 'system/languages/hu.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'it' => [
                 'file' => 'system/languages/it.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'ja' => [
                 'file' => 'system/languages/ja.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'lt' => [
                 'file' => 'system/languages/lt.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'nb' => [
                 'file' => 'system/languages/nb.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'nl' => [
                 'file' => 'system/languages/nl.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'no' => [
                 'file' => 'system/languages/no.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101147
             ],
             'pl' => [
                 'file' => 'system/languages/pl.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101146
             ],
             'pt' => [
                 'file' => 'system/languages/pt.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101146
             ],
             'ro' => [
                 'file' => 'system/languages/ro.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101146
             ],
             'ru' => [
                 'file' => 'system/languages/ru.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101146
             ],
             'sk' => [
                 'file' => 'system/languages/sk.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101146
             ],
             'sv' => [
                 'file' => 'system/languages/sv.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101146
             ],
             'th' => [
                 'file' => 'system/languages/th.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101146
             ],
             'tr' => [
                 'file' => 'system/languages/tr.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101146
             ],
             'uk' => [
                 'file' => 'system/languages/uk.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101146
             ],
             'vi' => [
                 'file' => 'system/languages/vi.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101146
             ]
         ],
         'user/plugins' => [
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101293
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/languages.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101312
+            ],
+            'plugins/external_links' => [
+                'file' => 'user/plugins/external_links/languages.yaml',
+                'modified' => 1528101313
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101314
             ]
         ],
         'user/plugins/admin/languages' => [
             'ar' => [
                 'file' => 'user/plugins/admin/languages/ar.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101212
             ],
             'bg' => [
                 'file' => 'user/plugins/admin/languages/bg.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101212
             ],
             'br' => [
                 'file' => 'user/plugins/admin/languages/br.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101212
             ],
             'ca' => [
                 'file' => 'user/plugins/admin/languages/ca.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101212
             ],
             'cs' => [
                 'file' => 'user/plugins/admin/languages/cs.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101212
             ],
             'cy' => [
                 'file' => 'user/plugins/admin/languages/cy.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101212
             ],
             'da' => [
                 'file' => 'user/plugins/admin/languages/da.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101212
             ],
             'de' => [
                 'file' => 'user/plugins/admin/languages/de.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101212
             ],
             'el' => [
                 'file' => 'user/plugins/admin/languages/el.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101212
             ],
             'en' => [
                 'file' => 'user/plugins/admin/languages/en.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'es' => [
                 'file' => 'user/plugins/admin/languages/es.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'et' => [
                 'file' => 'user/plugins/admin/languages/et.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'eu' => [
                 'file' => 'user/plugins/admin/languages/eu.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'fa' => [
                 'file' => 'user/plugins/admin/languages/fa.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'fi' => [
                 'file' => 'user/plugins/admin/languages/fi.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'fr' => [
                 'file' => 'user/plugins/admin/languages/fr.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'he' => [
                 'file' => 'user/plugins/admin/languages/he.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'hr' => [
                 'file' => 'user/plugins/admin/languages/hr.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'hu' => [
                 'file' => 'user/plugins/admin/languages/hu.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'id' => [
                 'file' => 'user/plugins/admin/languages/id.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'it' => [
                 'file' => 'user/plugins/admin/languages/it.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101211
             ],
             'ja' => [
                 'file' => 'user/plugins/admin/languages/ja.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'ko' => [
                 'file' => 'user/plugins/admin/languages/ko.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'lt' => [
                 'file' => 'user/plugins/admin/languages/lt.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'nl' => [
                 'file' => 'user/plugins/admin/languages/nl.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'no' => [
                 'file' => 'user/plugins/admin/languages/no.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'pl' => [
                 'file' => 'user/plugins/admin/languages/pl.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'pt' => [
                 'file' => 'user/plugins/admin/languages/pt.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'ro' => [
                 'file' => 'user/plugins/admin/languages/ro.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'ru' => [
                 'file' => 'user/plugins/admin/languages/ru.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'sk' => [
                 'file' => 'user/plugins/admin/languages/sk.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'sl' => [
                 'file' => 'user/plugins/admin/languages/sl.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'sv' => [
                 'file' => 'user/plugins/admin/languages/sv.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101209
             ],
             'th' => [
                 'file' => 'user/plugins/admin/languages/th.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101210
             ],
             'tlh' => [
                 'file' => 'user/plugins/admin/languages/tlh.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101209
             ],
             'tr' => [
                 'file' => 'user/plugins/admin/languages/tr.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101209
             ],
             'uk' => [
                 'file' => 'user/plugins/admin/languages/uk.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101209
             ],
             'vi' => [
                 'file' => 'user/plugins/admin/languages/vi.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101209
             ],
             'zh' => [
                 'file' => 'user/plugins/admin/languages/zh.yaml',
-                'modified' => 1512528472
+                'modified' => 1528101209
             ]
         ],
         'user/plugins/login/languages' => [
             'de' => [
                 'file' => 'user/plugins/login/languages/de.yaml',
-                'modified' => 1512528474
+                'modified' => 1528101321
             ],
             'en' => [
                 'file' => 'user/plugins/login/languages/en.yaml',
-                'modified' => 1512528474
+                'modified' => 1528101321
             ],
             'fr' => [
                 'file' => 'user/plugins/login/languages/fr.yaml',
-                'modified' => 1512528474
+                'modified' => 1528101321
             ],
             'hr' => [
                 'file' => 'user/plugins/login/languages/hr.yaml',
-                'modified' => 1512528474
+                'modified' => 1528101321
             ],
             'hu' => [
                 'file' => 'user/plugins/login/languages/hu.yaml',
-                'modified' => 1512528474
+                'modified' => 1528101321
             ],
             'ro' => [
                 'file' => 'user/plugins/login/languages/ro.yaml',
-                'modified' => 1512528474
+                'modified' => 1528101321
             ],
             'ru' => [
                 'file' => 'user/plugins/login/languages/ru.yaml',
-                'modified' => 1512528474
+                'modified' => 1528101321
             ]
         ]
     ],
@@ -1055,6 +1059,48 @@ return [
                 'ERROR' => 'Fehler',
                 'ERROR_MESSAGE' => 'Uuups. Sieht aus als ob diese Seite nicht existiert.'
             ],
+            'PLUGINS' => [
+                'EXTERNAL_LINKS' => [
+                    'PLUGIN_NAME' => 'External Links',
+                    'PLUGIN_STATUS' => 'Plugin Status',
+                    'PLUGIN_STATUS_HELP' => 'Aktiviere das Plugin oder schalte es komplett ab.',
+                    'BUILTIN_CSS' => 'Verwende mitgeliefertes CSS',
+                    'WEIGHT' => 'Ausführungsreihenfolge',
+                    'SETTINGS' => 'Einstellungen',
+                    'CONTENT' => 'Inhalt',
+                    'EXCLUDE' => [
+                        'SECTION' => 'Ausnahmen',
+                        'SECTION_HELP' => 'Setzt Links mit bestimmten Klassen oder Links von bestimmten Domains immer als intern.',
+                        'CLASSES' => 'Ignoriere Links mit diesen Klassen',
+                        'CLASSES_HELP' => 'Komma getrennte Liste',
+                        'DOMAINS' => 'Eine Liste von auszuschließenden Domains',
+                        'DOMAINS_HELP' => 'Komma getrennte Liste von Domains z.B. _localhost/*_ (jeder regulärer Ausdruck kann verwendet werden)'
+                    ],
+                    'LINKS' => [
+                        'SECTION' => 'Links',
+                        'SECTION_HELP' => 'Sieht Links beginnend mit <code>www.</code> oder mit als extern markierten Protokollen als extern an.',
+                        'WWW' => 'Verlinkung (WWW)',
+                        'WWW_HELP' => 'Verlinke auch Links, die mit \'www.\' beginnen als extern',
+                        'REDIRECTS' => 'Folge Seiten-Weiterleitungen',
+                        'REDIRECTS_HELP' => 'Links zu Seiten, die zu einer externen URL weiterleiten werden auch als extern markiert',
+                        'SCHEMES' => 'Erlaubte Protokolle',
+                        'SCHEMES_HELP' => 'Liste von erlaubten Protokollen'
+                    ],
+                    'PROCESS' => 'Aktiviere <code>External Links</code> auf Seite',
+                    'TITLE' => 'Zeige Standardtexttitel für externe Links',
+                    'TITLE_MESSAGE' => 'Dieser Link führt auf eine externe Webseite für deren Inhalt wir nicht verantwortlich sind.',
+                    'NO_FOLLOW' => 'Fügt <code>rel="nofollow"</code> zu allen externen Links',
+                    'TARGET' => 'Setze "target" Attribut des Links.',
+                    'TARGET_BLANK' => '_blank - Öffne Link im neuen Fenster',
+                    'TARGET_SELF' => '_self - Öffne Link im gleichen Tab oder Seite',
+                    'TARGET_PARENT' => '_parent - Öffne Link im Elternfenster',
+                    'TARGET_TOP' => '_top - Öffne Link im ganzen Fenster',
+                    'MODE' => 'Modus',
+                    'MODE_HELP' => 'active = Zeichne externe Links aus; passive = Zeichne externe Links aus ohne entsprechende CSS-Klassen zu setzen',
+                    'MODE_ACTIVE' => 'Aktiv - Zeichne externe Links aus',
+                    'MODE_PASSIVE' => 'Passiv - Zeichne externe Links aus ohne entsprechende CSS-Klassen zu setzen'
+                ]
+            ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formularwerte nicht gültig. Für ein oder mehrere erforderliche Felder fehlen Werte.',
                 'NONCE_NOT_VALIDATED' => 'Ups, es gibt da ein Problem. Eingabewerte bitte noch mal prüfen und das Formular erneut absenden.',
@@ -1065,7 +1111,8 @@ return [
                 'DESTINATION_HELP' => 'Das Ziel, wohin die Dateien hochgeladen werden sollen.',
                 'ACCEPT' => 'Erlaube MIME-Typen',
                 'ACCEPT_HELP' => 'Eine Liste von MIME-Typen, die hochgeladen werden dürfen.',
-                'ERROR_VALIDATING_CAPTCHA' => 'Die Überprüfung des Captcha ist fehlgeschlagen.'
+                'ERROR_VALIDATING_CAPTCHA' => 'Die Überprüfung des Captcha ist fehlgeschlagen.',
+                'DATA_SUMMARY' => 'Hier die Zusammenfassung von dem, was Sie geschrieben haben:'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -1184,6 +1231,7 @@ Pfad: `%2$s`
                 'FORGOT_INSTRUCTIONS_SENT_VIA_EMAIL' => 'Instructions to reset your password have been sent via email',
                 'FORGOT_FAILED_TO_EMAIL' => 'Failed to email instructions, please try again later',
                 'FORGOT_CANNOT_RESET_EMAIL_NO_EMAIL' => 'Cannot reset password for %s, no email address is set',
+                'FORGOT_CANNOT_RESET_EMAIL_NO_PASSWORD' => 'Cannot reset password for %s, this email is associated with a remote account',
                 'FORGOT_USERNAME_DOES_NOT_EXIST' => 'User with username <b>%s</b> does not exist',
                 'FORGOT_EMAIL_NOT_CONFIGURED' => 'Cannot reset password. This site is not configured to send emails',
                 'FORGOT_EMAIL_SUBJECT' => '%s Password Reset Request',
@@ -1206,7 +1254,7 @@ Pfad: `%2$s`
                 'USER_NEEDS_EMAIL_FIELD' => 'The user needs an email field',
                 'EMAIL_SENDING_FAILURE' => 'An error occurred while sending the email',
                 'ACTIVATION_EMAIL_SUBJECT' => 'Activate your account on %s',
-                'ACTIVATION_EMAIL_BODY' => '<h1>%Account Activation</h1><p>Hi %1$s, </p><p>Your account has been successfully created on <b>%3$s</b>, but you cannot login until it is activated.</p><p><br/><a href="%2$s" class="btn-primary">Activate Your Account Now</a><br/><br/></p><p>Alternatively, copy the following URL into your browser\'s address bar:</p><p class="word-break"><a href="%2$s">%2$s</a></p><p><br/>Kind regards,<br/><br/>%4$s</p>',
+                'ACTIVATION_EMAIL_BODY' => '<h1>Account Activation</h1><p>Hi %1$s, </p><p>Your account has been successfully created on <b>%3$s</b>, but you cannot login until it is activated.</p><p><br/><a href="%2$s" class="btn-primary">Activate Your Account Now</a><br/><br/></p><p>Alternatively, copy the following URL into your browser\'s address bar:</p><p class="word-break"><a href="%2$s">%2$s</a></p><p><br/>Kind regards,<br/><br/>%4$s</p>',
                 'ACTIVATION_NOTICE_MSG' => 'Hi %s, your account is created, please check your email to fully activate it',
                 'WELCOME_EMAIL_SUBJECT' => 'Welcome to %s',
                 'WELCOME_EMAIL_BODY' => '<h1>Account Created</h1><p>Hi %1$s, </p><p>Your account has been successfully created on <b>%3$s</b>.</p><p><br/><a href="%2$s" class="btn-primary">Login Now</a><br/><br/></p><p>Alternatively, copy the following URL into your browser\'s address bar:</p><p class="word-break"><a href="%2$s">%2$s</a></p><p><br/>Kind regards,<br/><br/>%4$s</p>',
@@ -1240,6 +1288,8 @@ Pfad: `%2$s`
                 'REGISTRATION_FIELD_KEY' => 'Field name',
                 'REDIRECT_AFTER_LOGIN' => 'Redirect after login',
                 'REDIRECT_AFTER_LOGIN_HELP' => 'Custom route to redirect after login',
+                'REDIRECT_AFTER_LOGOUT' => 'Redirect after logout',
+                'REDIRECT_AFTER_LOGOUT_HELP' => 'Custom route to redirect after logout',
                 'REDIRECT_AFTER_REGISTRATION' => 'Redirect after registration',
                 'REDIRECT_AFTER_REGISTRATION_HELP' => 'Custom route to redirect after the registration',
                 'OPTIONS' => 'Options',
@@ -1278,7 +1328,19 @@ Pfad: `%2$s`
                 'LOGGED_OUT' => 'You have been successfully logged out...',
                 'PAGE_RESTRICTED' => 'Access is restricted, please login...',
                 'DYNAMIC_VISIBILITY' => 'Dynamic Page Visibility',
-                'DYNAMIC_VISIBILITY_HELP' => 'Allows dynamic processing of page visibility base on access rules if login.visibility_requires_access is set to true on a page'
+                'DYNAMIC_VISIBILITY_HELP' => 'Allows dynamic processing of page visibility base on access rules if login.visibility_requires_access is set to true on a page',
+                'USER_IS_REMOTE_ONLY' => 'This user authenticated with a remote service, so profile cannot be saved',
+                '2FA_TITLE' => '2-Factor Authentication',
+                '2FA_INSTRUCTIONS' => '##### 2-Factor Authentication
+You have **2FA** enabled on this account. Please use your **2FA** app to enter the current **6-digit code** to complete the login process.',
+                '2FA_REGEN_HINT' => 'Regenerating the secret will require you to update your authenticator app',
+                '2FA_FAILED' => 'Invalid 2-Factor Authentication code, please try again...',
+                '2FA_ENABLED' => '2FA Enabled',
+                '2FA_CODE_INPUT' => '000000',
+                '2FA_SECRET' => '2FA Secret',
+                '2FA_SECRET_HELP' => 'Scan this QR code into your [Authenticator App](https://learn.getgrav.org/admin-panel/2fa#apps). Also it\'s a good idea to backup the secret in a safe location, in case you need to reinstall your app. Check the [Grav docs](https://learn.getgrav.org/admin-panel/2fa) for more information ',
+                '2FA_REGENERATE' => 'Regenerate',
+                'BTN_CANCEL' => 'Cancel'
             ],
             'PLUGIN_ADMIN' => [
                 'ADMIN_BETA_MSG' => 'This is a Beta release! Use this in production at your own risk...',
@@ -1318,6 +1380,7 @@ Pfad: `%2$s`
                 'ADD_MODULAR' => 'Add Modular',
                 'MOVE' => 'Move',
                 'DELETE' => 'Delete',
+                'UNSET' => 'Unset',
                 'VIEW' => 'View',
                 'SAVE' => 'Save',
                 'NORMAL' => 'Normal',
@@ -1613,7 +1676,10 @@ Pfad: `%2$s`
                 'ETAG_HELP' => 'Sets the etag header to help identify when a page has been modified',
                 'VARY_ACCEPT_ENCODING' => 'Vary accept encoding',
                 'VARY_ACCEPT_ENCODING_HELP' => 'Sets the `Vary: Accept Encoding` header to help with proxy and CDN caching',
+                'MARKDOWN_EXTRA' => 'Markdown extra',
                 'MARKDOWN_EXTRA_HELP' => 'Enable default support for Markdown Extra - https://michelf.ca/projects/php-markdown/extra/',
+                'MARKDOWN_EXTRA_ESCAPE_FENCES' => 'Escape HTML elements in markdown extra fences',
+                'MARKDOWN_EXTRA_ESCAPE_FENCES_HELP' => 'Escapes HTML elements in markdown extra fences',
                 'AUTO_LINE_BREAKS' => 'Auto line breaks',
                 'AUTO_LINE_BREAKS_HELP' => 'Enable support for automatic line breaks in markdown',
                 'AUTO_URL_LINKS' => 'Auto URL links',
@@ -1719,6 +1785,7 @@ Pfad: `%2$s`
                 'PAGE_FILE' => 'Page Template',
                 'PAGE_FILE_HELP' => 'Page template file name, and by default the display template for this page',
                 'NO_USER_ACCOUNTS' => 'No user accounts found, please create one first...',
+                'NO_USER_EXISTS' => 'No local user exists for this account, cannot save...',
                 'REDIRECT_TRAILING_SLASH' => 'Redirect trailing slash',
                 'REDIRECT_TRAILING_SLASH_HELP' => 'Perform a 301 redirect rather than transparently handling trailing slash URIs.',
                 'DEFAULT_DATE_FORMAT' => 'Page date format',
@@ -1823,7 +1890,6 @@ Pfad: `%2$s`
                 'FRONTMATTER_IGNORE_FIELDS' => 'Ignore frontmatter fields',
                 'FRONTMATTER_IGNORE_FIELDS_HELP' => 'Certain frontmatter fields may contain Twig but should not be processed, such as \'forms\'',
                 'PACKAGE_X_INSTALLED_SUCCESSFULLY' => 'Package %s installed successfully',
-                'NEEDS_GRAV_1_1' => '<i class="fa fa-exclamation-triangle"></i> <strong>You are running Grav v%s</strong>. You must update to the latest <strong>Grav v1.1.x</strong> release in order to ensure compatibility. This may require switching to <strong>Testing GPM releases</strong> in the System configuration.',
                 'ORDERING_DISABLED_BECAUSE_PARENT_SETTING_ORDER' => 'Parent setting order, ordering disabled',
                 'ORDERING_DISABLED_BECAUSE_PAGE_NOT_VISIBLE' => 'Page is not visible, ordering disabled',
                 'ORDERING_DISABLED_BECAUSE_TOO_MANY_SIBLINGS' => 'Ordering via the admin is unsupported because there are more than 200 siblings',
@@ -1848,6 +1914,7 @@ Pfad: `%2$s`
                 'PREVIEW' => 'Preview',
                 'FULLSCREEN' => 'Fullscreen',
                 'MODULAR' => 'Modular',
+                'MODULAR_SETUP' => 'Modular Setup',
                 'NON_ROUTABLE' => 'Non-Routable',
                 'NON_MODULAR' => 'Non-Modular',
                 'NON_VISIBLE' => 'Non-Visible',
@@ -1948,7 +2015,7 @@ Pfad: `%2$s`
                 'GPM_OFFICIAL_ONLY_HELP' => 'Only allow direct installs from the official GPM repository only.',
                 'NO_CHILD_TYPE' => 'No child type for this rawroute',
                 'SORTABLE_PAGES' => 'Sortable Pages:',
-                'UNSORTABLE_PAGES' => 'Unsortable Pages:',
+                'UNSORTABLE_PAGES' => 'Unsortable Pages',
                 'ADMIN_SPECIFIC_OVERRIDES' => 'Admin Specific Overrides',
                 'ADMIN_CHILDREN_DISPLAY_ORDER' => 'Children Display Order',
                 'ADMIN_CHILDREN_DISPLAY_ORDER_HELP' => 'The order that children of this page should be displayed in the \'Pages\' view of Admin plugin',
@@ -1965,18 +2032,31 @@ Pfad: `%2$s`
                 '2FA_TITLE' => '2-Factor Authentication',
                 '2FA_INSTRUCTIONS' => '##### 2-Factor Authentication
 You have **2FA** enabled on this account. Please use your **2FA** app to enter the current **6-digit code** to complete the login process.',
-                '2FA_REGEN_HINT' => 'regenerating the secret this will require you to update your authenticator app',
+                '2FA_REGEN_HINT' => 'Regenerating the secret will require you to update your authenticator app',
                 '2FA_LABEL' => 'Admin Access',
                 '2FA_FAILED' => 'Invalid 2-Factor Authentication code, please try again...',
                 '2FA_ENABLED' => '2FA Enabled',
                 '2FA_CODE_INPUT' => '000000',
                 '2FA_SECRET' => '2FA Secret',
-                '2FA_SECRET_HELP' => 'Scan this QR code into your [Authenticator App](https://learn.getgrav.org/admin-panel/2fa#apps). Also it\'s a good idea to backup the secret in a safe location, in case you need to reinstall your app.  Check the [Grav docs](https://learn.getgrav.org/admin-panel/2fa) for more information ',
+                '2FA_SECRET_HELP' => 'Scan this QR code into your [Authenticator App](https://learn.getgrav.org/admin-panel/2fa#apps). Also it\'s a good idea to backup the secret in a safe location, in case you need to reinstall your app. Check the [Grav docs](https://learn.getgrav.org/admin-panel/2fa) for more information ',
                 '2FA_REGENERATE' => 'Regenerate',
                 'FORCE_LOWERCASE_URLS' => 'Force lowercase URLs',
-                'FORCE_LOWERCASE_URLS_HELP' => 'By default grav will set all slugs and routes to be lowercase.  With this set to false, Uppercase slugs and routes can be used',
+                'FORCE_LOWERCASE_URLS_HELP' => 'By default Grav will set all slugs and routes to be lowercase. With this set to false, Uppercase slugs and routes can be used',
                 'INTL_ENABLED' => 'Intl module integration',
-                'INTL_ENABLED_HELP' => 'Use Intl PHP module and collate to sort UTF8 based collections'
+                'INTL_ENABLED_HELP' => 'Use Intl PHP module and collate to sort UTF8 based collections',
+                'VIEW_SITE_TIP' => 'View site',
+                'TOOLS_DIRECT_INSTALL_TITLE' => 'Direct Install of Grav Packages',
+                'TOOLS_DIRECT_INSTALL_UPLOAD_TITLE' => 'Install Package via Direct ZIP Upload',
+                'TOOLS_DIRECT_INSTALL_UPLOAD_DESC' => 'You can easily install a valid Grav <strong>theme</strong>, <strong>plugin</strong>, or even <strong>Grav</strong> update Zip package via this method.  This package does not have to be registered via GPM and allows you to easily roll back to a prior version or install for testing.',
+                'TOOLS_DIRECT_INSTALL_URL_TITLE' => 'Install Package via Remote URL Reference',
+                'TOOLS_DIRECT_INSTALL_URL_DESC' => 'Alternatively, you can also reference a full URL to the package ZIP file and install it via this remote URL.',
+                'TOOLS_DIRECT_INSTALL_UPLOAD_BUTTON' => 'Upload and install',
+                'ROUTE_OVERRIDES' => 'Route Overrides',
+                'ROUTE_DEFAULT' => 'Default Route',
+                'ROUTE_CANONICAL' => 'Canonical Route',
+                'ROUTE_ALIASES' => 'Route Aliases',
+                'OPEN_NEW_TAB' => 'Open in new tab',
+                'PAGEMEDIA_RESIZER' => '> The following settings apply to images uploaded through the page media. Resize Width / Height will automatically resize down and proportionally an image if exceeds the limits set in the inputs. Resolution min and max values define the size ranges for uploaded images. Set the fields to 0 to prevent any manipulation.'
             ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'Email not configured',
@@ -1988,6 +2068,48 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Error',
                 'ERROR_MESSAGE' => 'Woops. Looks like this page doesn\'t exist.'
+            ],
+            'PLUGINS' => [
+                'EXTERNAL_LINKS' => [
+                    'PLUGIN_NAME' => 'External Links',
+                    'PLUGIN_STATUS' => 'Plugin status',
+                    'STATUS_HELP' => 'Set to false to disable this plugin completely.',
+                    'BUILTIN_CSS' => 'Use built in CSS',
+                    'WEIGHT' => 'Order of execution',
+                    'SETTINGS' => 'Settings',
+                    'CONTENT' => 'Content',
+                    'EXCLUDE' => [
+                        'SECTION' => 'Exclusion',
+                        'SECTION_HELP' => 'Exclude links with a specific class or domains from being recognized as external links.',
+                        'CLASSES' => 'Exclude all links with this class',
+                        'CLASSES_HELP' => 'Comma separated list.',
+                        'DOMAINS' => 'A list of domains to be excluded',
+                        'DOMAINS_HELP' => 'Comma separated list of domains e.g. _localhost/*_  (any regular expression can be used)'
+                    ],
+                    'LINKS' => [
+                        'SECTION' => 'Links',
+                        'SECTION_HELP' => 'Set links starting with <code>www.</code> and within the list of allowed schemes as external.',
+                        'WWW' => 'Link WWW',
+                        'WWW_HELP' => 'Automatically link any hostname that starts with \'www.\' as external',
+                        'REDIRECTS' => 'Follow Page redirects',
+                        'REDIRECTS_HELP' => 'Also mark links as external, that link to pages that redirect to an external URL',
+                        'SCHEMES' => 'Allowed schemes',
+                        'SCHEMES_HELP' => 'List of allowed schemes'
+                    ],
+                    'PROCESS' => 'Filter external links on the page',
+                    'TITLE' => 'Show default title for external links',
+                    'TITLE_MESSAGE' => 'This link will take you to an external web site. We are not responsible for their content.',
+                    'NO_FOLLOW' => 'Add <code>rel="nofollow"</code> to all external links',
+                    'TARGET' => 'Set target attribute of the link.',
+                    'TARGET_BLANK' => '_blank | Load in a new window',
+                    'TARGET_SELF' => '_self | Load in the same frame as it was clicked',
+                    'TARGET_PARENT' => '_parent | Load in the parent frameset',
+                    'TARGET_TOP' => '_top | Load in the full body of the window',
+                    'MODE' => 'Mode',
+                    'MODE_HELP' => 'active = process and parse all links; passive = parse links, but don\'t set CSS classes',
+                    'MODE_ACTIVE' => 'Active - Process and parse all links',
+                    'MODE_PASSIVE' => 'Passive - Parse links, but don\'t set CSS classes'
+                ]
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Form not validated. One or more required fields are missing.',
@@ -2010,6 +2132,7 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'RECAPTCHA_SECRET_KEY_HELP' => 'For more info visit https://developers.google.com/recaptcha',
                 'GENERAL' => 'General',
                 'USE_BUILT_IN_CSS' => 'Use built-in CSS',
+                'USE_INLINE_CSS' => 'Use inline CSS',
                 'FILEUPLOAD_PREVENT_SELF' => 'Cannot use "%s" outside of pages.',
                 'FILEUPLOAD_UNABLE_TO_UPLOAD' => 'Unable to upload file %s: %s',
                 'FILEUPLOAD_UNABLE_TO_MOVE' => 'Unable to move file %s to "%s"',
@@ -2035,7 +2158,13 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'AVOID_OVERWRITING' => 'Avoid overwriting',
                 'AVOID_OVERWRITING_HELP' => 'Prevent files with the same name to be overridden. Date prefix will be added',
                 'RANDOM_NAME' => 'Random name',
-                'RANDOM_NAME_HELP' => 'Generate a random 15 long string name for the uploaded files'
+                'RANDOM_NAME_HELP' => 'Generate a random 15 long string name for the uploaded files',
+                'CLIENT_SIDE_VALIDATION' => 'Client-side validation',
+                'CLIENT_SIDE_VALIDATION_HELP' => 'By default forms will use HTML5 client validation as first line of defense',
+                'INLINE_ERRORS' => 'Inline errors',
+                'INLINE_ERRORS_HELP' => 'Useful with \'client-side validation\' off, shows inline contextual form errors',
+                'RESOLUTION_MIN' => 'The {{attr}} was less than the minimum of {{min}}px <br />',
+                'RESOLUTION_MAX' => 'The {{attr}} was more than the maximum of {{max}}px <br />'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -2981,6 +3110,48 @@ Path: `%2$s`
                 'ERROR' => 'Erreur',
                 'ERROR_MESSAGE' => 'Oups. Il semble que cette page n’existe pas.'
             ],
+            'PLUGINS' => [
+                'EXTERNAL_LINKS' => [
+                    'PLUGIN_NAME' => 'Liens externes',
+                    'PLUGIN_STATUS' => 'Statut du plugin',
+                    'STATUS_HELP' => 'Régler sur false pour désactiver complètement le plugin.',
+                    'BUILTIN_CSS' => 'Utiliser les CSS intégrés',
+                    'WEIGHT' => 'Ordre d’exécution',
+                    'SETTINGS' => 'Configuration',
+                    'CONTENT' => 'Contenu',
+                    'EXCLUDE' => [
+                        'SECTION' => 'Exclusion',
+                        'SECTION_HELP' => 'Exclure les liens avec des classes spécifiques ou des domaines comme étant reconnus comme liens externes.',
+                        'CLASSES' => 'Exclure tous les liens avec cette classe',
+                        'CLASSES_HELP' => 'Liste des classes séparées par des virgules.',
+                        'DOMAINS' => 'Une liste des domaines à exclure',
+                        'DOMAINS_HELP' => 'Liste des domaines séparés par des virgules ex : _localhost/*_  (les expressions régulières peuvent être utilisées)'
+                    ],
+                    'LINKS' => [
+                        'SECTION' => 'Liens',
+                        'SECTION_HELP' => 'Définir les liens commençant par <code>www.</code> et ceux de la liste des schémas définis comme étant des liens externes.',
+                        'WWW' => 'Liens WWW',
+                        'WWW_HELP' => 'Reconnaître automatiquement tout lien commencant par \'www.\' comme étant un lien externe.',
+                        'REDIRECTS' => 'Follow Page redirects',
+                        'REDIRECTS_HELP' => 'Also mark links as external, that link to pages that redirect to an external URL',
+                        'SCHEMES' => 'Schémas autorisés',
+                        'SCHEMES_HELP' => 'Liste des schémas autorisés'
+                    ],
+                    'PROCESS' => 'Filtrer les liens externes de la page',
+                    'TITLE' => 'Afficher le titre par défaut pour les liens externes',
+                    'TITLE_MESSAGE' => 'Ce lien va vous diriger vers un site externe. Nous ne sommes pas responsables de son contenu.',
+                    'NO_FOLLOW' => 'Ajouter <code>rel="nofollow"</code> à tous les liens externes',
+                    'TARGET' => 'Spécifier la cible dans laquelle le contenu du lien doit s\'afficher.',
+                    'TARGET_BLANK' => '_blank | Afficher dans une nouvelle fenêtre',
+                    'TARGET_SELF' => '_self | Afficher dans la même fenêtre',
+                    'TARGET_PARENT' => '_parent | Afficher dans le cadre parent (frame)',
+                    'TARGET_TOP' => '_top | Afficher dans le cadre racine',
+                    'MODE' => 'Mode',
+                    'MODE_HELP' => 'actif = analyser et procéder pour tous les liens; passif = analyser les liens mais ne pas appliquer les classes CSS',
+                    'MODE_ACTIVE' => 'Actif - Analyser et procéder pour tous les liens',
+                    'MODE_PASSIVE' => 'Passif - Analyser les liens mais ne pas appliquer les classes CSS'
+                ]
+            ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formulaire non validé. Un ou plusieurs champs obligatoires sont manquants.',
                 'NONCE_NOT_VALIDATED' => 'Oups, un problème est survenu. Veuillez vérifier votre saisie et soumettre à nouveau le formulaire.',
@@ -3881,11 +4052,12 @@ Path: `%2$s`
                 'ACCESS_DENIED' => 'Hozzáférés megtagadva...',
                 'LOGIN_FAILED' => 'Sikertelen belépés...',
                 'LOGIN_SUCCESSFUL' => 'Sikeresen beléptél.',
+                'LOGGED_OUT' => 'Sikeresen kiléptél.',
                 'BTN_LOGIN' => 'Belépés',
                 'BTN_LOGOUT' => 'Kilépés',
                 'BTN_FORGOT' => 'Elfelejtettem',
                 'BTN_REGISTER' => 'Regisztráció',
-                'REMEMBER_ME' => 'Jegyezz Meg',
+                'REMEMBER_ME' => 'Jegyezz meg',
                 'REMEMBER_ME_HELP' => 'Elhelyezünk egy hosszú lejáratú sütit a böngésződben, hogy belépve maradhass két munkamenet között.',
                 'REMEMBER_ME_STOLEN_COOKIE' => 'Valaki a belépési adataid felhasználásával látogatta meg ezt az oldalt! Minden munkamenetet kiléptettünk. Kérlek, jelentkezz be ismét és ellenőrizd az adataidat.',
                 'BUILTIN_CSS' => 'Beépített CSS használata',
@@ -6481,6 +6653,48 @@ Calea: `%2$s`
                 'ERROR' => 'Ошибка',
                 'ERROR_MESSAGE' => 'Упс. Похоже, этой страницы не существует.'
             ],
+            'PLUGINS' => [
+                'EXTERNAL_LINKS' => [
+                    'PLUGIN_NAME' => 'Внешние ссылки',
+                    'PLUGIN_STATUS' => 'Статус плагина',
+                    'STATUS_HELP' => 'Установите нет, чтобы отключить этот плагин полностью.',
+                    'BUILTIN_CSS' => 'Использовать встроенные CSS',
+                    'WEIGHT' => 'Порядок выполнения',
+                    'SETTINGS' => 'Настройки',
+                    'CONTENT' => 'Контент',
+                    'EXCLUDE' => [
+                        'SECTION' => 'Исключения',
+                        'SECTION_HELP' => 'Исключить ссылки с определенным классом или домены, которые не признаются в качестве внешних ссылок.',
+                        'CLASSES' => 'Исключить все ссылки с этим классом',
+                        'CLASSES_HELP' => 'Список разделенных запятыми.',
+                        'DOMAINS' => 'Список доменов, которые будут исключены',
+                        'DOMAINS_HELP' => 'Разделенный запятыми список доменов, например, _localhost / * _ (любое регулярное выражение может быть использовано)'
+                    ],
+                    'LINKS' => [
+                        'SECTION' => 'Ссылки',
+                        'SECTION_HELP' => 'Установить ссылки, начинающиеся с <code>www.</code>? и список разрешенных схем, как внешние.',
+                        'WWW' => 'Ссылка WWW',
+                        'WWW_HELP' => 'Автоматически связывать любое имя хоста, которое начинается с \'www\'. как внешние',
+                        'REDIRECTS' => 'Follow Page redirects',
+                        'REDIRECTS_HELP' => 'Also mark links as external, that link to pages that redirect to an external URL',
+                        'SCHEMES' => 'Допустимые схемы',
+                        'SCHEMES_HELP' => 'Список допустимых схем'
+                    ],
+                    'PROCESS' => 'Фильтр внешних ссылок на странице',
+                    'TITLE' => 'Показать название по умолчанию для внешних ссылок',
+                    'TITLE_MESSAGE' => 'Эта ссылка приведет вас на внешний веб-сайт. Мы не несем ответственности за его содержание.',
+                    'NO_FOLLOW' => 'Добавить <code>rel="nofollow"</code> ко всем внешним ссылкам',
+                    'TARGET' => 'Установить целевой атрибут ссылки.',
+                    'TARGET_BLANK' => '_blank | Загрузка в новом окне',
+                    'TARGET_SELF' => '_self | Загрузка в том же фрейме где и был сделан клик',
+                    'TARGET_PARENT' => '_parent | Загрузка в родительском наборе фреймов',
+                    'TARGET_TOP' => '_top | Загрузка в отдельном окне браузера',
+                    'MODE' => 'Режим',
+                    'MODE_HELP' => 'активный = обработка и разбор всех ссылок; пассивный = вставлять ссылки, но не устанавливать для них CSS',
+                    'MODE_ACTIVE' => 'Активный = обработка и разбор всех ссылок',
+                    'MODE_PASSIVE' => 'Пассивный = вставлять ссылки, но не устанавливать для них CSS'
+                ]
+            ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Форма не подтверждена. Отсутствует одно или несколько обязательных полей.',
                 'NONCE_NOT_VALIDATED' => 'Упс, у вас возникла проблема, проверьте свои данные и отправьте форму еще раз.',
@@ -8264,6 +8478,10 @@ Path: `%2$s`
                 'ALLOW_WEBSERVER_GZIP' => 'Permetre WebServer Gzip',
                 'OFFLINE_WARNING' => 'La connexió a la GPM no es pot establir'
             ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Error',
+                'ERROR_MESSAGE' => 'Ups. Sembla que aquesta pàgina no existeix.'
+            ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
 ---
@@ -9037,6 +9255,10 @@ Máte na svém účtu aktivováno **dvoufaktorové ověřování**. Pro dokonče
                 '2FA_SECRET' => 'Tajný kód dvoufaktorového ověření',
                 '2FA_SECRET_HELP' => 'Naskenujte tento QR kód do vaší [Ověřovací aplikace](https://learn.getgrav.org/admin-panel/2fa#apps). Dobrý nápad je také zazálohovat tajný kód na bezpečné místo, pokud bude zapotřebí aplikaci přeinstalovat.  Pro více informací se podívejte do [Grav dokumentace](https://learn.getgrav.org/admin-panel/2fa) ',
                 '2FA_REGENERATE' => 'Přegenerovat'
+            ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Chyba',
+                'ERROR_MESSAGE' => 'A jéje. Vypadá to, že hledaná stránka tu není.'
             ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formulář nebyl ověřen. Chybí jedno nebo více povinných polí.',
@@ -18070,6 +18292,10 @@ Masz na tym koncie włączone **2FA**. Użyj aplikacji od **2FA** i wprowadź ak
                 '2FA_SECRET_HELP' => 'Zeskanuj ten kod QR do swojej [aplikacji uwierzytelniającej](https://learn.getgrav.org/admin-panel/2fa#apps). Zrobienie kopii zapasowej sekretu w bezpiecznym miejscu jest także dobrym pomysłem, w przypadku konieczności reinstalacji aplikacji. Przeczytaj [dokumentację Grav](https://learn.getgrav.org/admin-panel/2fa), aby dowiedzieć się więcej.',
                 '2FA_REGENERATE' => 'Zregeneruj'
             ],
+            'PLUGIN_ERROR' => [
+                'ERROR' => 'Błąd',
+                'ERROR_MESSAGE' => 'Ups. Wygląda na to, że ta strona nie istnieje.'
+            ],
             'PLUGIN_FORM' => [
                 'NOT_VALIDATED' => 'Formularz został odrzucony. Jedno lub więcej pól wymaga wypełnienia.',
                 'NONCE_NOT_VALIDATED' => 'Ups, pojawił się problem. Proszę sprawdź czy wszystkie pola zostały wypełnione i wyślij formularz ponownie.',
@@ -22587,7 +22813,7 @@ Path: `%2$s`
                 6 => 'søndag'
             ]
         ],
-        'checksum' => 'e6c16e5e1dd2e521b6cb2a2f5bc0629d',
-        'timestamp' => 1519661015
+        'checksum' => '3619a6516d3a84f1e8740cf328fbe690',
+        'timestamp' => 1528101852
     ]
 ];

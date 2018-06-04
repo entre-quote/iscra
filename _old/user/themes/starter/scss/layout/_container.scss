@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.container {
+  margin: 0 auto;
+  width: $desktop-width;
+}
+
+@media (max-width: $desktop-width) {
+  .container {
+    padding: 0 20px;
+    width: 100%;  
+  }
+}
