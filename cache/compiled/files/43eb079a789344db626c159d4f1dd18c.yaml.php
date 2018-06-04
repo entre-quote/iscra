@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://youtube/youtube.yaml',
-    'modified' => 1528100754,
+    'modified' => 1528101351,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,

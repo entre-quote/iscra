@@ -22,5 +22,4 @@ Soutenus par le centre social Didee (Développement Initiatives Démocratie Echa
 En 2014, ils ont réalisé un second documentaire «Décolonisons l’histoire » pour répondre à leurs questionnements sur le fait qu’ils n’avaient pas été (en tant que jeunes descendants de l’immigration post-coloniale) prévus au « programme » politique de l’époque de la même façon qu’une grande part de leur histoire est cruellement absente des manuels scolaires.
 C’est à toutes ces questions sociétales, cruciales, que l’équipe de l’ISCRA-Méditerranée vous invite à débattre avec Karim Chaouchi et Marjorie Dimanche, qui démontrent, si besoin était, que le pouvoir d’agir est indissociable du pouvoir de comprendre.
 
-![](http://https://vimeo.com/96955111)
-
+[plugin:vimeo](http://https://vimeo.com/96955111)

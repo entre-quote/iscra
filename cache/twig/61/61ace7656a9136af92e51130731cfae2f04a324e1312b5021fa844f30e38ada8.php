@@ -112,7 +112,7 @@ class __TwigTemplate_2b46b939aaaca6f269bf015aa2d43f3ce808c95cad17ac5cfba484d98ad
         // line 35
         echo ($context["base_url_absolute"] ?? null);
         echo "/plan-du-site\">Plan du site</a>
-        <a href=\"#\"><img src=\"";
+        <a href=\"https://www.facebook.com/iscramediterranee.iscra\" target=\"_blank\"><img src=\"";
         // line 36
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/logo-fb.png");
         echo "\" alt=\"\"></a>
@@ -177,7 +177,7 @@ class __TwigTemplate_2b46b939aaaca6f269bf015aa2d43f3ce808c95cad17ac5cfba484d98ad
     <div>
         <a href=\"{{ base_url_absolute }}/mentions-legales\">Mentions légales</a>
         <a href=\"{{ base_url_absolute }}/plan-du-site\">Plan du site</a>
-        <a href=\"#\"><img src=\"{{ url('theme://images/logo-fb.png') }}\" alt=\"\"></a>
+        <a href=\"https://www.facebook.com/iscramediterranee.iscra\" target=\"_blank\"><img src=\"{{ url('theme://images/logo-fb.png') }}\" alt=\"\"></a>
     </div>
 </footer>
 

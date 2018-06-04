@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1528101892,
-    'checksum' => 'c70218eb1d29d0151fa29a59f67b51f0',
+    'timestamp' => 1528102378,
+    'checksum' => '6847cd09c969e3f537726f5df71972c3',
     'files' => [
         'user/config' => [
             'media' => [
@@ -84,6 +84,10 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1528101350
+            ],
+            'plugins/vimeo' => [
+                'file' => 'user/plugins/vimeo/vimeo.yaml',
+                'modified' => 1528102377
             ],
             'plugins/youtube' => [
                 'file' => 'user/plugins/youtube/youtube.yaml',
@@ -474,6 +478,21 @@ return [
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'vimeo' => [
+                'enabled' => true,
+                'plugin_css' => true,
+                'editor_button' => true,
+                'player_parameters' => [
+                    'autopause' => true,
+                    'autoplay' => false,
+                    'byline' => true,
+                    'color' => '#00adef',
+                    'loop' => false,
+                    'player_id' => '',
+                    'portrait' => true,
+                    'title' => true
+                ]
             ],
             'youtube' => [
                 'enabled' => true,

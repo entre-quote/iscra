@@ -29,13 +29,13 @@ Ressources documentaires
 
 Pour préparer la rencontre, nous avons visionné deux vidéos d'intervention :  
   La première permet de se décentrer d’une lecture ethnocentrique occidentale sur la catégorie du « religieux » (31 minutes) et éclaire utilement la notion d’universalisme :
-![](https://www.youtube.com/watch?v=gwQqMEMdFF8)
+[plugin:youtube](https://www.youtube.com/watch?v=gwQqMEMdFF8)
 
 - Mondher Kilani. Le religieux, catégorie de l'ethnographie occidentale. IHEID, 7 juin 2013
 
 La seconde est une contribution à la réflexion sur le radicalisme (20 minutes) :
 - le radicalisme est -il une fatalité ? (déc 2015), à partir de 22 minutes
 
-![](https://vimeo.com/149547654)
+[plugin:vimeo](https://vimeo.com/149547654)
 
 Télécharger le flyer de la rencontre :   [ISCRA-UCSI-KILANI-1411.pdf](ISCRA-UCSI-KILANI-1411.pdf)

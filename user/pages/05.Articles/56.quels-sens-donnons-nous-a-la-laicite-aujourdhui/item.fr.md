@@ -14,9 +14,9 @@ Rencontre-débat le 9 décembre 2016
 Olivier Nöel est intervenu, à l'invitation de la FCPE du Gard, sur le thème de la laïcité.  
 
 Pour visionner la conférence :  
-![](https://www.youtube.com/watch?v=hNfyEIv9eqQ)
+[plugin:youtube](https://www.youtube.com/watch?v=hNfyEIv9eqQ)
 
 A la suite de l'intervention d'Olivier Noël, Pablo Seban de la coopérative "Vent Debout" a proposé une conférence gesticulée intitulée "Identité et laïcité" :   
 
 Pour visionner la séquence :  
-![](https://www.youtube.com/watch?v=6_tJLYBh8S0)
+[plugin:youtube](https://www.youtube.com/watch?v=6_tJLYBh8S0)

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1528101892,
-    'checksum' => '3619a6516d3a84f1e8740cf328fbe690',
+    'timestamp' => 1528102379,
+    'checksum' => '5f0f20adce9d6a2f1a0a441bcff80da2',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -323,10 +323,56 @@ return [
                 'file' => 'user/plugins/login/languages/ru.yaml',
                 'modified' => 1528101321
             ]
+        ],
+        'user/plugins/vimeo/languages' => [
+            'de' => [
+                'file' => 'user/plugins/vimeo/languages/de.yaml',
+                'modified' => 1528102377
+            ],
+            'en' => [
+                'file' => 'user/plugins/vimeo/languages/en.yaml',
+                'modified' => 1528102377
+            ],
+            'fr' => [
+                'file' => 'user/plugins/vimeo/languages/fr.yaml',
+                'modified' => 1528102377
+            ]
         ]
     ],
     'data' => [
         'de' => [
+            'PLUGIN_VIMEO' => [
+                'GENERAL' => 'Allgemein',
+                'ENABLED' => 'Aktiviert',
+                'DISABLED' => 'Deaktiviert',
+                'PLUGIN_STATUS' => 'Plugin Status',
+                'PLUGIN_CSS' => 'Plugin CSS',
+                'PLUGIN_CSS_HELP' => 'Das CSS des Plugins wird verwendet.',
+                'EDITOR_BUTTON' => 'Bearbeitungsschaltfläche',
+                'EDITOR_BUTTON_HELP' => 'In der Seitenbearbeitung kann einfach ein Vimeo Video hinzugefügt werden.',
+                'EDITOR_BUTTON_TOOLTIP' => 'Vimeo Video',
+                'EDITOR_BUTTON_PROMPT' => 'Gib bitte eine Vimeo Video ID ein. Die findest du in der Vimeo Video Url.
+Z.B. https://vimeo.com/[123456789] oder https://player.vimeo.com/video/[123456789]',
+                'PLAYER' => 'Player',
+                'PLAYER_VIEW' => 'Ansicht',
+                'PLAYER_VIEW_TEXT' => 'Falls der Video-Eigentümer Plus-Mitglied ist, könnten diese Einstellungen durch ihn überschrieben sein.',
+                'AUTOPAUSE' => 'Automatisches Pausieren',
+                'AUTOPAUSE_HELP' => 'Wenn ein anderes Video abgespielt wird, wird das Video automatisch pausiert.',
+                'AUTOPLAY' => 'Automatische Wiedergabe',
+                'AUTOPLAY_HELP' => 'Wenn der Player geladen wurde, wird das Video automatisch gestartet. Nicht von allen Geräte unterstützt.',
+                'BYLINE' => 'Verfasserangabe',
+                'BYLINE_HELP' => 'Info über den Eigentümer wird angezeigt.',
+                'COLOR' => 'Farbe',
+                'COLOR_HELP' => 'Farbe der Video-Bedienelemente.',
+                'LOOP' => 'Schleifenwiedergabe',
+                'LOOP_HELP' => 'Das Video wird automatisch neugestartet, wenn es zu Ende ist.',
+                'PLAYER_ID' => 'Player ID',
+                'PLAYER_ID_HELP' => 'Eine eindeutige ID für den Player, die mit der Vimeo Javascript API verwendet werden kann.',
+                'PORTRAIT' => 'Benutzerbild',
+                'PORTRAIT_HELP' => 'Benutzerbild des Eigentümers wird angezeigt.',
+                'TITLE' => 'Titel',
+                'TITLE_HELP' => 'Zeigt den Videotitel an.'
+            ],
             'PLUGIN_LOGIN' => [
                 'USERNAME' => 'Benutzername',
                 'EMAIL' => 'Email',
@@ -1211,6 +1257,38 @@ Pfad: `%2$s`
             ]
         ],
         'en' => [
+            'PLUGIN_VIMEO' => [
+                'GENERAL' => 'General',
+                'ENABLED' => 'Enabled',
+                'DISABLED' => 'Disabled',
+                'PLUGIN_STATUS' => 'Plugin status',
+                'PLUGIN_CSS' => 'Plugin CSS',
+                'PLUGIN_CSS_HELP' => 'The built in CSS of the plugin will be used.',
+                'EDITOR_BUTTON' => 'Editor button',
+                'EDITOR_BUTTON_HELP' => 'Allows you to easily add Vimeo videos in the page content.',
+                'EDITOR_BUTTON_TOOLTIP' => 'Vimeo Video',
+                'EDITOR_BUTTON_PROMPT' => 'Please enter a Vimeo Video ID. You\'ll find it in the Vimeo Video URL.
+E.g. https://vimeo.com/[123456789] or https://player.vimeo.com/video/[123456789]',
+                'PLAYER' => 'Player',
+                'PLAYER_VIEW' => 'View',
+                'PLAYER_VIEW_TEXT' => 'If the owner of the video is a Plus member, some of these settings may be overridden by their preferences.',
+                'AUTOPAUSE' => 'Autopause',
+                'AUTOPAUSE_HELP' => 'Enables or disables pausing this video when another video is played.',
+                'AUTOPLAY' => 'Autoplay',
+                'AUTOPLAY_HELP' => 'Plays the video automatically on load. Note that this won’t work on some devices.',
+                'BYLINE' => 'Byline',
+                'BYLINE_HELP' => 'Shows the user’s byline on the video.',
+                'COLOR' => 'Color',
+                'COLOR_HELP' => 'Specifies the color of the video controls.',
+                'LOOP' => 'Loop',
+                'LOOP_HELP' => 'Plays the video again when it reaches the end.',
+                'PLAYER_ID' => 'Player ID',
+                'PLAYER_ID_HELP' => 'A unique id for the player that will be passed back with all Javascript Vimeo API responses.',
+                'PORTRAIT' => 'Portrait',
+                'PORTRAIT_HELP' => 'Shows the user’s portrait on the video.',
+                'TITLE' => 'Title',
+                'TITLE_HELP' => 'Shows the title on the video.'
+            ],
             'PLUGIN_LOGIN' => [
                 'USERNAME' => 'Username',
                 'EMAIL' => 'Email',
@@ -2315,6 +2393,38 @@ Path: `%2$s`
             ]
         ],
         'fr' => [
+            'PLUGIN_VIMEO' => [
+                'GENERAL' => 'Général',
+                'ENABLED' => 'Activé',
+                'DISABLED' => 'Désactivé',
+                'PLUGIN_STATUS' => 'Statut du plugin',
+                'PLUGIN_CSS' => 'Plugin CSS',
+                'PLUGIN_CSS_HELP' => 'Les CSS internes du plugin seront utilisés.',
+                'EDITOR_BUTTON' => 'Bouton éditeur',
+                'EDITOR_BUTTON_HELP' => 'Vous permet d’ajouter facilement des vidéos Vimeo dans le contenu de la page.',
+                'EDITOR_BUTTON_TOOLTIP' => 'Vidéo Vimeo',
+                'EDITOR_BUTTON_PROMPT' => 'Veuillez indiquer l\'ID d\'une vidéo Vimeo. Vous la trouverez dans l’URL de la vidéo Vimeo.
+Ex : https://vimeo.com/[123456789] ou https://player.vimeo.com/video/[123456789]',
+                'PLAYER' => 'Lecteur',
+                'PLAYER_VIEW' => 'Vue',
+                'PLAYER_VIEW_TEXT' => 'Si le propriétaire de la vidéo est un Membre Plus, certains de ces paramètres peuvent être remplacés par leurs préférences utilisateur.',
+                'AUTOPAUSE' => 'Pause automatique',
+                'AUTOPAUSE_HELP' => 'Active ou désactive la pause de cette vidéo lorsque vous en visionnez une autre.',
+                'AUTOPLAY' => 'Lecture automatique',
+                'AUTOPLAY_HELP' => 'Joue la vidéo automatiquement lors du chargement. Notez que cela ne fonctionnera pas sur certains appareils.',
+                'BYLINE' => 'Signature',
+                'BYLINE_HELP' => 'Affiche la signature de l’utilisateur sur la vidéo.',
+                'COLOR' => 'Couleur',
+                'COLOR_HELP' => 'Indique la couleur des contrôles vidéo.',
+                'LOOP' => 'Boucle',
+                'LOOP_HELP' => 'Rejoue la vidéo lorsque la fin est atteinte.',
+                'PLAYER_ID' => 'ID de lecteur',
+                'PLAYER_ID_HELP' => 'Une ID unique pour le lecteur qui sera réutilisée pour toutes les réponses de l\'API Javascript Vimeo.',
+                'PORTRAIT' => 'Portrait',
+                'PORTRAIT_HELP' => 'Affiche le portrait de l’utilisateur sur la vidéo.',
+                'TITLE' => 'Titre',
+                'TITLE_HELP' => 'Affiche le titre sur la vidéo.'
+            ],
             'PLUGIN_LOGIN' => [
                 'USERNAME' => 'Nom d’utilisateur',
                 'EMAIL' => 'E-mail',
@@ -22813,7 +22923,7 @@ Path: `%2$s`
                 6 => 'søndag'
             ]
         ],
-        'checksum' => '3619a6516d3a84f1e8740cf328fbe690',
-        'timestamp' => 1528101892
+        'checksum' => '5f0f20adce9d6a2f1a0a441bcff80da2',
+        'timestamp' => 1528102379
     ]
 ];

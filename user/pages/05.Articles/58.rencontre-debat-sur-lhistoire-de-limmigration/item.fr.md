@@ -22,6 +22,5 @@ le 31 mars 2015, à la Cimade à Béziers  ![](117917-beziers-cimade,bWF4LTY1NXg
 
 Au programme :
 20h30 Projection du court-métrage AMSTERDAM de Philippe Etienne  
-https://vimeo.com/107800514  
-21h Forum Social animé par l’ISCRA, autour du livre de Suzana Dukic, L’immigration en Languedoc-Roussillon du XIXème siècle à nos jours, avec des intervenants de la CIMADE et de l’ABCR http://www.politique-actu.com/CIMADE-ISCRA-ABCR  
-
+[plugin:vimeo](https://vimeo.com/107800514)  
+21h Forum Social animé par l’ISCRA, autour du livre de Suzana Dukic, L’immigration en Languedoc-Roussillon du XIXème siècle à nos jours, avec des intervenants de la CIMADE et de l’ABCR [http://www.politique-actu.com/CIMADE-ISCRA-ABCR](http://www.politique-actu.com/CIMADE-ISCRA-ABCR)  

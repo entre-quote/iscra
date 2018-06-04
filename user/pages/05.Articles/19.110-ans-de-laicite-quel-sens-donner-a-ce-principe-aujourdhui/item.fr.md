@@ -11,10 +11,10 @@ taxonomy:
 ---
 
 
-Invité par la FCPE du Gard, le 9 décembre 2015, au Lycée Jean-Baptiste Dumas d’Alès, pour discuter les résultats d’une étude conduite auprès des parents d’élèves et lycéens, Olivier NOEL, souligne, à partir d’une approche socio-historique, les enjeux de penser la laïcité, comme un principe, et non comme une valeur, et analyse, à partir de la mise en œuvre de la circulaire Chatel (2012) les limites et effets d’une laïcité exclusive. 
+Invité par la FCPE du Gard, le 9 décembre 2015, au Lycée Jean-Baptiste Dumas d’Alès, pour discuter les résultats d’une étude conduite auprès des parents d’élèves et lycéens, Olivier NOEL, souligne, à partir d’une approche socio-historique, les enjeux de penser la laïcité, comme un principe, et non comme une valeur, et analyse, à partir de la mise en œuvre de la circulaire Chatel (2012) les limites et effets d’une laïcité exclusive.
 
 ===
 
-Regarder la conférence publique : 
+Regarder la conférence publique :
 
-![](https://www.youtube.com/watch?v=hNfyEIv9eqQ)
+[plugin:youtube](https://www.youtube.com/watch?v=hNfyEIv9eqQ)
