@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/user/plugins/admin/blueprints.yaml',
-    'modified' => 1528101206,
+    'modified' => 1529309860,
     'data' => [
         'name' => 'Admin Panel',
-        'version' => '1.8.3',
+        'version' => '1.8.4',
         'description' => 'Adds an advanced administration panel to manage your site',
         'icon' => 'empire',
         'author' => [
