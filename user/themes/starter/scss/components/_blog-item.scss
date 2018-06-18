@@ -142,3 +142,14 @@
         float: none;
     }
 }
+
+.blog-item-media {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 2rem;
+        height: auto;
+        margin-left: 5px;
+    }
+}

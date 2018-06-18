@@ -9,10 +9,15 @@
 body {
   margin: 0;
   color: $default-color;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 .img-center {
     display: block;
     margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
 }

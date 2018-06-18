@@ -1,0 +1,79 @@
+1529514946
+a:2:{s:7:"content";s:4896:"<h1>Fonctionnement de l'interface d'administration</h1>
+<h2>Ajouter un article</h2>
+<ul>
+<li>Dans le menu de gauche, se rendre dans la partie "Pages"<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.35.59.png" /></li>
+<li>Une fois la page chargée, cliquer sur le bouton "Ajouter" dans le bandeau tout en haut<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.36.11.png" /></li>
+<li>Remplir les champs de la fenêtre<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.38.34.png" />      
+<ul>
+<li>"Titre de la page"</li>
+<li>Laisser le "Nom du dossier" se remplir automatiquement</li>
+<li>vérifier qu'il ne contient pas d'accents ou d'appostrophes</li>
+<li>dans "Page parente", choisir "Articles"</li>
+<li>dans "Template de la page", choisir "item"</li>
+<li>"Visible", laisser en "auto"</li>
+</ul></li>
+</ul>
+<h2>Remplir un article</h2>
+<p>Le titre de l'article sera déjà présent dans le champs "Titre"<br />
+S'il y a une information supplémentaire, la mettre dans le champs "Sous-titre"<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.43.45.png" /> </p>
+<p>Explications de la barre d'outils (de gauche à droite)
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.36.45.png" /></p>
+<ul>
+<li>Annuler la dernière action</li>
+<li>Rétablir l'action annulée</li>
+<li>Niveaux de titre : ne pas utiliser <code>h1</code>, il ne doit y en avoir qu'un seul par page</li>
+<li>Gras</li>
+<li>Italique</li>
+<li>Barré</li>
+<li>Délimiteur de résumé, génère le code <code>===</code> permet d'avoir des résumés pour les listes d'articles</li>
+<li>Insérer un lien -&gt; voir la partie dédiée</li>
+<li>Insérer une image -&gt; voir la partie dédiée</li>
+<li>Insérer une citation</li>
+<li>Liste non ordonnée</li>
+<li>Liste ordonnée</li>
+<li>Insérer une vidéo Vimeo</li>
+<li>Insérer une vidéo Youtube</li>
+</ul>
+<p>Tout à droite</p>
+<ul>
+<li>Éditeur : permet d'éditer le code</li>
+<li>Aperçu du rendu</li>
+<li>Passer le champs de saisie en plein écran</li>
+</ul>
+<h4>Subtilités de l'éditeur :</h4>
+<ul>
+<li>il utilise le langage markdown, d'où la syntaxe qui peut étonner</li>
+<li>pour faire un retour à la ligne, il faut mettre 2 espaces en fin de ligne</li>
+</ul>
+<h3>Insérer un lien</h3>
+<p>Pour ajouter un lien, utiliser le bouton <img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.55.15.png" /><br />
+La syntaxe suivante sera ajoutée []().<br />
+Il faut remplir suivant un ordre précis.<br />
+Entre les crochets <code>[]</code>, mettre le texte qui apparaitra et qui sera cliquable. Entre les parenthèses <code>()</code>, il faut insérer le lien de la page destination.</p>
+<p>Exemples : </p>
+<ul>
+<li><code>[site de l'iscra](https://iscra.org)</code> donnera <a href="http://iscra.org" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">site de l'iscra</a><br />
+On voit ici qu'il y a une icône qui est rajoutée à côté du lien, c'est qu'il s'agit d'un lien vers une page externe.</li>
+<li><code>[Inauguration de l'exposition Nous](articles/inauguration-de-lexposition-nous)</code> donnera <a href="/zz-documentation/articles/inauguration-de-lexposition-nous">Inauguration de l'exposition Nous</a>  </li>
+</ul>
+<h2>Insérer une image</h2>
+<p>Déjà il faut éviter que l'image soit trop grande. Pour celà, il faut la redimensionner.<br />
+Pour redimensionner une image : <a href="http://resizeyourimage.com/FR/" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">Resize your image</a>.<br />
+Largeur maximum d'affichage : 255px.</p>
+<p>Il faut ensuite l'envoyer sur le site.<br />
+Pour cela, sous la partie de contenu, il y a une partie <code>Médias de la page</code>. Celle-ci sert à insérer des images dans le contenu.<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 19.01.34.png" /><br />
+En cliquant dessus (ou en glissant déposant les images voulues), les images vont être envoyées sur le serveur.</p>
+<p>Il faudra enfin les insérer.<br />
+Pour insérer l'image, il faut survoler l'image choisie, puis cliquer sur l'icône <code>+</code> tout en haut.<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 19.05.23.png" /></p>
+<p>Un code ressemblant s'affichera <code>![](mon-image.jpg)</code></p>
+<p>Il est aussi possible d'ajouter une image venant d'un autre site en cliquant sur le bouton <img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.59.31.png" />   Là il faudra remplir le code comme dans l'exemple ci-dessous<br />
+<code>![] (http://adresse.fr/de/mon-image.jpg)</code></p>
+<h2>Insérer une vidéo</h2>
+<h2>Insérer un son depuis Soundcloud</h2>";s:12:"content_meta";N;}

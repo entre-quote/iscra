@@ -46,18 +46,15 @@
 
         {% if page.taxonomy.Medias == true %}
         <div class="blog-item-plus">
-            <div class="bog-item-media">
+            <div class="blog-item-media">
                 Media :
                 {% for media in page.taxonomy.Medias %}
-                {{ media }}
+                <img src="{{ theme_url }}/images/icons/{{ media }}.png" alt="{{ media }}">
                 {% endfor %}
             </div>
         </div>
         {% endif %}
 
-        {% for theme in page.taxonomy.Medias %}
-
-        {% endfor %}
     </div>
 
         {% if page.taxonomy.Themes == true or page.taxonomy.Interventions == true  %}

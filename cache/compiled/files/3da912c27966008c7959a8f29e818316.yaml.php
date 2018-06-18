@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/user/plugins/login/blueprints.yaml',
-    'modified' => 1528101320,
+    'modified' => 1528214332,
     'data' => [
         'name' => 'Login',
-        'version' => '2.7.0',
+        'version' => '2.7.1',
         'description' => 'Enables user authentication and login screen.',
         'icon' => 'sign-in',
         'author' => [
