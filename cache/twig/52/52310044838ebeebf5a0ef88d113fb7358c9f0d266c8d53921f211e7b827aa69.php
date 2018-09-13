@@ -69,7 +69,7 @@ class __TwigTemplate_ef615d0509a0c322e20119fd280aadd7849aa4fb40eba160aaeeab7d222
         echo "
         ";
         // line 18
-        $context["redirect"] = ((($context["redirect"] ?? null)) ? (($context["redirect"] ?? null)) : (((("/" . ($context["admin_route"] ?? null)) . "/") . $this->getAttribute(($context["admin"] ?? null), "route", array()))));
+        $context["redirect"] = ((($context["redirect"] ?? null)) ? (($context["redirect"] ?? null)) : ($this->getAttribute(($context["uri"] ?? null), "path", array())));
         // line 19
         echo "
         <form method=\"post\" action=\"";
@@ -158,7 +158,7 @@ class __TwigTemplate_ef615d0509a0c322e20119fd280aadd7849aa4fb40eba160aaeeab7d222
 
         {% block integration %}{% endblock %}
 
-        {% set redirect = redirect ?: '/' ~ admin_route ~ '/' ~ admin.route %}
+        {% set redirect = redirect ?: uri.path %}
 
         <form method=\"post\" action=\"{{ base_url_relative }}\">
             <div class=\"padding\">

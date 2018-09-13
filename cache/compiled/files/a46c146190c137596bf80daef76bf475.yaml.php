@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/user/plugins/admin/blueprints/config/media.yaml',
-    'modified' => 1529309860,
+    'modified' => 1530515334,
     'data' => [
         'title' => 'PLUGIN_ADMIN.MEDIA',
         'form' => [

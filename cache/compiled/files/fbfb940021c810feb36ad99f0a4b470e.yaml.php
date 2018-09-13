@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/system/config/media.yaml',
-    'modified' => 1528101135,
+    'modified' => 1530515265,
     'data' => [
         'types' => [
             'defaults' => [

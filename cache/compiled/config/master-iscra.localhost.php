@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1529309864,
-    'checksum' => 'a6874801aae972b2515ba7e989676306',
+    'timestamp' => 1530515674,
+    'checksum' => 'd65fda631e340a4a83737d433f649a92',
     'files' => [
         'user/config' => [
             'media' => [
@@ -33,25 +33,25 @@ return [
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1528101135
+                'modified' => 1530515265
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1528101135
+                'modified' => 1530515265
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1528101135
+                'modified' => 1530515265
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1528101135
+                'modified' => 1530515265
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1529309860
+                'modified' => 1530515334
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
@@ -67,11 +67,11 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1528101314
+                'modified' => 1530515344
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1529309855
+                'modified' => 1530515328
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
@@ -84,6 +84,14 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1528101350
+            ],
+            'plugins/shortcode-core' => [
+                'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
+                'modified' => 1530515454
+            ],
+            'plugins/shortcode-owl-carousel' => [
+                'file' => 'user/plugins/shortcode-owl-carousel/shortcode-owl-carousel.yaml',
+                'modified' => 1530515673
             ],
             'plugins/vimeo' => [
                 'file' => 'user/plugins/vimeo/vimeo.yaml',
@@ -476,6 +484,21 @@ return [
                 ]
             ],
             'problems' => [
+                'enabled' => true,
+                'built_in_css' => true
+            ],
+            'shortcode-core' => [
+                'enabled' => true,
+                'active' => true,
+                'active_admin' => true,
+                'parser' => 'regex',
+                'custom_shortcodes' => NULL,
+                'fontawesome' => [
+                    'load' => true,
+                    'url' => '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
+                ]
+            ],
+            'shortcode-owl-carousel' => [
                 'enabled' => true,
                 'built_in_css' => true
             ],

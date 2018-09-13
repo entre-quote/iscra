@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/user/plugins/form/blueprints.yaml',
-    'modified' => 1528101315,
+    'modified' => 1530515344,
     'data' => [
         'name' => 'Form',
-        'version' => '2.15.0',
+        'version' => '2.15.1',
         'description' => 'Enables the forms handling',
         'icon' => 'check-square',
         'author' => [

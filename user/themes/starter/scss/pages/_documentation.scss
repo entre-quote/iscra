@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.doc {
+
+    main > h2:first-child {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    h2, h3, h4 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    hr {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    main img {
+        box-shadow: 2px 2px 5px 0 grey;
+    }
+}
+
+code {
+    background-color: #ddd;
+}
+
+hr.small {
+    width: 40%;
+    height: 2px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f00;
+    border: 0;
+
+}

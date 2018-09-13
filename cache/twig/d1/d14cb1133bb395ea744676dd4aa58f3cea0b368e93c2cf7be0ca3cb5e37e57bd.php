@@ -34,7 +34,7 @@ class __TwigTemplate_0524b5f92bf7d3e3b4f71ce837474e0c4322324e7866ac03ceac66ef8e9
             <a href=\"";
             // line 7
             echo ($context["base_url_absolute"] ?? null);
-            echo "/interventions/etude-recherche-action\">Étude, recherche-action</a>
+            echo "/interventions/recherche-action\">Étude, recherche-action</a>
             <a href=\"";
             // line 8
             echo ($context["base_url_absolute"] ?? null);
@@ -148,7 +148,7 @@ class __TwigTemplate_0524b5f92bf7d3e3b4f71ce837474e0c4322324e7866ac03ceac66ef8e9
 
     {% if 'themes' in uri.path %}
         <div>
-            <a href=\"{{ base_url_absolute }}/interventions/etude-recherche-action\">Étude, recherche-action</a>
+            <a href=\"{{ base_url_absolute }}/interventions/recherche-action\">Étude, recherche-action</a>
             <a href=\"{{ base_url_absolute }}/interventions/formation\">Formation</a>
             <a href=\"{{ base_url_absolute }}/interventions/conferences-et-debats-publics\">Conférences et débats publics</a>
         </div>

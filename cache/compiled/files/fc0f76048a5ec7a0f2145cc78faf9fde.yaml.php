@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/user/plugins/form/form.yaml',
-    'modified' => 1528101314,
+    'modified' => 1530515344,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/user/plugins/admin/blueprints/admin/pages/move.yaml',
-    'modified' => 1528101208,
+    'modified' => 1530515334,
     'data' => [
         'form' => [
             'validation' => 'loose',

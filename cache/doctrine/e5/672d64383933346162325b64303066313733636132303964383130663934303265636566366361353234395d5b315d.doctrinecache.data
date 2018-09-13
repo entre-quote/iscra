@@ -1,0 +1,187 @@
+1529933810
+a:2:{s:7:"content";s:13367:"<h1>Fonctionnement de l'interface d'administration</h1>
+<ul>
+<li><a href="#pages">Présentation de l'administration des pages</a></li>
+<li><a href="#ajout">Ajouter un article</a></li>
+<li><a href="#remplir">Remplir un article</a>
+<ul>
+<li><a href="#lien">Insérer un lien</a></li>
+<li><a href="#image">Insérer une image</a></li>
+<li><a href="#video">Insérer une vidéo</a></li>
+<li><a href="#son">Insérer un son depuis Soundcloud</a></li>
+<li><a href="#date">Choisir une date de mise en ligne d'un article</a></li>
+<li><a href="#categories">Mettre un article en actualités</a></li>
+</ul></li>
+<li><a href="#erreur">En cas d'erreur de création</a></li>
+<li><a href="#autres">Les pages qui ne sont pas des articles</a>
+<ul>
+<li>[Présentation de l'interface] </li>
+</ul></li>
+</ul>
+<hr>
+<h2 id="pages">Présentation de l'administration des pages</h2>
+<p>Dans la partie "Pages" de l'administration : </p>
+<ul>
+<li>certaines sont bleues, c'est à dire qu'elles sont publiées et visible dans le menu principale </li>
+<li>certaines sont grises, elles sont publiées mais ne doivent pas apparaitre dans le menu sous le logo (exemple : contact)</li>
+<li>certaines ont un cercle rouge, elles ne sont pas publiées, elles n'apparaitront pas </li>
+</ul>
+<p>Pour naviguer dans l'arborescence de pages, il faut utiliser le bouton "+"/"-" à côté du titre de la page.<br />
+Exemple d'arborescence dépliée :<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-18 à 15.28.10.png" /></p>
+<hr>
+<h2 id="ajout">Ajouter un article</h2>
+<ul>
+<li>Dans le menu de gauche, se rendre dans la partie "Pages"<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.35.59.png" /></li>
+<li>Une fois la page chargée, cliquer sur le bouton "Ajouter" dans le bandeau tout en haut<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.36.11.png" /></li>
+<li>Remplir les champs de la fenêtre<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.38.34.png" />      
+<ul>
+<li>"Titre de la page"</li>
+<li>Laisser le "Nom du dossier" se remplir automatiquement</li>
+<li>vérifier qu'il ne contient pas d'accents ou d'appostrophes</li>
+<li>dans "Page parente", choisir "Articles"</li>
+<li>dans "Template de la page", choisir "item"</li>
+<li>"Visible", laisser en "auto"</li>
+</ul></li>
+</ul>
+<hr>
+<h2 id="remplir">Remplir un article</h2>
+<p>Le titre de l'article sera déjà présent dans le champs "Titre"<br />
+S'il y a une information supplémentaire, la mettre dans le champs "Sous-titre"<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.43.45.png" /> </p>
+<p>Explications de la barre d'outils (de gauche à droite)
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.36.45.png" /></p>
+<ul>
+<li>Annuler la dernière action</li>
+<li>Rétablir l'action annulée</li>
+<li>Niveaux de titre : ne pas utiliser <code>h1</code>, il ne doit y en avoir qu'un seul par page</li>
+<li>Gras</li>
+<li>Italique</li>
+<li>Barré</li>
+<li>Délimiteur de résumé, génère le code <code>===</code> permet d'avoir des résumés pour les listes d'articles</li>
+<li>Insérer un lien -&gt; voir la partie dédiée</li>
+<li>Insérer une image -&gt; voir la partie dédiée</li>
+<li>Insérer une citation</li>
+<li>Liste non ordonnée</li>
+<li>Liste ordonnée</li>
+<li>Insérer une vidéo Vimeo</li>
+<li>Insérer une vidéo Youtube</li>
+</ul>
+<p>Tout à droite</p>
+<ul>
+<li>Éditeur : permet d'éditer le code</li>
+<li>Aperçu du rendu</li>
+<li>Passer le champs de saisie en plein écran</li>
+</ul>
+<h4>Subtilités de l'éditeur :</h4>
+<ul>
+<li>il utilise le langage markdown, d'où la syntaxe qui peut étonner</li>
+<li>pour faire un retour à la ligne, il faut mettre 2 espaces en fin de ligne</li>
+</ul>
+<hr class="small">
+<h3 id="lien">Insérer un lien</h3>
+<p>Pour ajouter un lien, utiliser le bouton <img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.55.15.png" /><br />
+La syntaxe suivante sera ajoutée []().<br />
+Il faut remplir suivant un ordre précis.<br />
+Entre les crochets <code>[]</code>, mettre le texte qui apparaitra et qui sera cliquable. Entre les parenthèses <code>()</code>, il faut insérer le lien de la page destination.</p>
+<p>Exemples : </p>
+<ul>
+<li><code>[site de l'iscra](https://iscra.org)</code> donnera <a href="http://iscra.org" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">site de l'iscra</a><br />
+On voit ici qu'il y a une icône qui est rajoutée à côté du lien, c'est qu'il s'agit d'un lien vers une page externe.</li>
+<li><code>[Inauguration de l'exposition Nous](articles/inauguration-de-lexposition-nous)</code> donnera <a href="/zz-documentation/articles/inauguration-de-lexposition-nous">Inauguration de l'exposition Nous</a>  </li>
+</ul>
+<hr class="small">
+<h3 id="image">Insérer une image</h3>
+<p>Déjà il faut éviter que l'image soit trop grande. Pour celà, il faut la redimensionner.<br />
+Pour redimensionner une image : <a href="http://resizeyourimage.com/FR/" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">Resize your image</a>.<br />
+Largeur maximum d'affichage : 255px.</p>
+<p>Il faut ensuite l'envoyer sur le site.<br />
+Pour cela, sous la partie de contenu, il y a une partie <code>Médias de la page</code>. Celle-ci sert à insérer des images dans le contenu.<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 19.01.34.png" /><br />
+En cliquant dessus (ou en glissant déposant les images voulues), les images vont être envoyées sur le serveur.</p>
+<p>Il faudra enfin les insérer.<br />
+Pour insérer l'image, il faut survoler l'image choisie, puis cliquer sur l'icône <code>+</code> tout en haut.<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 19.05.23.png" /></p>
+<p>Un code ressemblant s'affichera <code>![](mon-image.jpg)</code></p>
+<p>Il est aussi possible d'ajouter une image venant d'un autre site en cliquant sur le bouton <img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 18.59.31.png" /><br />
+Là il faudra remplir le code comme dans l'exemple ci-dessous<br />
+<code>![] (http://adresse.fr/de/mon-image.jpg)</code></p>
+<hr class="small">
+<h3 id="video">Insérer une vidéo</h3>
+<p>En fonction du service il faudra choisir entre : </p>
+<ul>
+<li>Vimeo <img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 19.21.09.png" /></li>
+<li>Youtube <img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-13 à 19.21.20.png" /></li>
+</ul>
+<p>Les 2 vont ouvrir une fenêtre qui permettra d'inserer l'adresse de la vidéo.  </p>
+<ul>
+<li>Le code généré pour Vimeo sera dans le genre <code>[plugin:vimeo] (https://vimeo.com/272263498)</code></li>
+<li>Le code généré pour Youtube sera dans le genre <code>[plugin:youtube] (https://www.youtube.com/watch?v=befyJOxtBHY)</code></li>
+</ul>
+<hr class="small">
+<h3 id="son">Insérer un son depuis Soundcloud</h3>
+<h4>Uploader un son</h4>
+<p>Une fois connecté sur <a href="https://soundcloud.com/" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">Souncloud</a>, cliquer sur le bouton "Uploader" dans la barre tout en haut du site.<br />
+Dans la page qui s'ouvre, cliquer sur le bouton orange "Sélectionner un fichier à uploader".  Dans la fenêtre qui s'ouvrira, choisir le ou les fichiers à envoyer.<br />
+S'il y a plusieurs fichiers, Soundcloud créera une playlist, ce qui permettra d'insérer un seul code sur le site de l'ISCRA et que les pistes se lisent automatiquement les unes après les autres.  </p>
+<h4>Insérer une ou des pistes sur le site ISCRA</h4>
+<p>Sur Soundcloud, se rendre sur la <a href="https://soundcloud.com/iscra-mediterranee" target="_blank" rel="nofollow noopener noreferrer" class="external-link no-image">page de l'ISCRA</a>, choisir le fichier ou la playlist à insérer.<br />
+Sous chacun se trouve un bouton "partager" <img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-18 à 14.18.57.png" />.<br />
+Au clique, un fenêtre s'ouvre, il faut se rendre dans l'onglet "intégrer".<br />
+Il y a 2 affichages prévus pour les pistes et les playlists et un 3ème seulement pour les pistes. Celui-ci est plus léger en affichage.
+Dans le cas où une des 2 premières options d'affichage est choisie, il faut décocher toutes les cases présentent dans la fenêtre.<br />
+Une fois ces actions effectuées, il faut copier le contenu sous le titre "code". Il commence par <code>&lt;iframe width="100%"</code><br />
+Retourner sur l'article ISCRA en cours d'édition, positionner le curseur à l'endroit où l'on veut les pistes audio et coller le code copié précédement.<br />
+Cela devrait ressembler à <code>&lt;iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/457687311&amp;color=%23ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=true"&gt;&lt;/iframe&gt;</code></p>
+<p>Les différentes options d'affichages pour pistes et playlists : </p>
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/457687311&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false&amp;visual=true"></iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/457687311&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false"></iframe>
+<p>Seulement pour les pistes : </p>
+<iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/457687311&amp;color=%23ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>
+<hr class="small">
+<h3 id="date">Choisir une date de mise en ligne d'un article</h3>
+<p>Au dessus du champs "Titre" se trouvent 3 onglets : "Contenu", "Options" et "Avancé".<br />
+Pour cette manipulation, il faut se rendre dans "Options"<br />
+Une des parties de cette page se nomme "Publication"  </p>
+<p>Dans les pages de thèmes ou interventions, les articles sont triés par date.<br />
+Si aucune modification de date n'est faite, le dernier article ajouté sera le premier affiché.<br />
+Il est possible de remplir une date antérieure à la date du jour afin qu'un article ancien arrive avant les plus récents.<br />
+Pour cela il faut cliquer dans le champs nommé "Date", de choisir une date correspondant approximativement à la date voulue et d'enregistrer.</p>
+<p>Il est possible de choisir une date de publication et de dépublication en cas d'article temporaire.  </p>
+<hr class="small">
+<h3 id="categories">Mettre un article dans une catégorie</h3>
+<p>Au dessus du champs "Titre" se trouvent 3 onglets : "Contenu", "Options" et "Avancé".<br />
+Pour cette manipulation, il faut se rendre dans "Options"<br />
+Une des parties de cette page se nomme "Taxonomies"<br />
+Dedans se trouvent les champs "Actualités", "Themes", "Interventions", "Medias".  </p>
+<h4>Pour mettre un article en page d'accueil (actualités)</h4>
+<p>Cliquer dans le champs "Actualités", le mot "Oui" apparait. En cliquant dessus, il va s'inscrire dans le champs.<br />
+Après enregistrement, il sera affiché sur la page d'accueil.  </p>
+<h4>Insérer l'article dans un thème et/ou une intervention</h4>
+<p>Même fonctionnement que pour les actualités. En cliquant dans le champs en face du titre "Themes" ou "Interventions", il y a une liste pré-remplie.<br />
+Il faut choisir les thèmes et interventions liées à l'article puis enregistrer.
+L'article apparaitra ainsi dans les pages dédiées aux thèmes ou interventions choisies</p>
+<p>Exemple :<br />
+<img alt="" src="/user/pages/zz-documentation/Capture d’écran 2018-06-18 à 14.55.16.png" /></p>
+<hr>
+<h2 id="erreur">En cas d'erreur de création</h2>
+<p>Au dessus du champs "Titre" se trouvent 3 onglets : "Contenu", "Options" et "Avancé".<br />
+Pour cette manipulation, il faut se rendre dans "Avancé".  </p>
+<p>Si l'article n'apparait pas, cela peut venir de plusieurs choses : </p>
+<ul>
+<li>Il n'est pas rangé dans la partie "articles"<br />
+Cela est visible dans la champs "Parent". Si l'affichage n'est pas "/articles", le sélectionner dans la liste déroulante et enregistrer.</li>
+<li>Il ne s'agit pas d'un "item".<br />
+Cela est visible dans la champs "Template de page". Si ce n'est pas "item", le choisir dans la liste déroulante et enregistrer.</li>
+</ul>
+<hr>
+<h2 id="autres">Les pages qui ne sont pas des articles</h2>
+<ul>
+<li>Dans la configuration actuelle, le contenu rempli dans les sous-pages qui composent "Thèmes" et "Interventions" n'apparaitra pas.</li>
+<li>Il est possible d'éditer le contenu des pages "ISCRA", "Thèmes", "Interventions"</li>
+</ul>
+<h3>Plan du site</h3>
+<p>Cette page est générée automatiquement</p>";s:12:"content_meta";N;}

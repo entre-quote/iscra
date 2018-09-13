@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/system/languages/nl.yaml',
-    'modified' => 1528101147,
+    'modified' => 1530515265,
     'data' => [
         'INFLECTOR_IRREGULAR' => [
             'person' => 'personen',

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/dev/Boulot/Mathieu Roy/ISCRA/iscra/system/languages/pl.yaml',
-    'modified' => 1528101146,
+    'modified' => 1530515265,
     'data' => [
         'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
